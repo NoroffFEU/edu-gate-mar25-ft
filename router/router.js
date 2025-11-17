@@ -1,6 +1,6 @@
 import routes from "./routes.js";
-import { GetEmailFromLocalStorage } from "../dataHandeling/localStorageHandeling.js";
 
+// 404 Not Found view or route
 const NotFound = () => /*HTML*/`
 <div>
     <h1>testing 404 error page</h1>
@@ -18,38 +18,16 @@ function router() {
         path = url.pathname;
     } catch (e) {
     }
-    if (path.endsWith("index.html") || path === "/templates/") path = "/";
-
-    const isLoggedIn = !!GetEmailFromLocalStorage();
-    if (!isLoggedIn && path !== "/login") {
-        navigateTo("/login");
-        return;
-    }
-    if (isLoggedIn && path === "/login") {
-        navigateTo("/");
-        return;
-    }
+    if (path.endsWith("index.html")) path = "/";
 
     const route = routes.find(r => r.path === path);
     const view = route ? route.view : NotFound;
     document.querySelector("#app").innerHTML = view();
-    updateActiveNav();
 }
 
 function navigateTo(url) {
     history.pushState(null, null, url);
     router();
-}
-
-function updateActiveNav() {
-  const links = document.querySelectorAll('.header-navbar a[data-link]');
-  links.forEach(link => {
-    if (link.getAttribute('href') === location.pathname) {
-      link.classList.add('nav-clicked');
-    } else {
-      link.classList.remove('nav-clicked');
-    }
-  });
 }
 
 
