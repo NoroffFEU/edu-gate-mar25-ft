@@ -1,0 +1,4414 @@
+{
+  "results": [
+    {
+      "studentId": "stu-105",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 90,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 100,
+          "grade": "A"
+        }
+      ],
+      "average": 91.12,
+      "position": 1
+    },
+    {
+      "studentId": "stu-106",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 78,
+          "grade": "B"
+        }
+      ],
+      "average": 78.62,
+      "position": 2
+    },
+    {
+      "studentId": "stu-103",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 87,
+          "grade": "A"
+        }
+      ],
+      "average": 78.5,
+      "position": 3
+    },
+    {
+      "studentId": "stu-110",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 86,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 71,
+          "grade": "B"
+        }
+      ],
+      "average": 75.25,
+      "position": 4
+    },
+    {
+      "studentId": "stu-109",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 71,
+          "grade": "B"
+        }
+      ],
+      "average": 69.12,
+      "position": 5
+    },
+    {
+      "studentId": "stu-104",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 62,
+          "grade": "C"
+        }
+      ],
+      "average": 65.38,
+      "position": 6
+    },
+    {
+      "studentId": "stu-108",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 50,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 73,
+          "grade": "B"
+        }
+      ],
+      "average": 60.75,
+      "position": 7
+    },
+    {
+      "studentId": "stu-102",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 50,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 54,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 42,
+          "grade": "F"
+        }
+      ],
+      "average": 58.38,
+      "position": 8
+    },
+    {
+      "studentId": "stu-107",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 43,
+          "grade": "F"
+        },
+        {
+          "name": "Biology",
+          "score": 42,
+          "grade": "F"
+        },
+        {
+          "name": "Chemistry",
+          "score": 54,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 64,
+          "grade": "C"
+        }
+      ],
+      "average": 56.62,
+      "position": 9
+    },
+    {
+      "studentId": "stu-101",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 37,
+          "grade": "F"
+        },
+        {
+          "name": "English Language",
+          "score": 35,
+          "grade": "F"
+        },
+        {
+          "name": "Biology",
+          "score": 54,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 52,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 56,
+          "grade": "D"
+        }
+      ],
+      "average": 51.5,
+      "position": 10
+    },
+    {
+      "studentId": "stu-202",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 87,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 95,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 95,
+          "grade": "A"
+        }
+      ],
+      "average": 85.62,
+      "position": 1
+    },
+    {
+      "studentId": "stu-203",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 97,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 99,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 62,
+          "grade": "C"
+        }
+      ],
+      "average": 83,
+      "position": 2
+    },
+    {
+      "studentId": "stu-208",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 86,
+          "grade": "A"
+        }
+      ],
+      "average": 81.12,
+      "position": 3
+    },
+    {
+      "studentId": "stu-204",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 73,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 73,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 75,
+          "grade": "B"
+        }
+      ],
+      "average": 73,
+      "position": 4
+    },
+    {
+      "studentId": "stu-201",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 76,
+          "grade": "B"
+        }
+      ],
+      "average": 67.75,
+      "position": 5
+    },
+    {
+      "studentId": "stu-207",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 48,
+          "grade": "E"
+        },
+        {
+          "name": "Government",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 59,
+          "grade": "D"
+        }
+      ],
+      "average": 67.5,
+      "position": 6
+    },
+    {
+      "studentId": "stu-210",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 51,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 45,
+          "grade": "E"
+        },
+        {
+          "name": "Government",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 65,
+          "grade": "C"
+        }
+      ],
+      "average": 61.88,
+      "position": 7
+    },
+    {
+      "studentId": "stu-206",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 54,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 52,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 50,
+          "grade": "D"
+        }
+      ],
+      "average": 60.5,
+      "position": 8
+    },
+    {
+      "studentId": "stu-205",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 47,
+          "grade": "E"
+        },
+        {
+          "name": "Chemistry",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 45,
+          "grade": "E"
+        },
+        {
+          "name": "Economics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 58,
+          "grade": "D"
+        }
+      ],
+      "average": 57.62,
+      "position": 9
+    },
+    {
+      "studentId": "stu-209",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 45,
+          "grade": "E"
+        },
+        {
+          "name": "English Language",
+          "score": 45,
+          "grade": "E"
+        },
+        {
+          "name": "Biology",
+          "score": 31,
+          "grade": "F"
+        },
+        {
+          "name": "Chemistry",
+          "score": 52,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 51,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 54,
+          "grade": "D"
+        }
+      ],
+      "average": 49.75,
+      "position": 10
+    },
+    {
+      "studentId": "stu-307",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 93,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 95,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 87,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 96,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 98,
+          "grade": "A"
+        }
+      ],
+      "average": 91.75,
+      "position": 1
+    },
+    {
+      "studentId": "stu-310",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 82,
+          "grade": "A"
+        }
+      ],
+      "average": 79.38,
+      "position": 2
+    },
+    {
+      "studentId": "stu-302",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 93,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 67,
+          "grade": "C"
+        }
+      ],
+      "average": 76.88,
+      "position": 3
+    },
+    {
+      "studentId": "stu-306",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 69,
+          "grade": "C"
+        }
+      ],
+      "average": 75.12,
+      "position": 4
+    },
+    {
+      "studentId": "stu-304",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 62,
+          "grade": "C"
+        }
+      ],
+      "average": 70.88,
+      "position": 5
+    },
+    {
+      "studentId": "stu-303",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 46,
+          "grade": "E"
+        },
+        {
+          "name": "Biology",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 66,
+          "grade": "C"
+        }
+      ],
+      "average": 65.12,
+      "position": 6
+    },
+    {
+      "studentId": "stu-309",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 51,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 40,
+          "grade": "F"
+        },
+        {
+          "name": "Government",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 57,
+          "grade": "D"
+        }
+      ],
+      "average": 58.25,
+      "position": 7
+    },
+    {
+      "studentId": "stu-301",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 45,
+          "grade": "E"
+        },
+        {
+          "name": "Chemistry",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 44,
+          "grade": "F"
+        },
+        {
+          "name": "Economics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 54,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 54,
+          "grade": "D"
+        }
+      ],
+      "average": 58.25,
+      "position": 7
+    },
+    {
+      "studentId": "stu-305",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "Biology",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "Physics",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "Economics",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 52,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 56,
+          "grade": "D"
+        }
+      ],
+      "average": 55.25,
+      "position": 9
+    },
+    {
+      "studentId": "stu-308",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 48,
+          "grade": "E"
+        },
+        {
+          "name": "Physics",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "Government",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 50,
+          "grade": "D"
+        }
+      ],
+      "average": 55,
+      "position": 10
+    },
+        {
+      "studentId": "stu-406",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 90,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 95,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 82,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 75,
+          "grade": "B"
+        }
+      ],
+      "average": 86.5,
+      "position": 1
+    },
+    {
+      "studentId": "stu-408",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 93,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 78,
+          "grade": "B"
+        }
+      ],
+      "average": 84.38,
+      "position": 2
+    },
+    {
+      "studentId": "stu-410",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 95,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 90,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 95,
+          "grade": "A"
+        }
+      ],
+      "average": 81.62,
+      "position": 3
+    },
+    {
+      "studentId": "stu-404",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 63,
+          "grade": "C"
+        }
+      ],
+      "average": 72.62,
+      "position": 4
+    },
+    {
+      "studentId": "stu-402",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 65,
+          "grade": "C"
+        }
+      ],
+      "average": 68.5,
+      "position": 5
+    },
+    {
+      "studentId": "stu-401",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 54,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 42,
+          "grade": "F"
+        },
+        {
+          "name": "Physics",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 65,
+          "grade": "C"
+        }
+      ],
+      "average": 66.38,
+      "position": 6
+    },
+    {
+      "studentId": "stu-409",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 51,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 61,
+          "grade": "C"
+        }
+      ],
+      "average": 61.5,
+      "position": 7
+    },
+    {
+      "studentId": "stu-403",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 55,
+          "grade": "D"
+        }
+      ],
+      "average": 60.25,
+      "position": 8
+    },
+    {
+      "studentId": "stu-405",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 48,
+          "grade": "E"
+        },
+        {
+          "name": "Chemistry",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 54,
+          "grade": "D"
+        }
+      ],
+      "average": 56.75,
+      "position": 9
+    },
+    {
+      "studentId": "stu-407",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 37,
+          "grade": "F"
+        },
+        {
+          "name": "English Language",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 54,
+          "grade": "D"
+        }
+      ],
+      "average": 55.12,
+      "position": 10
+    },
+    {
+      "studentId": "stu-508",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 88,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 88,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 93,
+          "grade": "A"
+        }
+      ],
+      "average": 85.12,
+      "position": 1
+    },
+    {
+      "studentId": "stu-502",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 93,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 73,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 85,
+          "grade": "A"
+        }
+      ],
+      "average": 79.75,
+      "position": 2
+    },
+    {
+      "studentId": "stu-507",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 82,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 80,
+          "grade": "A"
+        }
+      ],
+      "average": 78.62,
+      "position": 3
+    },
+    {
+      "studentId": "stu-504",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 82,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 97,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 83,
+          "grade": "A"
+        }
+      ],
+      "average": 76.38,
+      "position": 4
+    },
+    {
+      "studentId": "stu-501",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 73,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 75,
+          "grade": "B"
+        }
+      ],
+      "average": 74.12,
+      "position": 5
+    },
+    {
+      "studentId": "stu-506",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 86,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 78,
+          "grade": "B"
+        }
+      ],
+      "average": 67.75,
+      "position": 6
+    },
+    {
+      "studentId": "stu-509",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 73,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 73,
+          "grade": "B"
+        }
+      ],
+      "average": 67.75,
+      "position": 6
+    },
+    {
+      "studentId": "stu-503",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 52,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 61,
+          "grade": "C"
+        }
+      ],
+      "average": 62.0,
+      "position": 8
+    },
+    {
+      "studentId": "stu-505",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 52,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 45,
+          "grade": "E"
+        },
+        {
+          "name": "ICT",
+          "score": 72,
+          "grade": "B"
+        }
+      ],
+      "average": 57.62,
+      "position": 9
+    },
+    {
+      "studentId": "stu-510",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "English Language",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 46,
+          "grade": "E"
+        },
+        {
+          "name": "Chemistry",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 59,
+          "grade": "D"
+        }
+      ],
+      "average": 57.5,
+      "position": 10
+    },
+    {
+      "studentId": "stu-602",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 87,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 99,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 92,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 89,
+          "grade": "A"
+        }
+      ],
+      "average": 89.38,
+      "position": 1
+    },
+    {
+      "studentId": "stu-610",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 82,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 96,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 79,
+          "grade": "B"
+        }
+      ],
+      "average": 81.75,
+      "position": 2
+    },
+    {
+      "studentId": "stu-606",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 88,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 74,
+          "grade": "B"
+        }
+      ],
+      "average": 76.75,
+      "position": 3
+    },
+    {
+      "studentId": "stu-607",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 73,
+          "grade": "B"
+        }
+      ],
+      "average": 74.5,
+      "position": 4
+    },
+    {
+      "studentId": "stu-601",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 82,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 75,
+          "grade": "B"
+        }
+      ],
+      "average": 73.12,
+      "position": 5
+    },
+    {
+      "studentId": "stu-608",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 86,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 72,
+          "grade": "B"
+        }
+      ],
+      "average": 69.0,
+      "position": 6
+    },
+    {
+      "studentId": "stu-604",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 50,
+          "grade": "D"
+        }
+      ],
+      "average": 66.0,
+      "position": 7
+    },
+    {
+      "studentId": "stu-609",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "English Language",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "Chemistry",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 75,
+          "grade": "B"
+        }
+      ],
+      "average": 59.0,
+      "position": 8
+    },
+    {
+      "studentId": "stu-603",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 45,
+          "grade": "E"
+        },
+        {
+          "name": "Chemistry",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 55,
+          "grade": "D"
+        }
+      ],
+      "average": 58.0,
+      "position": 9
+    },
+    {
+      "studentId": "stu-605",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 51,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 36,
+          "grade": "F"
+        },
+        {
+          "name": "Chemistry",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 48,
+          "grade": "E"
+        },
+        {
+          "name": "Economics",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 70,
+          "grade": "B"
+        }
+      ],
+      "average": 55.62,
+      "position": 10
+    },
+        {
+      "studentId": "stu-710",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 95,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 82,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 94,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 90,
+          "grade": "A"
+        }
+      ],
+      "average": 90.38,
+      "position": 1
+    },
+    {
+      "studentId": "stu-705",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 87,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 88,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 88,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 70,
+          "grade": "B"
+        }
+      ],
+      "average": 82.0,
+      "position": 2
+    },
+    {
+      "studentId": "stu-709",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 89,
+          "grade": "A"
+        }
+      ],
+      "average": 76.38,
+      "position": 3
+    },
+    {
+      "studentId": "stu-702",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 82,
+          "grade": "A"
+        }
+      ],
+      "average": 76.0,
+      "position": 4
+    },
+    {
+      "studentId": "stu-703",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 86,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 63,
+          "grade": "C"
+        }
+      ],
+      "average": 68.25,
+      "position": 5
+    },
+    {
+      "studentId": "stu-708",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "Government",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 60,
+          "grade": "C"
+        }
+      ],
+      "average": 63.0,
+      "position": 6
+    },
+    {
+      "studentId": "stu-707",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 44,
+          "grade": "F"
+        },
+        {
+          "name": "Biology",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 39,
+          "grade": "F"
+        }
+      ],
+      "average": 59.5,
+      "position": 7
+    },
+    {
+      "studentId": "stu-706",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 43,
+          "grade": "F"
+        }
+      ],
+      "average": 57.62,
+      "position": 8
+    },
+    {
+      "studentId": "stu-704",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 50,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "Government",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 65,
+          "grade": "C"
+        }
+      ],
+      "average": 55.88,
+      "position": 9
+    },
+    {
+      "studentId": "stu-701",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 42,
+          "grade": "F"
+        },
+        {
+          "name": "English Language",
+          "score": 35,
+          "grade": "F"
+        },
+        {
+          "name": "Biology",
+          "score": 50,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 48,
+          "grade": "E"
+        },
+        {
+          "name": "ICT",
+          "score": 32,
+          "grade": "F"
+        }
+      ],
+      "average": 47.25,
+      "position": 10
+    },
+    {
+      "studentId": "stu-808",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 100,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 60,
+          "grade": "C"
+        }
+      ],
+      "average": 84.5,
+      "position": 1
+    },
+    {
+      "studentId": "stu-810",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 83,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 61,
+          "grade": "C"
+        }
+      ],
+      "average": 74.88,
+      "position": 2
+    },
+    {
+      "studentId": "stu-806",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 85,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 77,
+          "grade": "B"
+        }
+      ],
+      "average": 74.25,
+      "position": 3
+    },
+    {
+      "studentId": "stu-803",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 52,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 91,
+          "grade": "A"
+        },
+        {
+          "name": "Government",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 74,
+          "grade": "B"
+        }
+      ],
+      "average": 71.38,
+      "position": 4
+    },
+    {
+      "studentId": "stu-801",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 73,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 51,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 81,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 64,
+          "grade": "C"
+        }
+      ],
+      "average": 68.88,
+      "position": 5
+    },
+    {
+      "studentId": "stu-802",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 46,
+          "grade": "E"
+        },
+        {
+          "name": "Economics",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 64,
+          "grade": "C"
+        }
+      ],
+      "average": 66.0,
+      "position": 6
+    },
+    {
+      "studentId": "stu-807",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "ICT",
+          "score": 59,
+          "grade": "D"
+        }
+      ],
+      "average": 63.0,
+      "position": 7
+    },
+    {
+      "studentId": "stu-805",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 54,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 51,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 51,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 79,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 60,
+          "grade": "C"
+        }
+      ],
+      "average": 62.5,
+      "position": 8
+    },
+    {
+      "studentId": "stu-804",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 54,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 52,
+          "grade": "D"
+        }
+      ],
+      "average": 58.38,
+      "position": 9
+    },
+    {
+      "studentId": "stu-809",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 46,
+          "grade": "E"
+        },
+        {
+          "name": "English Language",
+          "score": 37,
+          "grade": "F"
+        },
+        {
+          "name": "Biology",
+          "score": 51,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 45,
+          "grade": "E"
+        },
+        {
+          "name": "Physics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "Government",
+          "score": 49,
+          "grade": "E"
+        },
+        {
+          "name": "ICT",
+          "score": 45,
+          "grade": "E"
+        }
+      ],
+      "average": 48.5,
+      "position": 10
+    },
+    {
+      "studentId": "stu-910",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 96,
+          "grade": "A"
+        },
+        {
+          "name": "English Language",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 92,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 89,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 73,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 89,
+          "grade": "A"
+        }
+      ],
+      "average": 85.12,
+      "position": 1
+    },
+    {
+      "studentId": "stu-902",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 87,
+          "grade": "A"
+        },
+        {
+          "name": "Biology",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 90,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 82,
+          "grade": "A"
+        },
+        {
+          "name": "ICT",
+          "score": 73,
+          "grade": "B"
+        }
+      ],
+      "average": 79.38,
+      "position": 2
+    },
+    {
+      "studentId": "stu-901",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 80,
+          "grade": "A"
+        },
+        {
+          "name": "Chemistry",
+          "score": 77,
+          "grade": "B"
+        },
+        {
+          "name": "Physics",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 71,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 84,
+          "grade": "A"
+        }
+      ],
+      "average": 74.75,
+      "position": 3
+    },
+    {
+      "studentId": "stu-908",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "English Language",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 75,
+          "grade": "B"
+        },
+        {
+          "name": "Chemistry",
+          "score": 88,
+          "grade": "A"
+        },
+        {
+          "name": "Physics",
+          "score": 84,
+          "grade": "A"
+        },
+        {
+          "name": "Economics",
+          "score": 73,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 74,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 64,
+          "grade": "C"
+        }
+      ],
+      "average": 74.25,
+      "position": 4
+    },
+    {
+      "studentId": "stu-904",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 65,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 73,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 62,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 72,
+          "grade": "B"
+        },
+        {
+          "name": "Economics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 78,
+          "grade": "B"
+        },
+        {
+          "name": "ICT",
+          "score": 85,
+          "grade": "A"
+        }
+      ],
+      "average": 71.0,
+      "position": 5
+    },
+    {
+      "studentId": "stu-906",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 69,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 70,
+          "grade": "B"
+        },
+        {
+          "name": "Biology",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 54,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 59,
+          "grade": "D"
+        },
+        {
+          "name": "Government",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 78,
+          "grade": "B"
+        }
+      ],
+      "average": 64.38,
+      "position": 6
+    },
+    {
+      "studentId": "stu-909",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 63,
+          "grade": "C"
+        },
+        {
+          "name": "Biology",
+          "score": 48,
+          "grade": "E"
+        },
+        {
+          "name": "Chemistry",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 66,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 61,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 67,
+          "grade": "C"
+        },
+        {
+          "name": "ICT",
+          "score": 50,
+          "grade": "D"
+        }
+      ],
+      "average": 59.12,
+      "position": 7
+    },
+    {
+      "studentId": "stu-905",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 60,
+          "grade": "C"
+        },
+        {
+          "name": "English Language",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Chemistry",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Physics",
+          "score": 50,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 38,
+          "grade": "F"
+        },
+        {
+          "name": "ICT",
+          "score": 65,
+          "grade": "C"
+        }
+      ],
+      "average": 58.25,
+      "position": 8
+    },
+    {
+      "studentId": "stu-907",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 58,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 45,
+          "grade": "E"
+        },
+        {
+          "name": "Biology",
+          "score": 48,
+          "grade": "E"
+        },
+        {
+          "name": "Chemistry",
+          "score": 47,
+          "grade": "E"
+        },
+        {
+          "name": "Physics",
+          "score": 64,
+          "grade": "C"
+        },
+        {
+          "name": "Economics",
+          "score": 68,
+          "grade": "C"
+        },
+        {
+          "name": "Government",
+          "score": 41,
+          "grade": "F"
+        },
+        {
+          "name": "ICT",
+          "score": 70,
+          "grade": "B"
+        }
+      ],
+      "average": 55.12,
+      "position": 9
+    },
+    {
+      "studentId": "stu-903",
+      "term": "First Term",
+      "session": "2024/2025",
+      "subjects": [
+        {
+          "name": "Mathematics",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "English Language",
+          "score": 56,
+          "grade": "D"
+        },
+        {
+          "name": "Biology",
+          "score": 57,
+          "grade": "D"
+        },
+        {
+          "name": "Chemistry",
+          "score": 55,
+          "grade": "D"
+        },
+        {
+          "name": "Physics",
+          "score": 53,
+          "grade": "D"
+        },
+        {
+          "name": "Economics",
+          "score": 76,
+          "grade": "B"
+        },
+        {
+          "name": "Government",
+          "score": 36,
+          "grade": "F"
+        },
+        {
+          "name": "ICT",
+          "score": 33,
+          "grade": "F"
+        }
+      ],
+      "average": 52.62,
+      "position": 10
+    }
+  ]
+}

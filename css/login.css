@@ -1,0 +1,114 @@
+
+
+
+.login{
+    /* width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: '. login message'; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.login form{
+    /* grid-area: login; */
+    border: 3px solid #CCCCCCCC;
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 2em 4em;
+}
+
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-section input {
+    width: 315px;
+    height: 50px;
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #CCCCCC;
+}
+
+
+
+.submit-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button button{
+    background-color: #4CAF50;
+    width: 140px;
+    height: 59px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px 0px #00000040 inset;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFFFF;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+    border: none;
+  
+}
+
+@media (max-width: 1300px){
+    /* .login{
+    grid-template-rows: auto;
+    grid-template-areas: 'message message message'
+                        '. login .';
+    
+    } */
+
+}
+
+@media (max-width: 768px){
+    /* .login{
+    grid-template-columns: 1fr;
+    grid-template-areas: 'message'
+                        'login';
+    
+    } */
+    .login form{
+    border: none;
+    box-shadow: none;
+    }
+
+}
+@media (max-width: 600px){
+    .login form {
+        width: 100%;
+        padding: 2em 0em;
+    }
+
+    .login-section {
+        width: 100%;
+        padding: 0 2em;
+        box-sizing: border-box;
+    }
+
+    .login-section input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

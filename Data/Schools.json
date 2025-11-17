@@ -1,0 +1,25 @@
+{
+  "schools": [
+    {
+      "id": "sch-001",
+      "name": "Federal Government College Lagos",
+      "location": "Lagos, Nigeria",
+      "type": "Federal",
+      "principal": "Mrs. Abiola Adeyemi"
+    },
+    {
+      "id": "sch-002",
+      "name": "Queens College Yaba",
+      "location": "Lagos, Nigeria",
+      "type": "State",
+      "principal": "Dr. Ngozi Okeke"
+    },
+    {
+      "id": "sch-003",
+      "name": "Blooming Greens College",
+      "location": "Lagos, Nigeria",
+      "type": "Private",
+      "principal": "Dr. Nonso Adekunle"
+    }
+  ]
+}

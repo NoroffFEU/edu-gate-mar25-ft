@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    /*colors*/
+    --primary-color: #4CAF50; /*Represents growth, education, and reliability.*/
+    --secondary-color: #2196F3; /*Represents trustworthiness and professionalism.*/
+    --accent-color: #FF5722;/*Use sparingly for notifications or alerts.*/
+
+    --color-neutral-gray: #F5F5F5;/*(background)*/
+    --color-neutral-dark-gray: #333333;/*(text)*/
+    --color-neutral-medium-gray: #757575;/*(secondary text and borders)*/
+
+    /*padding and margin*/
+
+    /*Small Padding (8px, 16px): Used for tight, internal spacing within buttons, inputs, and compact layouts.*/
+    --padding-8px: 8px;/**/
+    --padding-16px: 16px;
+    /*Medium Padding (24px, 32px): Used for cards, sections within pages, and content within modals.*/
+    --padding-24px: 24px;
+    --padding-32px: 32px;
+    /*Large Padding (40px, 48px): Reserved for page layout containers, major section separations, and margins around large blocks of content.*/
+    --padding-40px: 40px;
+    --padding-48px: 48px;
+
+    /*fonts*/
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+
+    --heading-1: 32px;
+    --heading-2: 24px;
+    --heading-3: 20px;
+    --paragraph: 16px;
+    --small-txt: 14px;
+
+    --line-height: 1.5;
+    --letter-spacing: 0.5px;
+
+
+
+}
+
+h1, h2, h3, button{
+    font-family: var(--primary-font);
+    color: var(--color-neutral-dark-gray);
+    font-weight: 700;
+    line-height: var(--line-height);
+}
+h1, h2, h3{
+    letter-spacing: var(--letter-spacing);
+}
+h1{
+    font-size: var(--heading-1);
+}
+h2{
+    font-size: var(--heading-2);
+}
+h3{
+    font-size: var(--heading-3);
+}
+p, label, a{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+p{
+    font-size: var(--paragraph);
+}
+a{
+    font-size: 18px; /*it was 18 in the figma file*/
+}
+label{
+    font-size: var(--small-txt);
+}
