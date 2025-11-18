@@ -60,8 +60,8 @@ Your contribution is assessed based on your written reflection and role responsi
 - Informative commit messages and Pull Request descripttions will benefit the entire team.
 
 ## Important Links
-1. [Agency 1 Sign Up Form](https://forms.office.com/e/QRE4GchecV)
-2. [Project Plan](https://github.com/orgs/NoroffFEU/projects/214/views/1)
-3. [GitHub Repo](https://github.com/NoroffFEU/edu-gate)
+1. [Agency 1 Sign Up Form](https://forms.office.com/e/EC8DnPbfUy)
+2. [Project Plan](https://github.com/orgs/NoroffFEU/projects/416)
+3. [GitHub Repo](https://github.com/NoroffFEU/edu-gate-mar25-ft)
 4. [Project Requirements](/docs/Project-Requirements.md)
 5. [Figma File](https://www.figma.com/design/IdBpLb1ou1CH8TY716G49E/Edugate?node-id=0-1&t=zXHkoIx9IoTrGkkn-1)
