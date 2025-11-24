@@ -53,6 +53,7 @@ header {
 /* /header */
 
 /* Landing page */
+
 .hero-container {
   display: flex;
   position: relative;
@@ -91,6 +92,36 @@ header {
 
 .hero-btn-wrapper button {
   margin: 8px 8px;
+}
+
+/* Mobile breakpoint */
+
+@media (max-width: 393px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-btn-wrapper {
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-img-wrapper {
+    height: 70vh;
+    overflow: hidden;
+  }
+
+  .hero-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btn {
+    font-size: 1.25rem;
+  }
 }
 
 /* footer */
