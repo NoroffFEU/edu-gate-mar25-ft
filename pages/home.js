@@ -1,12 +1,21 @@
 export default function Home() {
   return /*HTML*/ `
-    <div>
-    <h1>Edugate</h1>
-    <p>Welcome to Edugate, the platform that lets you access your exam results online.</p>
-   <img src="public/img/heroimage-edugate.png" alt="two-students-sitting-on-the-grass-with-laptops">
-   <button class="sign-up">Sign Up</button>
-   <button class="log-in">Log In</button>
+    <div class="hero-container">
+
+      <div class="hero-img-wrapper">
+        <img src="public/img/heroimage-edugate.png" alt="two-students-sitting-on-the-grass-with-laptops" class="hero-img">
+      </div>
+
+      <div class="hero-content-wrapper">
+        <h1>Edugate</h1>
+        <p>Welcome to Edugate, the platform that lets you access your exam results online.</p>
+      </div>
+      
+      <div class="hero-btn-wrapper">
+        <button class="btn btn--sign-up">Sign Up</button>
+        <button class="btn btn--log-in">Log In</button>
+      </div>
     </div>  
-    
+
     `;
 }
