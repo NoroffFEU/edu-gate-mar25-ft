@@ -119,6 +119,14 @@ header {
     object-fit: cover;
   }
 
+  .hero-content-wrapper {
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55vh;
+  }
+
   .btn {
     font-size: 1.25rem;
   }
