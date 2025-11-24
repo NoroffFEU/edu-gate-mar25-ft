@@ -12,8 +12,8 @@ export default function Home() {
       </div>
       
       <div class="hero-btn-wrapper">
-        <button class="btn btn--sign-up">Sign Up</button>
-        <button class="btn btn--log-in">Log In</button>
+        <button class="btn">Sign Up</button>
+        <button class="btn btn--secondary">Log In</button>
       </div>
     </div>  
 

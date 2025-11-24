@@ -5,6 +5,26 @@ body {
   padding: 0;
 }
 
+h1,
+p {
+  margin: 0;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: 3px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 3px solid var(--secondary-color);
+}
+
 /* Header */
 
 header {
@@ -33,6 +53,45 @@ header {
 /* /header */
 
 /* Landing page */
+.hero-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+}
+
+.hero-content-wrapper {
+  top: 2.5rem;
+}
+
+.hero-content-wrapper,
+.hero-btn-wrapper {
+  position: absolute;
+  text-align: center;
+}
+
+.hero-btn-wrapper {
+  margin: 10px 10px;
+}
+
+.hero-img-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.hero-img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-btn-wrapper {
+  position: absolute;
+  bottom: 2.5rem;
+}
+
+.hero-btn-wrapper button {
+  margin: 8px 8px;
+}
 
 /* footer */
 
