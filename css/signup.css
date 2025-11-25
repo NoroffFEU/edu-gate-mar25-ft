@@ -1,0 +1,143 @@
+.signup-page {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.signup-card {
+  background: white;
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.signup-card h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-group input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-neutral-medium-gray);
+  font-family: var(--secondary-font);
+  font-size: var(--paragraph);
+}
+.signup-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: 3px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: 3px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
+}
+input::placeholder {
+    color: var(--color-neutral-medium-gray);
+    font-family: var(--secondary-font);
+    font-size: var(--paragraph);
+    opacity: 1;
+}
+
+
+@media (min-width: 768px) {
+  .signup-page {
+    padding: 3rem;
+  }
+
+  .signup-card {
+    max-width: 600px;
+    padding: 3rem 2.5rem;
+  }
+}
+
+
+/* --------- Tablet ---------*/
+
+@media (min-width: 768px) {
+  .signup-page {
+    padding: var(--padding-40px);
+  }
+
+  .signup-card {
+    max-width: 480px;
+    padding: var(--padding-32px);
+  }
+
+  .signup-form {
+    gap: 1rem;
+  }
+
+  .form-group input {
+    padding: 0.6rem 0.9rem;
+  }
+}
+
+
+/* --------- Desktop ---------*/
+
+@media (min-width: 1024px) {
+  .signup-page {
+    padding: var(--padding-48px);
+  }
+
+  .signup-card {
+    max-width: 420px;
+    padding: 3rem 2.5rem;
+  }
+
+  .signup-card h1 {
+    margin-bottom: 2rem;
+  }
+
+  .signup-form {
+    gap: 1.2rem;
+  }
+}
+
+.name-row {
+    display: flex;
+    gap: 1rem;      /* mellomrom mellom firstname og surname */
+  }
+
+  .name-row .form-group {
+    width: 48%;    /* gjør at begge tar like mye plass */
+  }

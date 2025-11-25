@@ -22,6 +22,7 @@ export default function signup(){
             placeholder="example@mail.com" required />
           </div>
 
+          <div class="name-row">
           <div class="form-group">
             <label for="firstname">Firstname</label>
             <input id="firstname" type="text"
@@ -32,6 +33,7 @@ export default function signup(){
             <label for="surname">Surname</label>
             <input id="surname" type="text" 
             placeholder="Nordmann" required />
+          </div>
           </div>
 
           <div class="form-group">
