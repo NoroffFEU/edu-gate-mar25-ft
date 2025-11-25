@@ -2,9 +2,9 @@ export default function Home() {
   return /*HTML*/ `
     <section class="home__container">
 
-      <figure class="home__media">
+      <div class="home__media">
       <img src="/public/img/heroimage-edugate.png" alt="two-students-sitting-on-the-grass-with-laptops">
-      </figure>
+      </div>
 
       <div class="home__content">
       <h1>Edugate</h1>
