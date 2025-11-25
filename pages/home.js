@@ -3,17 +3,17 @@ export default function Home() {
     <section class="home__container">
 
       <div class="home__media">
-      <img src="/public/img/heroimage-edugate.png" alt="two-students-sitting-on-the-grass-with-laptops">
+        <img src="/public/img/heroimage-edugate.png" alt="two-students-sitting-on-the-grass-with-laptops">
       </div>
 
       <div class="home__content">
-      <h1>Edugate</h1>
-      <p>Welcome to Edugate, the platform that lets you access your exam results online.</p>
+        <h1>Edugate</h1>
+        <p>Welcome to Edugate, the platform that lets you access your exam results online.</p>
       </div>
 
       <div class="home__actions">
-      <a href="/signup" data-link class="btn btn--primary">Sign Up</a>
-      <a href="#" class="btn btn--secondary">Log In</a>
+        <a href="/signup" data-link class="btn btn--primary">Sign Up</a>
+        <a href="#" class="btn btn--secondary">Log In</a>
       </div>
     </section>  
 
