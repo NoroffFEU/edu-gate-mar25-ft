@@ -45,7 +45,7 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .btn {
