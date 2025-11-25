@@ -84,8 +84,8 @@
   }
 
   .home__media {
-    width: 100%p;
-    height: 50vh;
+    width: 100%;
+    height: auto;
     overflow: hidden;
     position: relative;
   }
@@ -102,13 +102,6 @@
 }
 
 @media (min-width: 1024px) {
-  .home__media {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-  }
-
   .home__content {
     padding: 30px 0;
   }
