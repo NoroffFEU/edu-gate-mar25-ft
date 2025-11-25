@@ -99,14 +99,14 @@
     height: auto;
     top: 0;
   }
+
+  .home__content p {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1024px) {
   .home__content {
     padding: 30px 0;
-  }
-
-  .home__content p {
-    margin: 0;
   }
 }
