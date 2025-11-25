@@ -64,7 +64,6 @@
   background-color: transparent;
   color: var(--secondary-color);
   border: 3px solid var(--secondary-color);
-  width: 110px;
   text-decoration: none;
 }
 
@@ -81,6 +80,14 @@
     bottom: 20px;
     left: 0;
     width: 100%;
+
+    gap: 30px;
+    bottom: 30px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    width: 90px;
   }
 
   .home__media {
@@ -108,5 +115,9 @@
 @media (min-width: 1024px) {
   .home__content {
     padding: 30px 0;
+  }
+
+  .home__actions {
+    bottom: 40px;
   }
 }
