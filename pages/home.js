@@ -11,12 +11,10 @@ export default function Home() {
       <p>Welcome to Edugate, the platform that lets you access your exam results online.</p>
       </div>
 
-      <div class="btn">
-      <a href="/signup" data-link>Sign Up</a>
-      <a href="#">Log In</a>
+      <div class="home__actions">
+      <a href="/signup" data-link class="btn btn--primary">Sign Up</a>
+      <a href="#" class="btn btn--secondary">Log In</a>
       </div>
-
-      .home-
     </section>  
 
     `;
