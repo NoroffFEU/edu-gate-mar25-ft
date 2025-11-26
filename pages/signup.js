@@ -1,5 +1,5 @@
 
-export default function signup(){
+export default function Signup() {
 
     const existing = document.querySelector('link[data-signup-style]');
   if (!existing) {
@@ -22,28 +22,26 @@ export default function signup(){
             placeholder="example@mail.com" required />
           </div>
 
-          <div class="name-row">
-          <div class="form-group">
-            <label for="firstname">Firstname</label>
+          <div class="form-group name-row">
+            <label for="firstname"class="form-group-label">Firstname</label>
             <input id="firstname" type="text"
             placeholder="Ola" required />
           </div>
 
-          <div class="form-group">
-            <label for="surname">Surname</label>
+          <div class="form-group name-row">
+            <label for="surname"class="form-group-label">Surname</label>
             <input id="surname" type="text" 
             placeholder="Nordmann" required />
           </div>
-          </div>
 
           <div class="form-group">
-            <label for="password">Password</label>
+            <label for="password"class="form-group-label">Password</label>
             <input id="password" type="password"
             placeholder="Choose password" required />
           </div>
 
           <div class="form-group">
-            <label for="confirm-password">Confirm password</label>
+            <label for="confirm-password"class="form-group-label">Confirm password</label>
             <input id="confirm-password" type="password"
             placeholder="Repeat password" required />
           </div>
