@@ -1,13 +1,21 @@
 #sidebar{
     position: fixed;
-    top: 0;
+    top: 7em;
     left: 0;
+}
+
+nav ul{
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 
 nav li{
     all: unset;
+}
+
+nav li img{
+    width: 40px;
 }
 
 .user-info{
@@ -16,15 +24,16 @@ nav li{
     justify-content: center;
     align-items: center;
     width: 100vw;
+    margin-bottom: 80px;
 }
 
 .options{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 40px;
+    grid-gap: 40px;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .option{
@@ -34,6 +43,8 @@ nav li{
     text-align: center;
 }
 
-
+.option img{
+    height: 100px;
+}
 
 
