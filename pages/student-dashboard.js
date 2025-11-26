@@ -1,0 +1,31 @@
+export default function StudentDashboard() {
+    
+    return /*HTML*/`      
+    <section class="student-dashboard">
+        <div class="dashboard-container">
+          <div class="dashboard-content">
+            <h1>Dashboard</h1>
+            <div class="avatar-container">
+                <div class="avatar-circle">
+                    <img src="public/icons/profile-icon.png" alt="User Icon" class="avatar-icon"/>
+                </div>
+                <p class="avatar-name">Joe Bloggs</p>
+                <p class="avatar-school">Student at Edugate </p>
+            </div>
+          </div>
+          <div class="dashboard-options">
+          <div class ="profile-container">
+            <img src="public/icons/user-circle.png" alt="Profile Icon" class="profile-icon"/>
+            <a href="/#" class="student-profile">See profile</a>
+          </div>
+        <div class ="result-container">
+        <img src="public/icons/results.png" alt="Profile Icon" class="profile-icon"/>
+        <a href="/#" class="student-results">See results</a>
+        </div>
+
+        <div class ="logout-container">
+            <img src="public/icons/logout.png" alt="Logout Icon" class="profile-icon"/>
+            <a href="/#" class="student-logout">Logout</a></div>
+         </div>
+      </section>`
+}
