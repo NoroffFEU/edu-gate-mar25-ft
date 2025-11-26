@@ -1,5 +1,10 @@
-/* Image */
+/* Smaller mobile text because variables.css is desktop sized */
+.home__content p {
+  font-size: 14px;
+  font-weight: 400;
+}
 
+/* Image */
 .home__media {
   width: 100%;
   height: 45vh;
@@ -70,6 +75,11 @@
 /* Media queries  */
 
 @media (min-width: 768px) {
+  .home__content p {
+    font-size: 16px; /* Switch to desktop text values from 768px and up */
+    font-weight: 500;
+  }
+
   .home__actions {
     display: flex;
     flex-direction: row;
