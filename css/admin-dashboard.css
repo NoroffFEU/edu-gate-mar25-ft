@@ -1,0 +1,166 @@
+/* mobile first prinsip.. so i dont build desktop first  */
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: var(--secondary-font);
+}
+
+.dashboard {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: var(--padding-32px) var(--padding-16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+
+.dashboard h1 {
+  font-family: var(--primary-font);
+  font-size: var(--heading-1);
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: var(--color-neutral-dark-gray);
+  text-align: center;
+  margin-bottom: var(--padding-32px);
+}
+
+.admin-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--padding-48px);
+}
+
+.avatar {
+  width: 71px;
+  height: 71px;
+  background: var(--primary-color);
+  border-radius: 100px;
+  border: 1px solid var(--color-neutral-dark-gray);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--primary-font);
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+
+  margin-bottom: var(--padding-16px);
+}
+
+.admin-name {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: var(--color-neutral-dark-gray);
+  text-align: center;
+
+  margin-top: var(--padding-8px);
+  margin-bottom: var(--padding-8px);
+}
+
+.admin-role {
+  font-family: var(--secondary-font);
+  font-size: var(--small-txt);
+  font-weight: 500;
+  color: var(--color-neutral-medium-gray);
+  margin-bottom: var(--padding-32px);
+}
+
+.dashboard-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--padding-40px);
+  width: 100%;
+}
+
+.nav-item {
+  width: 205px;
+  height: 151px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: var(--color-neutral-dark-gray);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  gap: var(--padding-8px);
+}
+
+.nav-item img {
+  width: 55px;
+  height: auto;
+}
+
+.logout p {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.nav-item:visited {
+  color: var(--color-neutral-dark-gray);
+}
+
+/* this is the desktop version of my task.  */
+
+@media (min-width: 768px) {
+  .dashboard {
+    max-width: 900px;
+    padding: var(--padding-48px);
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+  }
+
+  .dashboard h1 {
+    font-size: 40px;
+    margin-bottom: var(--padding-40px);
+  }
+
+  .admin-name {
+    font-size: 24px;
+  }
+
+  .admin-role {
+    font-size: 16px;
+    margin-bottom: var(--padding-48px);
+  }
+
+  .dashboard-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: var(--padding-48px);
+    column-gap: var(--padding-40px);
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .nav-item {
+    width: 220px;
+    height: 180px;
+  }
+
+  .nav-item img {
+    width: 80px;
+  }
+
+  .nav-item p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

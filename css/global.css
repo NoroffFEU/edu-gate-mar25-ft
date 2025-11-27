@@ -1,35 +1,33 @@
 html,
 body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header */
 
 header {
-	margin-bottom: 25px;
-	border: var(--color-neutral-medium-gray);
-	border-style: inset;
-	border-width: 0.5px;
-	
-	position: sticky;
-	top: 0;
-	z-index: 9; 
-	background: var(--color-neutral-gray);
+  margin-bottom: 25px;
+  border: var(--color-neutral-medium-gray);
+  border-style: inset;
+  border-width: 0.5px;
+
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background: var(--color-neutral-gray);
 }
 
-
-
 .UserLogo {
-	width: 64px;
-	height: 64px;
-	
-	img{
-		width: 64px;
-		height: 64px;
-		object-fit: contain;
-	}
+  width: 64px;
+  height: 64px;
+
+  img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+  }
 }
 
 /* /header */
@@ -37,19 +35,19 @@ header {
 /* footer */
 
 footer {
-	display: flex;
-	flex-direction: row;
-	height: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
 footer img {
-	height: 250px;
-	min-width: 350px;
+  height: 250px;
+  min-width: 350px;
 }
 
 @media (max-width: 424px) {
-	footer img {
-		width: 100%;
-		min-width: 1px;
-	}
+  footer img {
+    width: 100%;
+    min-width: 1px;
+  }
 }
