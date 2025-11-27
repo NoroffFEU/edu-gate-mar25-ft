@@ -129,7 +129,8 @@ a {
 }
 
 table {
-  width: 1280px;
+  max-width: 1280px;
+  width: 90dvw;
   height: 600px;
   border-collapse: collapse;
   border: 0.5px solid var(--color-neutral-medium-gray);
@@ -209,7 +210,7 @@ th {
   pointer-events: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .student-results-table-container {
     width: 100dvw;
   }
@@ -229,7 +230,6 @@ th {
   }
 
   .student-results-table-container table {
-    width: 393px;
     height: 481.53px;
   }
 
