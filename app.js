@@ -2,8 +2,11 @@
 import { initRouter } from "./router/router.js";
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
+import Sidebar from "./components/sidebar.js";
+
 
 document.getElementById("header").innerHTML = Header();
 document.getElementById("footer").innerHTML = Footer();
+document.getElementById("sidebar").innerHTML = Sidebar();
 
 initRouter();
