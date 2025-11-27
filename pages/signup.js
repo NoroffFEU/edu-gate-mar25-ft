@@ -22,16 +22,18 @@ export default function Signup() {
             placeholder="example@mail.com" required />
           </div>
 
-          <div class="form-group name-row">
-            <label for="firstname"class="form-group-label">Firstname</label>
+          <div class="name-row">
+          <div class="form-group">
+            <label for="firstname"class="form-group-label">First name</label>
             <input id="firstname" type="text"
             placeholder="Ola" required />
           </div>
 
-          <div class="form-group name-row">
+          <div class="form-group">
             <label for="surname"class="form-group-label">Surname</label>
             <input id="surname" type="text" 
             placeholder="Nordmann" required />
+          </div>
           </div>
 
           <div class="form-group">
