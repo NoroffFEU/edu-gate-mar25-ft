@@ -10,7 +10,7 @@ export default function StudentDashboard() {
                     <img src="public/icons/profile-icon.png" alt="User Icon" class="avatar-icon"/>
                 </div>
                 <p class="avatar-name">Joe Bloggs</p>
-                <p class="avatar-school">Student at Edugate </p>
+                <p class="avatar-school">Student at Edugate school</p>
             </div>
           </div>
           <div class="dashboard-options">
