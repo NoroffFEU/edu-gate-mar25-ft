@@ -41,6 +41,7 @@ header {
  color: #fff;
  border-radius: 6px;
  padding: 10px 20px;
+ cursor: pointer;
 }
 
 .primary-btn:hover {
@@ -54,6 +55,7 @@ header {
  color: var(--secondary-color);
  border-radius: 6px;
  padding: 10px 20px;
+ cursor: pointer;
 }
 
 .secondary-btn:hover {
@@ -67,6 +69,7 @@ header {
  color: #fff;
  border-radius: 6px;
  padding: 10px 20px;
+ cursor: pointer;
 }
 
 .alert-btn:hover {
