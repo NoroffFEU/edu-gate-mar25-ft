@@ -56,3 +56,22 @@ export default function Signup() {
   `;
 
 }
+
+export function initSignupForm() {
+  const form = document.querySelector("#signup-form");
+  if (!form) return;
+
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+
+    const password = document.querySelector("#password").value;
+    const confirm = document.querySelector("#confirm-password").value;
+
+    /*if (password !== confirm) {
+      alert("Passwords do not match");
+      return;
+    }
+
+    alert("Form passed validation ✅");*/
+  });
+}
