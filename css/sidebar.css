@@ -43,7 +43,6 @@
 #sidebar a.logo {
   display: flex;
   align-items: center;          /* ✅ Vertical alignment */
-  justify-content: center;      /* ✅ Center icon horizontally when collapsed */
   gap: 12px;
   text-decoration: none;
   color: var(--font-color);
@@ -51,6 +50,8 @@
   border-radius: 8px;
   transition: background 160ms ease, justify-content 0.3s ease;
   width: 100%;
+  margin: 0 auto;
+  margin-left: 25px;
 }
 
 /* When expanded, left-align content */
