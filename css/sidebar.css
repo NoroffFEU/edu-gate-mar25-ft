@@ -1,36 +1,103 @@
+
+:root {
+  --sidebar-width: 250px;  
+  --sidebar-collapsed: 100px;
+  --bg-color: #ffffff;
+  --border-color: #e6e6e6;
+  --icon-size: 36px;
+  --gap: 24px;
+  --font-color: #333;
+  --hover-bg: #f5f7fb;
+  --font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar container */
 #sidebar {
-  height: 100vh;
-  width: 80px;                       /* slim sidebar */
+  height: 100vh;                       /* slim sidebar */
   background-color: #ffffff;          /* white background */
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 20px;
+  height: 100vh;
+  width: var(--sidebar-collapsed);
+  background: var(--bg-color);
+  border-right: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
-  align-items: center;                /* center icons horizontally */
-  gap: 30px;                          /* space between icons */
-  border-right: 1px solid #e0e0e0;    /* subtle border */
+  gap: var(--gap);
+  padding: 28px 0; /* ✅ Remove left padding in collapsed state */
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  z-index: 100;
+  transition: width 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
 }
 
-/* all links in sidebar */
-#sidebar a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Expand on hover */
+#sidebar:hover {
+  width: var(--sidebar-width);
+  padding: 28px 16px; /* ✅ Add padding only when expanded */
 }
 
-/* universal icon style */
+/* Sidebar links */
+#sidebar a.logo {
+  display: none;
+  align-items: center;          /* ✅ Vertical alignment */
+  justify-content: center;      /* ✅ Center icon horizontally when collapsed */
+  gap: 12px;
+  text-decoration: none;
+  color: var(--font-color);
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 160ms ease, justify-content 0.3s ease;
+  width: 100%;
+}
+
+/* When expanded, left-align content */
+#sidebar:hover a.logo {
+  justify-content: flex-start; /* ✅ Move icon + label to left */
+}
+
+/* Hover effect on links */
+#sidebar a.logo:hover {
+  background: var(--hover-bg);
+}
+
+/* Icon styling */
 #sidebar .icon {
-  width: 32px;        /* all icons same size */
-  height: 32px;
+  width: var(--icon-size);
+  height: var(--icon-size);
   object-fit: contain;
-  filter: brightness(0) saturate(0) opacity(0.6);  /* dark grey */
-  transition: opacity 0.2s ease, filter 0.2s ease;
+  display: block;
 }
 
-/* hover effect */
-#sidebar a:hover .icon {
-  opacity: 1;
-  filter: none;       /* original icon color on hover */
+/* Label hidden by default */
+#sidebar .label {
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  font-size: 15px;
+  color: var(--font-color);
+  white-space: nowrap;
 }
+
+/* Show labels when sidebar hovered */
+#sidebar:hover .label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive: collapse sidebar on small screens */
+@media (max-width: 900px) {
+  #sidebar {
+    width: var(--sidebar-collapsed);
+    padding: 28px 8px;
+  }
+  #sidebar .label {
+    display: none;
+  }
+}
+
+
+
+
