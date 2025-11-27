@@ -1,11 +1,12 @@
-export default function Sidebar() {
+export default function SidebarAdmin()
+ {
   return /*HTML*/ `
 <div id="sidebar">
 
      <a href="#home" class="logo" title="Home">
     <img class="icon" src="./public/icons/dashboard.png" alt="home-logo">
     <span class="label">Home</span>
-  </a>
+  </a>  
 
    <a href="#result-management" class="logo" title="Results management">
     <img class="icon" src="./public/icons/add-results.png" alt="management-logo">
@@ -17,9 +18,9 @@ export default function Sidebar() {
     <span class="label">Users</span>
   </a>
 
-    <a href="#top-students" class="logo" title="Top students">
-    <img class="icon" src="./public/icons/top-students.png" alt="top-students-logo">
-    <span class="label">Top students</span>
+    <a href="#top-students" class="logo" title="school management">
+    <img class="icon" src="./public/icons/school-management.png" alt="school management-logo">
+    <span class="label">School management</span>
   </a>
 
     <a href="#logout" class="logo" title="Logout">
@@ -31,4 +32,3 @@ export default function Sidebar() {
 
   `;
 }
-
