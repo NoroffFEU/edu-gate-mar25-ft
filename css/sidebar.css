@@ -41,7 +41,7 @@
 
 /* Sidebar links */
 #sidebar a.logo {
-  display: none;
+  display: flex;
   align-items: center;          /* ✅ Vertical alignment */
   justify-content: center;      /* ✅ Center icon horizontally when collapsed */
   gap: 12px;
