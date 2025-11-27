@@ -1,0 +1,264 @@
+html {
+  width: 100dvw;
+  height: 100dvh;
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 90%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: var(--color-neutral-gray);
+  font-family: var(--secondary-font);
+}
+
+body {
+  width: 100dvw;
+}
+h1,
+h2,
+h3,
+button {
+  font-family: var(--primary-font);
+  color: var(--color-neutral-dark-gray);
+  font-weight: 700;
+  line-height: var(--line-height);
+}
+h1,
+h2,
+h3 {
+  letter-spacing: var(--letter-spacing);
+}
+h1 {
+  font-size: var(--heading-1);
+}
+h2 {
+  font-size: var(--heading-2);
+}
+h3 {
+  font-size: var(--heading-3);
+}
+
+p,
+a {
+  font-size: var(--paragraph);
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--color-neutral-medium-gray);
+}
+
+.student-results-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumbs {
+  display: flex;
+  gap: var(--padding-32px);
+  margin: var(--padding-32px);
+  font-size: 18px;
+  color: var(--color-neutral-medium-gray);
+}
+
+.your-results {
+  color: var(--primary-color);
+}
+
+.results-icon {
+  display: none;
+}
+
+.student-search {
+  position: relative;
+  display: flex;
+  width: 314px;
+  justify-content: center;
+  align-items: center;
+  margin: var(--padding-32px);
+}
+
+.student-search input {
+  width: 100dvw;
+  height: 50px;
+  border: 1px solid var(--color-neutral-medium-gray);
+  color: var(--color-neutral-medium-gray);
+  font-size: var(--small-txt);
+  border-right: 0px solid var(--color-neutral-medium-gray);
+  border-radius: 6px 0 0 6px;
+  padding-left: var(--padding-8px);
+}
+
+.student-search button {
+  border-radius: 6px 0 0 6px;
+  width: 20dvw;
+  height: 54px;
+  border: 1px solid var(--primary-color);
+  border-radius: 0 6px 6px 0;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+.search-icon img {
+  width: 20px;
+  height: auto;
+  position: relative;
+  top: 3px;
+  transition: filter 0.5s ease;
+}
+
+.student-search button:hover {
+  background-color: var(--primary-color);
+}
+
+.student-search button:hover .search-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.student-results-table-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--padding-32px);
+}
+
+table {
+  width: 1280px;
+  height: 600px;
+  border-collapse: collapse;
+  border: 0.5px solid var(--color-neutral-medium-gray);
+  margin: 0 auto;
+}
+
+tbody tr:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--color-neutral-medium-gray) 15%,
+    white
+  );
+  cursor: pointer;
+}
+
+tbody tr:checked {
+  background-color: var(--color-neutral-medium-gray);
+}
+
+.student-row-grey {
+  background-color: #f9f9f9;
+}
+
+.student-row-white {
+  background-color: white;
+}
+
+th {
+  color: var(--primary-color);
+}
+
+th,
+td {
+  padding: var(--padding-16px);
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: var(--letter-spacing);
+}
+
+th {
+  font-family: var(--primary-font);
+}
+
+.pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--padding-32px);
+  gap: var(--padding-16px);
+}
+
+.pagination img {
+  position: relative;
+  top: 3px;
+}
+
+.pagination-button {
+  background-color: transparent;
+  border: 0.5px solid var(--color-neutral-medium-gray);
+  cursor: pointer;
+  padding: var(--padding-8px);
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  color: var(--color-neutral-medium-gray);
+}
+
+#page-1 {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+#page-first,
+#page-previous {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .student-results-table-container {
+    width: 100dvw;
+  }
+
+  .results-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+
+  .student-search {
+    width: 90dvw;
+  }
+
+  .student-search button {
+    max-width: 50px;
+  }
+
+  .student-results-table-container table {
+    width: 393px;
+    height: 481.53px;
+  }
+
+  .more-info-button {
+    display: flex;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .more-info-button img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .year-column,
+  .term-column,
+  .result-column {
+    display: none;
+  }
+
+  td:nth-child(1),
+  td:nth-child(2),
+  td:nth-child(5) {
+    display: none;
+  }
+
+  #page-2,
+  #page-7 {
+    display: none;
+  }
+}
