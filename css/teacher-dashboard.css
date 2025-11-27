@@ -1,71 +1,83 @@
-.user-info{
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100vw;
+}
+
+.desktop-img {
+  width: 150px;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  width: 566px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: auto auto;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.option img {
+  height: 96px;
+}
+
+@media (max-width: 767px) {
+  .desktop-img {
+    display: none;
+  }
+
+  .main-content {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .options {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    width: 100vw;
-}
+    width: auto;
+    gap: 16px;
+  }
 
-.user-info img{
-    width: 150px;
-}
+  .option h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
 
-.options{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    width: 566px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: auto auto;
-}
-
-.option{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.option img{
-    height: 96px;
-}
-
-@media (min-width: 768px){
-    .mobile-img{
-        display: none;
-    }
-}
-
-@media (max-width: 767px){
-    .desktop-img{
-        display: none;
-    }
-    
-    .main-content{
-        padding-right: 16px;
-        padding-left: 16px;
-    }
-
-    .options{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        gap: 16px;
-    }
-
-    .option img{
+  .option img {
     height: 42px;
-    }
+  }
 
-    .user-info{
-        gap: 16px;
-    }
+  .user-info {
+    gap: 16px;
+  }
 
-    .user-info p{
-        font-size: 14px;
-    }
+  .user-info h2 {
+    font-size: 20px;
+  }
 
+  .user-info p {
+    font-size: 14px;
+  }
+
+  .mobile-img {
+    display: block;
+    height: 71px;
+    width: 71px;
+  }
 }
