@@ -1,39 +1,25 @@
-#sidebar{
-    position: fixed;
-    top: 7em;
-    left: 0;
-}
-
-nav ul{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-nav li{
-    all: unset;
-}
-
-nav li img{
-    width: 40px;
-}
-
 .user-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
     width: 100vw;
-    margin-bottom: 80px;
+}
+
+.user-info img{
+    width: 150px;
 }
 
 .options{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    grid-gap: 40px;
-    max-width: 500px;
-    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 566px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: auto auto;
 }
 
 .option{
@@ -44,7 +30,42 @@ nav li img{
 }
 
 .option img{
-    height: 100px;
+    height: 96px;
 }
 
+@media (min-width: 768px){
+    .mobile-img{
+        display: none;
+    }
+}
 
+@media (max-width: 767px){
+    .desktop-img{
+        display: none;
+    }
+    
+    .main-content{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .options{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 16px;
+    }
+
+    .option img{
+    height: 42px;
+    }
+
+    .user-info{
+        gap: 16px;
+    }
+
+    .user-info p{
+        font-size: 14px;
+    }
+
+}
