@@ -22,6 +22,16 @@
   gap: 2rem;
 }
 
+.name-row {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.name-row .form-group {
+  width: 100%;
+}
+
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -138,7 +148,6 @@ input::placeholder {
   .signup-form {
     gap: 1.2rem;
   }
-}
 
 .name-row {
     display: flex;
@@ -148,3 +157,6 @@ input::placeholder {
   .name-row .form-group {
     width: 48%;
   }
+
+}
+
