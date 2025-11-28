@@ -51,7 +51,7 @@ export default function Signup() {
           <button type="submit" class="btn">Submit</button>
         </form>
 
-        <!-- Alert-boks LATER!! -->
+        <!-- Alert-boks LATER -->
       </div>
   `;
 
@@ -67,7 +67,8 @@ export function initSignupForm() {
     const password = document.querySelector("#password").value;
     const confirm = document.querySelector("#confirm-password").value;
 
-    /*if (password !== confirm) {
+    /* -------- Extra function -----------
+    if (password !== confirm) {
       alert("Passwords do not match");
       return;
     }
