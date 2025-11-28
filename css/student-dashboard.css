@@ -36,10 +36,9 @@
   margin-bottom: 30px;
 }
 
-.profile-container,
-.result-container,
-.logout-container {
+.logo-container {
   display: flex;
+  width: 160px;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
