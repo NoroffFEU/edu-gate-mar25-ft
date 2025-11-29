@@ -2,6 +2,7 @@ html {
   width: 100dvw;
   height: 100dvh;
   overflow-x: hidden;
+  background-color: var(--color-neutral-gray);
 }
 
 main {
@@ -132,9 +133,12 @@ table {
   max-width: 1280px;
   width: 90dvw;
   height: 600px;
-  border-collapse: collapse;
-  border: 0.5px solid var(--color-neutral-medium-gray);
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 0.5px solid transparent;
+  border-radius: 6px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 tbody tr:hover {
@@ -174,6 +178,10 @@ th {
   font-family: var(--primary-font);
 }
 
+.more-info-button {
+  display: none;
+}
+
 .pagination {
   position: relative;
   display: flex;
@@ -185,7 +193,6 @@ th {
 
 .pagination img {
   position: relative;
-  top: 3px;
 }
 
 .pagination-button {
@@ -197,6 +204,9 @@ th {
   height: 40px;
   border-radius: 6px;
   color: var(--color-neutral-medium-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #page-1 {
@@ -260,5 +270,30 @@ th {
   #page-2,
   #page-7 {
     display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  table {
+    font-size: 12px;
+  }
+
+  .pagination {
+    gap: var(--padding-8px);
+  }
+
+  .pagination button {
+    width: 32px;
+    height: 32px;
+    border: 0.5px solid var(--color-neutral-medium-gray);
+    border-radius: 6px;
+    color: var(--color-neutral-medium-gray);
+    cursor: pointer;
+  }
+
+  .pagination-button img {
+    width: 12px;
+    height: 12px;
+    position: relative;
   }
 }
