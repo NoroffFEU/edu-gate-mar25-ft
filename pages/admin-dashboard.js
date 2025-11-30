@@ -5,7 +5,7 @@ export default function AdminDashboard() {
   <section class="admin-info">
   <h1>Dashboard</h1>
     <div class="avatar">JB</div>
-    <h2 class="admin-name">John Brown</h2>
+    <h2 class="admin-name">Joe Bloggs</h2>  
     <p class="admin-role">Admin at Edugate School</p>
   </section>
 
@@ -26,7 +26,7 @@ export default function AdminDashboard() {
     <a href="/schools/create" class="nav-item add-school">
     <img src="./public/icons/add-school.png" alt="add school icon">
     <p>Add School</p> </a>
-
+    
     <a href="/logout" class="nav-item logout">
     <img src="./public/icons/logout.png" alt="logout icon">
     <p>Logout</p> </a>
