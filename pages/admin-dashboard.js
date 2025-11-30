@@ -26,6 +26,10 @@ export default function AdminDashboard() {
     <a href="/schools/create" class="nav-item add-school">
     <img src="./public/icons/add-school.png" alt="add school icon">
     <p>Add School</p> </a>
+
+    <a href="/profiles" class="nav-item profile">
+    <img src="./public/icons/user-circle.png" alt="view profiles icon">
+    <p>View Profiles</p> </a>
     
     <a href="/logout" class="nav-item logout">
     <img src="./public/icons/logout.png" alt="logout icon">
