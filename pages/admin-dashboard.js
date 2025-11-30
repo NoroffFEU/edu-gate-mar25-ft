@@ -31,7 +31,7 @@ export default function AdminDashboard() {
 
     <a href="/profiles" class="nav-item profile">
     <img src="./public/icons/user-circle.png" alt="view profiles icon">
-    <p>View Profiles</p> </a>
+    <p>See Profile</p> </a>
     
     <a href="/logout" class="nav-item ">
     <img src="./public/icons/logout.png" alt="logout icon">
