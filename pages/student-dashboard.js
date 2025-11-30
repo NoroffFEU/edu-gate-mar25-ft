@@ -1,7 +1,7 @@
 export default function StudentDashboard() {
     
     return /*HTML*/`      
-    <section class="student-dashboard">
+      <section class="student-dashboard">
         <div class="dashboard-container">
           <div class="dashboard-content">
             <h1>Dashboard</h1>
@@ -13,6 +13,7 @@ export default function StudentDashboard() {
                 <p class="avatar-school">Student at Edugate school</p>
             </div>
           </div>
+        </div>
           <div class="dashboard-options">
           <div class ="logo-container">
             <img src="public/icons/user-circle.png" alt="Profile Icon" class="profile-icon"/>
@@ -27,5 +28,6 @@ export default function StudentDashboard() {
             <img src="public/icons/logout.png" alt="Logout Icon" class="profile-icon"/>
             <a href="/#" class="student-logout">Logout</a></div>
          </div>
+        </div>
       </section>`
 }
