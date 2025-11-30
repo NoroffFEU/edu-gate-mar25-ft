@@ -107,11 +107,6 @@ body {
   height: auto;
 }
 
-.logout p {
-  color: var(--color-neutral-dark-gray);
-  font-weight: 600;
-}
-
 .profile {
   display: none;
 }
@@ -167,6 +162,6 @@ body {
     font-weight: 600;
   }
   .profile {
-    display: block;
+    display: flex;
   }
 }

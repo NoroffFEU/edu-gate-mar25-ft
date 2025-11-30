@@ -11,19 +11,19 @@ export default function AdminDashboard() {
 
   <nav class="dashboard-nav"> 
 
-    <a href="/users" class="nav-item Manage Users">
-    <img src="./public/icons/user-circle.png" alt="manage users icon">
+    <a href="/users" class="nav-item ">
+    <img src="./public/icons/add-user.png" alt="manage users icon">
     <p>Manage Users</p> </a>
 
-    <a href="/students/create" class="nav-item add-student">
+    <a href="/students/create" class="nav-item">
     <img src="./public/icons/add-student.png" alt="add student icon">
     <p>Add Student</p> </a>
 
-    <a href="/teachers/create" class="nav-item add-teacher">
+    <a href="/teachers/create" class="nav-item ">
     <img src="./public/icons/add-teacher.png" alt="add teacher icon">
     <p>Add Teacher</p> </a>
 
-    <a href="/schools/create" class="nav-item add-school">
+    <a href="/schools/create" class="nav-item ">
     <img src="./public/icons/add-school.png" alt="add school icon">
     <p>Add School</p> </a>
 
@@ -31,7 +31,7 @@ export default function AdminDashboard() {
     <img src="./public/icons/user-circle.png" alt="view profiles icon">
     <p>View Profiles</p> </a>
     
-    <a href="/logout" class="nav-item logout">
+    <a href="/logout" class="nav-item ">
     <img src="./public/icons/logout.png" alt="logout icon">
     <p>Logout</p> </a>
 
