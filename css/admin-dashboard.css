@@ -27,30 +27,14 @@ body {
   margin-bottom: var(--padding-32px);
 }
 
+.sim-mobile {
+  margin-bottom: 10px;
+}
+
 .admin-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: var(--padding-48px);
-}
-
-.avatar {
-  width: 71px;
-  height: 71px;
-  background: var(--primary-color);
-  border-radius: 100px;
-  border: 1px solid var(--color-neutral-dark-gray);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-family: var(--primary-font);
-  font-size: 40px;
-  font-weight: 700;
-  color: #ffffff;
-
-  margin-bottom: var(--padding-16px);
 }
 
 .admin-name {
@@ -84,7 +68,6 @@ body {
 
 .nav-item {
   width: 205px;
-  height: 151px;
 
   display: flex;
   flex-direction: column;
@@ -112,18 +95,16 @@ body {
   display: none;
 }
 
+.sim-desktop {
+  display: none;
+}
+
 /* this is the desktop version of my task.  */
 
 @media (min-width: 768px) {
   .dashboard {
     max-width: 900px;
     padding: var(--padding-48px);
-  }
-
-  .avatar {
-    width: 100px;
-    height: 100px;
-    font-size: 48px;
   }
 
   .dashboard h1 {
@@ -152,7 +133,6 @@ body {
 
   .nav-item {
     width: 220px;
-    height: 180px;
   }
 
   .nav-item img {
@@ -163,7 +143,16 @@ body {
     font-size: 20px;
     font-weight: 600;
   }
+  .sim-desktop {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
   .profile {
     display: flex;
+  }
+
+  .sim-mobile {
+    display: none;
   }
 }

@@ -4,8 +4,10 @@ export default function AdminDashboard() {
 
   <section class="admin-info">
   <h1>Dashboard</h1>
-    <div class="avatar">JB</div>
-    <h2 class="admin-name">Joe Bloggs</h2>  
+  
+  <img src="public/img/Student initials mobile.png" alt="student initials icon" class="sim-mobile">
+  <img src="public/img/Student initials.png" alt="student initials icon" class="sim-desktop">
+    <h2 class="admin-name">Joe Bloggs</h2> 
     <p class="admin-role">Admin at Edugate School</p>
   </section>
 
