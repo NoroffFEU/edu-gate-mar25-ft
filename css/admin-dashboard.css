@@ -112,8 +112,8 @@ body {
   font-weight: 600;
 }
 
-.nav-item:visited {
-  color: var(--color-neutral-dark-gray);
+.profile {
+  display: none;
 }
 
 /* this is the desktop version of my task.  */
@@ -165,5 +165,8 @@ body {
   .nav-item p {
     font-size: 18px;
     font-weight: 600;
+  }
+  .profile {
+    display: block;
   }
 }
