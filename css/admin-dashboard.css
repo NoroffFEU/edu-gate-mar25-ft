@@ -67,7 +67,7 @@ body {
 }
 
 .nav-item {
-  width: 205px;
+  width: 160px;
 
   display: flex;
   flex-direction: column;
@@ -127,11 +127,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    max-width: 900px;
-  }
-
-  .nav-item {
-    width: 220px;
+    max-width: 694px;
   }
 
   .nav-item img {
