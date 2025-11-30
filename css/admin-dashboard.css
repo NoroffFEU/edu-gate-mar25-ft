@@ -70,7 +70,7 @@ body {
   font-family: var(--secondary-font);
   font-size: var(--small-txt);
   font-weight: 500;
-  color: var(--color-neutral-medium-gray);
+  color: var(--color-neutral-dark-gray);
   margin-bottom: var(--padding-32px);
 }
 
@@ -78,7 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--padding-40px);
+  gap: 25px;
   width: 100%;
 }
 
@@ -98,13 +98,17 @@ body {
   gap: var(--padding-8px);
 }
 
+.nav-item p {
+  font-size: var(--small-txt);
+}
+
 .nav-item img {
   width: 55px;
   height: auto;
 }
 
 .logout p {
-  color: var(--accent-color);
+  color: var(--color-neutral-dark-gray);
   font-weight: 600;
 }
 
@@ -141,12 +145,11 @@ body {
   }
 
   .dashboard-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    row-gap: var(--padding-48px);
-    column-gap: var(--padding-40px);
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
     max-width: 900px;
   }
 
