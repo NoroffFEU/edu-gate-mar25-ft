@@ -100,6 +100,7 @@ body {
 
 .nav-item p {
   font-size: var(--small-txt);
+  font-weight: 600;
 }
 
 .nav-item img {
@@ -136,6 +137,7 @@ body {
 
   .admin-role {
     font-size: 16px;
+    font-weight: 700;
     margin-bottom: var(--padding-48px);
   }
 
@@ -158,7 +160,7 @@ body {
   }
 
   .nav-item p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
   }
   .profile {
