@@ -1,37 +1,81 @@
 html,
 body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header */
 
 header {
-	margin-bottom: 25px;
-	border: var(--color-neutral-medium-gray);
-	border-style: inset;
-	border-width: 0.5px;
-	
-	position: sticky;
-	top: 0;
-	z-index: 9; 
-	background: var(--color-neutral-gray);
+  margin-bottom: 25px;
+  border: var(--color-neutral-medium-gray);
+  border-style: inset;
+  border-width: 0.5px;
+
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background: var(--color-neutral-gray);
 }
-
-
 
 .UserLogo {
-	width: 64px;
-	height: 64px;
-	
-	img{
-		width: 64px;
-		height: 64px;
-		object-fit: contain;
-	}
+  width: 64px;
+  height: 64px;
+
+  img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+  }
 }
 
+
+/*buttons*/
+
+.primary-btn {
+  font-size: 26px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #388e3c;
+}
+
+.secondary-btn {
+  font-size: 26px;
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background-color: #bbdefb;
+}
+
+.alert-btn {
+  font-size: 26px;
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.alert-btn:hover {
+  background-color: #e64a19;
+}
+
+/*/*buttons*/
 
 /* footer */
 
@@ -39,19 +83,33 @@ header {
 
 
 footer {
-	display: flex;
-	flex-direction: row;
-	height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 footer img {
-	height: 250px;
-	min-width: 350px;
+  height: 250px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+.desktop-footer {
+  display: none;
+}
+
+@media (min-width: 425px) {
+  .mobile-footer {
+    display: none;
+  }
+
+  .desktop-footer {
+    display: block;
+  }
 }
 
 @media (max-width: 424px) {
-	footer img {
-		width: 100%;
-		min-width: 1px;
-	}
+  footer img {
+    width: 100%;
+    min-width: 1px;
+  }
 }
