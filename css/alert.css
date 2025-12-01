@@ -75,6 +75,10 @@
   color: #c62828;
 }
 
+.alert--failed h2 {
+  margin-bottom: 2px;
+}
+
 .alert--failed p {
   font-size: var(--paragraph);
 }
