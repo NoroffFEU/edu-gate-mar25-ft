@@ -2,7 +2,6 @@
   display: grid;
   width: 686px;
   margin: 0 auto;
-  padding: 20px;
   text-align: center;
   gap: 48px;
 }
@@ -27,6 +26,7 @@
 
 .avatar-school {
   font-weight: 400;
+  font-size: var(--heading-3);
 }
 
 .dashboard-options {
@@ -34,6 +34,11 @@
   justify-content: center;
   gap: 48px;
   margin-bottom: 30px;
+  align-items: center;
+}
+
+a {
+  font-size: var(--heading-2);
 }
 
 .logo-container {
@@ -53,7 +58,6 @@
 @media (max-width: 1023px) {
   .dashboard-container {
     max-width: 600px;
-    padding: 16px;
     gap: 32px;
   }
 
@@ -70,8 +74,6 @@
 @media (max-width: 767px) {
   .dashboard-container {
     width: 100%;
-    padding: 10px;
-    gap: 16px;
   }
 
   .avatar-circle {
