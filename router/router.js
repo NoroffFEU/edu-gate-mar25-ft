@@ -30,8 +30,6 @@ function navigateTo(url) {
     router();
 }
 
-
-
 export function initRouter() {
     document.addEventListener("click", e => {
         const link = e.target.closest('a[data-link]');
