@@ -202,7 +202,8 @@ export default function StudentResults(){
               alt="Go to last page"
             />
           </button>
-        </div>
+          </div>
+          <button class="secondary-btn">Back to dashboard</button>
       </div>
     </div>
     `;

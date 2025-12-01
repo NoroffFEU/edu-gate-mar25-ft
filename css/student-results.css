@@ -5,8 +5,7 @@ html {
   background-color: var(--color-neutral-gray);
 }
 
-#main {
-  max-width: 90%;
+main {
   margin: 0 auto;
   overflow-x: hidden;
   background-color: var(--color-neutral-gray);
@@ -45,7 +44,7 @@ a {
   font-size: var(--paragraph);
   font-weight: 400;
   text-decoration: none;
-  color: var(--color-neutral-medium-gray);
+  color: var(--color-neutral-dark-gray);
 }
 
 .student-results-container {
@@ -187,7 +186,7 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: var(--padding-32px);
+  margin: var(--padding-16px);
   gap: var(--padding-16px);
 }
 
@@ -196,7 +195,7 @@ th {
 }
 
 .pagination-button {
-  background-color: transparent;
+  background-color: white;
   border: 0.5px solid var(--color-neutral-medium-gray);
   cursor: pointer;
   padding: var(--padding-8px);
@@ -207,6 +206,8 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  font-size: var(--heading-3);
 }
 
 #page-1 {
@@ -218,6 +219,14 @@ th {
 #page-previous {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.secondary-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--padding-32px);
 }
 
 @media (max-width: 767px) {
@@ -271,11 +280,19 @@ th {
   #page-7 {
     display: none;
   }
+
+  .secondary-btn {
+    font-size: 16px;
+  }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 425px) {
   table {
     font-size: 12px;
+  }
+
+  th {
+    font-size: 14px;
   }
 
   .pagination {
