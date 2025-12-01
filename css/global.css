@@ -30,7 +30,6 @@ header {
   }
 }
 
-/* /header */
 
 /*buttons*/
 
@@ -79,6 +78,9 @@ header {
 /*/*buttons*/
 
 /* footer */
+
+
+
 
 footer {
   display: flex;
