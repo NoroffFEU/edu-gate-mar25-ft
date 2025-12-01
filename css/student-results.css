@@ -5,7 +5,7 @@ html {
   background-color: var(--color-neutral-gray);
 }
 
-main {
+#main {
   max-width: 90%;
   margin: 0 auto;
   overflow-x: hidden;
@@ -57,8 +57,8 @@ a {
 }
 .breadcrumbs {
   display: flex;
-  gap: var(--padding-32px);
-  margin: var(--padding-32px);
+  gap: var(--padding-16px);
+  margin: var(--padding-16px);
   font-size: 18px;
   color: var(--color-neutral-medium-gray);
 }
