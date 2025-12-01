@@ -21,11 +21,9 @@
   position: absolute;
   top: 16px;
   right: 16px;
-
   background: none;
   border: none;
 }
-
 .alert h2 {
   position: relative;
   padding-left: 40px;
@@ -37,7 +35,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/public/icons/success.png); /* change the icon depending on the alert */
   width: 32px;
   height: 32px;
   background-size: contain;
@@ -64,6 +61,9 @@
 .alert--success p {
   margin: 0;
 }
+.alert--success h2::before {
+  background-image: url(/public/icons/success.png);
+}
 
 /* Styling for failed alert*/
 .alert--failed {
@@ -79,6 +79,34 @@
   font-size: var(--paragraph);
 }
 
+.alert--failed h2::before {
+  background-image: url(/public/icons/fail.png);
+}
+
 /* alert media queries for desktop */
 @media (min-width: 1024px) {
+  .alert {
+    position: absolute;
+    top: 86px;
+    right: 0;
+    width: 450px;
+    height: 167px;
+    padding: var(--padding-8px);
+    box-shadow: -2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .alert h2 {
+    font-size: var(--heading-1);
+    position: relative;
+    padding-left: 80px;
+  }
+
+  .alert p {
+    padding-left: 80px;
+    font-size: var(--paragraph);
+  }
+
+  .alert-text {
+    width: 380px;
+  }
 }
