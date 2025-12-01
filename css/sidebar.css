@@ -8,9 +8,7 @@
   --gap: 24px;
   --font-color: #333;
   --hover-bg: #f5f7fb;
-  --font-family: 'Inter', sans-serif;
     --sidebar-mobile: 60px;
-
 }
 
 /* Sidebar container */
@@ -79,6 +77,8 @@
   transition: opacity 0.2s ease, transform 0.2s ease;
   font-size: 15px;
   color: var(--font-color);
+  font-size: var(--small-txt);
+  font-weight: 600;
   white-space: nowrap;
 }
 
@@ -94,7 +94,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* Sidebar styles for mobile */
   #sidebar {
     display:none;
@@ -102,7 +102,6 @@
     left: 0;
     width: var(--sidebar-mobile);
     padding-left: 8px;
-    
     padding: 14px 0;
     height: 100vh;
     background: var(--bg-color);
