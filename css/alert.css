@@ -1,8 +1,80 @@
+.home__container {
+  position: relative;
+}
+
+/* Shared styling for alert*/
 .alert {
+  position: absolute;
+  top: 86px;
+  right: 0;
   width: 337px;
   height: 114px;
+  padding: var(--padding-8px);
+  box-shadow: -2px 4px 4px 2px rgba(0, 0, 0, 0.25);
 }
 
 .alert p {
   font-weight: 400;
+}
+
+.alert-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  background: none;
+  border: none;
+}
+
+.alert h2 {
+  position: relative;
+  padding-left: 40px;
+}
+
+.alert h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(/public/icons/success.png); /* change the icon depending on the alert */
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+}
+
+/* Styling for success alert */
+.alert--success {
+  background-color: #e8f5e9;
+}
+
+.alert--success h2,
+.alert--success p {
+  color: #388e3c;
+}
+
+.alert--success p {
+  font-size: var(--small-txt);
+}
+
+.alert--success h2 {
+  margin-bottom: 8px;
+}
+
+.alert--success p {
+  margin: 0;
+}
+
+/* Styling for failed alert*/
+.alert--failed {
+  background-color: #ffebee;
+}
+
+.alert--failed h2,
+.alert--failed p {
+  color: #c62828;
+}
+
+.alert--failed p {
+  font-size: var(--paragraph);
 }
