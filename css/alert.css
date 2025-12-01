@@ -133,4 +133,18 @@
   }
 
   /* Styling for failed alert desktop*/
+  .alert--failed h2::before {
+    top: 10px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .alert--failed p {
+    margin-top: 6px;
+  }
+
+  .alert-text {
+    padding-top: 8px;
+  }
 }
