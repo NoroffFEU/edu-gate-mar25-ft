@@ -2,7 +2,6 @@ html {
   width: 100dvw;
   height: 100dvh;
   overflow-x: hidden;
-  background-color: var(--color-neutral-gray);
 }
 
 main {
@@ -52,6 +51,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+   flex-wrap: wrap;
 }
 .breadcrumbs {
   display: flex;
@@ -103,7 +103,6 @@ a {
   transition: background-color 0.5s ease;
 }
 
-/* had to have different pixel height for input and button to align them. Because of "padding block" on input block text(?) */
 
 .search-icon img {
   width: 20px;
@@ -213,6 +212,8 @@ td {
   font-size: var(--heading-3);
 }
 
+
+
 #page-1 {
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
@@ -235,87 +236,43 @@ td {
 }
 
 @media (max-width: 767px) {
-  .student-results-table-container {
-    width: 100dvw;
-  }
-
-  .results-icon {
-    display: block;
-    width: 32px;
-    height: 32px;
-  }
-
-  .student-search {
-    width: 90dvw;
-  }
-
-  .student-search button {
-    max-width: 50px;
-  }
-
-  .student-results-table-container table {
-    height: 481.53px;
-  }
-
-  .more-info-button {
-    display: flex;
-    vertical-align: top;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .more-info-button img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .year-column,
-  .term-column,
-  .result-column {
-    display: none;
-  }
-
-  td:nth-child(1),
-  td:nth-child(2),
-  td:nth-child(5) {
-    display: none;
-  }
-
-  #page-2,
-  #page-7 {
-    display: none;
-  }
-
-  .secondary-btn {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 425px) {
-  table {
-    font-size: 12px;
-  }
-
+  
   th {
+    position: relative;
+    font-size: 18px; 
+    color: #28a645; 
+  }
+
+  th::after {
+    content: attr(data-short); /* Show short text */
+    color: #28a645;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Optional: adjust table for mobile */
+  .student-results {
+    width: 100%;
     font-size: 14px;
   }
 
-  .pagination {
-    gap: var(--padding-8px);
-  }
-
-  .pagination button {
-    width: 32px;
-    height: 32px;
-    border: 0.5px solid var(--color-neutral-medium-gray);
-    border-radius: 6px;
-    color: var(--color-neutral-medium-gray);
-    cursor: pointer;
-  }
-
-  .pagination-button img {
-    width: 12px;
-    height: 12px;
-    position: relative;
+  td {
+    padding: 8px;
   }
 }
+
+
+ .pagination-button {
+    width: 40px;   /* smaller width */
+    height: 40px;  /* smaller height */
+    font-size: 18px; /* smaller text */
+    padding: 10px;  /* less padding */
+  }
+
+  .pagination {
+    gap: 8px; /* reduced gap */
+    width: auto; /* adjust width for smaller screens */
+  }

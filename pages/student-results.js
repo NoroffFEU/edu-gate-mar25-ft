@@ -1,11 +1,13 @@
 export default function StudentResults(){
     return /*HTML*/`
-<div id="main">
+<div id="student-page">
+
       <nav class="breadcrumbs" id="breadcrumbs">
         <a href="/">Dashboard</a>
         <span>></span>
         <a href="/student-results" class="your-results">Your results</a>
       </nav>
+
       <div class="student-results-container">
         <h1>Your Results</h1>
         <img
@@ -13,6 +15,7 @@ export default function StudentResults(){
           src="./public/icons/results.png"
           alt="Results icon"
         />
+
         <p>View your results</p>
         <div class="student-search" id="student-search">
           <input type="text" placeholder="Search for results..." />
@@ -22,100 +25,74 @@ export default function StudentResults(){
             </div>
           </button>
         </div>
+
+
         <div class="student-results-table-container">
           <table class="student-results" id="student-results">
             <thead class="student-row-white">
               <tr>
-                <th class="year-column">Year</th>
-                <th class="term-column">Term</th>
-                <th class="subject-column">Subject</th>
-                <th class="exam-column">Exam</th>
-                <th class="result-column">Result</th>
-                <th class="grade-column">Grade</th>
-                <th class="more-info-button"></th>
+                <th class=" ID">Student ID</th>
+                <th class="First Name">First Name</th>
+                <th class="Last Name">Last Name</th>
+                <th class="Year">Year</th>
               </tr>
             </thead>
+
             <tbody>
               <tr class="student-row-grey">
-                <td>2019</td>
-                <td>3</td>
-                <td>Mathematics</td>
-                <td>M1</td>
-                <td class="result-score">90/120</td>
-                <td>B</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
+                <td>1921840</td>
+                <td>Joe</td>
+                <td>Bloggs</td>
+                <td>2020</td>
               </tr>
+
               <tr class="student-row-white">
-                <td>2019</td>
-                <td>3</td>
-                <td>Physics</td>
-                <td>P3</td>
-                <td class="result-score">102/120</td>
-                <td>A</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
+               <td>1921840</td>
+                <td>Joe</td>
+                <td>Bloggs</td>
+                <td>2020</td>
               </tr>
+
               <tr class="student-row-grey">
-                <td>2019</td>
-                <td>3</td>
-                <td>English</td>
-                <td>E2</td>
-                <td class="result-score">80/110</td>
-                <td>B</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
+                <td>1921840</td>
+                <td>Joe</td>
+                <td>Bloggs</td>
+                <td>2020</td>
               </tr>
+
               <tr class="student-row-white">
-                <td>2019</td>
-                <td>3</td>
-                <td>English</td>
-                <td>E1</td>
-                <td class="result-score">95/130</td>
-                <td>B</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
+               <td>1921840</td>
+                <td>Joe</td>
+                <td>Bloggs</td>
+                <td>2020</td>
               </tr>
+
               <tr class="student-row-grey">
-                <td>2019</td>
-                <td>3</td>
-                <td>Biology</td>
-                <td>B2</td>
-                <td class="result-score">73/120</td>
-                <td>C</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
+               <td>1921840</td>
+                <td>Joe</td>
+                <td>Bloggs</td>
+                <td>2020</td>
               </tr>
+
               <tr class="student-row-white">
-                <td>2019</td>
-                <td>3</td>
-                <td>Physics</td>
-                <td>P2</td>
-                <td class="result-score">110/120</td>
-                <td>A</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
+               <td>1921840</td>
+                <td>Joe</td>
+                <td>Bloggs</td>
+                <td>2020</td>
               </tr>
+
+
+
               <tr class="student-row-grey">
-                <td>2019</td>
-                <td>3</td>
-                <td>History</td>
-                <td>H2</td>
-                <td class="result-score">90/110</td>
-                <td>A</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
+              <td>1921840</td>
+                <td>Joe</td>
+                <td>Bloggs</td>
+                <td>2020</td>
               </tr>
             </tbody>
           </table>
         </div>
+
         <div class="pagination" id="pagination">
           <button
             id="page-first"
