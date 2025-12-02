@@ -262,14 +262,24 @@ td {
   td {
     padding: 8px;
   }
+
+  #page-2,
+  #page-7 {
+    display: none;
+  }
+
+  .secondary-btn {
+    font-size: 16px;
+  }
 }
 
+@media (max-width: 425px) {
+  table {
+    font-size: 12px;
+  }
 
- .pagination-button {
-    width: 40px;   /* smaller width */
-    height: 40px;  /* smaller height */
-    font-size: 18px; /* smaller text */
-    padding: 10px;  /* less padding */
+  th {
+    font-size: 14px;
   }
 
   .pagination {
