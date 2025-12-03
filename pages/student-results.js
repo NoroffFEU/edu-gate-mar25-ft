@@ -27,16 +27,16 @@ export default function StudentResults(){
         </div>
 
 
-        <div class="student-results-table-container">
-          <table class="student-results" id="student-results">
-            <thead class="student-row-white">
-              <tr>
-                <th class=" ID">Student ID</th>
-                <th class="First Name">First Name</th>
-                <th class="Last Name">Last Name</th>
-                <th class="Year">Year</th>
-              </tr>
-            </thead>
+       <div class="student-results-table-container"> 
+       <table class="student-results" id="student-results"> 
+       <thead class="student-row-white"> 
+       <tr> 
+       <th class=" ID">Student ID </th> 
+       <th class="First Name">First Name </th> 
+       <th class="Last Name">Last Name </th> 
+       <th class="Year"> Year </th> 
+       </tr> 
+       </thead>
 
             <tbody>
               <tr class="student-row-grey">

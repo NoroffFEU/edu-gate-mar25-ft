@@ -236,53 +236,78 @@ td {
 }
 
 @media (max-width: 767px) {
-  
-  th {
-    position: relative;
-    font-size: 18px; 
-    color: #28a645; 
-  }
+   th { 
+     font-size: 0;
+  position: relative; 
+  color: #28a645; 
 
-  th::after {
-    content: attr(data-short); /* Show short text */
-    color: #28a645;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    text-align: left;
-  }
+} 
 
-  /* Optional: adjust table for mobile */
-  .student-results {
-    width: 100%;
-    font-size: 14px;
-  }
+th::after { 
+  font-size: 16px;    /* visible text */
+  content: attr(data-short); /* Show short text */ 
+  color: #28a645; 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  position: flex ;
+  text-align: left;  /* Optional: adjust table for mobile */ 
+  justify-items: space-between;
+  min-width: 80px;
+  padding: 14px 14px;
 
-  td {
-    padding: 8px;
-  }
-
-  #page-2,
-  #page-7 {
-    display: none;
-  }
-
-  .secondary-btn {
-    font-size: 16px;
-  }
 }
 
-@media (max-width: 425px) {
-  table {
-    font-size: 12px;
+
+  /* Column 1: Student ID → ID */
+  th:nth-child(1)::after {
+    content: "ID";
   }
 
-  th {
-    font-size: 14px;
+  /* Column 2: First Name → F. Name */
+  th:nth-child(2)::after {
+    content: "F.Name";
+
   }
 
-  .pagination {
-    gap: 8px; /* reduced gap */
-    width: auto; /* adjust width for smaller screens */
+  /* Column 3: Last Name → L. Name */
+  th:nth-child(3)::after {
+    content: "L.Name";
   }
+
+  /* Column 4: Year → Year (already short) */
+  th:nth-child(4)::after {
+    content: "Year";
+  }
+
+.student-results-table-container
+{
+    width: 370px;
+    height: auto;
+    overflow-x: auto;
+    margin: 0 auto;
+
+}
+  .student-results { 
+    width: 100%; 
+    font-size: 14px; 
+  }
+  
+  td { 
+    padding: 8px;
+   } 
+   
+   #page-2, #page-7 { 
+    display: none; 
+  } 
+  
+  .secondary-btn { 
+    font-size: 16px; 
+  } 
+} 
+
+.pagination  { 
+    width: 30px; 
+    height: 30px; 
+}
