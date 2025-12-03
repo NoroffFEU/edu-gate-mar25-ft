@@ -1,6 +1,9 @@
+import SidebarTeaching from "../components/sidebar-teaching.js";
+
 export default function TeacherDashboard() {
   return /*HTML*/ `
     <div>
+    <div id="sidebar"></div>
       <div main-content>
         <div class="user-info">
           <h1>Dashboard</h1>
