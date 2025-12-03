@@ -1,8 +1,8 @@
 html,
 body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* header */
@@ -39,15 +39,32 @@ header ul {
 
 /* footer */
 
+
+
+
 footer {
-	display: flex;
-	flex-direction: row;
-	height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 footer img {
-	height: 250px;
-	min-width: 350px;
+  height: 250px;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+.desktop-footer {
+  display: none;
+}
+
+@media (min-width: 425px) {
+  .mobile-footer {
+    display: none;
+  }
+
+  .desktop-footer {
+    display: block;
+  }
 }
 
 @media (max-width: 424px) {
