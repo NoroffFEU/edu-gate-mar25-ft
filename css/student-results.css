@@ -1,3 +1,5 @@
+
+
 html {
   width: 100dvw;
   height: 100dvh;
@@ -19,7 +21,7 @@ h2,
 h3 {
   font-family: var(--primary-font);
   color: var(--color-neutral-dark-gray);
-  font-weight: 700;
+  
   line-height: var(--line-height);
 }
 h1,
@@ -53,6 +55,40 @@ a {
   justify-content: center;
    flex-wrap: wrap;
 }
+
+.student-results-container h1{
+  font-size:32px;
+
+}
+
+.student-heading {
+  display: flex;          
+  align-items: center;     /* vertical center */
+  gap: 10px;              
+}
+
+.chevron-icon {
+  display: none;          
+  width: 25px;       
+  height: 25px;
+    filter: invert(44%) sepia(86%) saturate(421%) hue-rotate(84deg) brightness(94%) contrast(92%); /* green */
+
+}
+
+
+.student-intro {
+  display: flex;  
+   flex-direction: column;
+  justify-content: center;   
+  align-items: center;  
+  text-align: center; 
+}
+
+.student-intro img {
+  width: 35px;
+  height: 35px;
+}
+
 .breadcrumbs {
   display: flex;
   gap: var(--padding-16px);
@@ -65,7 +101,7 @@ a {
   color: var(--primary-color);
 }
 
-.results-icon {
+.search-student img {
   display: none;
 }
 
@@ -130,7 +166,7 @@ a {
 
 table {
   max-width: 1280px;
-  width: 90dvw;
+  width: 1200px;
   height: 600px;
   border-collapse: separate;
   border-spacing: 0;
@@ -138,6 +174,7 @@ table {
   border-radius: 6px;
   margin: 0 auto;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 tbody tr:hover {
@@ -183,6 +220,9 @@ td {
   display: none;
 }
 
+
+
+
 .pagination {
   position: relative;
   display: flex;
@@ -226,88 +266,113 @@ td {
   pointer-events: none;
 }
 
-.secondary-btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: var(--padding-32px);
-  font-weight: 600;
+.button-wrapper {
+
+  width: 100%;
+  text-align: center;            
 }
+
+/* Button itself */
+.secondary-btn {
+display: inline-block; 
+justify-items: center;
+align-items: center;
+  padding: 12px 24px;
+  font-weight: 600;
+  padding-top:10px;
+}
+
 
 @media (max-width: 767px) {
-   th { 
-     font-size: 0;
-  position: relative; 
-  color: #28a645; 
 
-} 
-
-th::after { 
-  font-size: 16px;    /* visible text */
-  content: attr(data-short); /* Show short text */ 
-  color: #28a645; 
-  position: absolute; 
-  left: 0; 
-  top: 0; 
-  width: 100%; 
-  position: flex ;
-  text-align: left;  /* Optional: adjust table for mobile */ 
-  justify-items: space-between;
-  min-width: 80px;
-  padding: 14px 14px;
-
-}
-
-
-  /* Column 1: Student ID → ID */
-  th:nth-child(1)::after {
-    content: "ID";
-  }
-
-  /* Column 2: First Name → F. Name */
-  th:nth-child(2)::after {
-    content: "F.Name";
-
-  }
-
-  /* Column 3: Last Name → L. Name */
-  th:nth-child(3)::after {
-    content: "L.Name";
-  }
-
-  /* Column 4: Year → Year (already short) */
-  th:nth-child(4)::after {
-    content: "Year";
-  }
-
-.student-results-table-container
-{
-    width: 370px;
-    height: auto;
-    overflow-x: auto;
+  #student-page {
+    width: 100%;
     margin: 0 auto;
-
-}
-  .student-results { 
-    width: 100%; 
-    font-size: 14px; 
+    overflow-x: hidden;
   }
-  
-  td { 
-    padding: 8px;
-   } 
-   
-   #page-2, #page-7 { 
-    display: none; 
-  } 
-  
-  .secondary-btn { 
-    font-size: 16px; 
-  } 
-} 
 
-.pagination  { 
-    width: 30px; 
-    height: 30px; 
+  .chevron-icon {
+    display: inline-block;
+  }
+
+
+
+  th {
+    font-size: 0;
+    position: relative;
+    color: #28a645;
+    min-width: 60px;
+  }
+
+  th::after {
+    font-size: 16px;
+    color: #28a645;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    padding: 14px;
+    display: block;   
+  }
+
+  th:nth-child(1)::after { content: "ID"; width: 60px;} 
+  th:nth-child(2)::after { content: "F.Name"; width: 100px;}
+  th:nth-child(3)::after { content: "L.Name"; width: 100px;}
+  th:nth-child(4)::after { content: "Year"; width: 0px;}
+
+  .student-results-table-container {
+    width: 360px;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding-right: 14px; 
+  }
+
+  .student-results {
+    width: 370px;
+    font-size: 14px;
+    margin-bottom:20px;
+  }
+
+  td {
+    padding: 12px;
+  }
+
+  #page-2, #page-7 {
+    display: none;
+  }
+
+  .pagination {
+    width: 320px; 
+    margin-top: 15px;
+    overflow-x: auto;
+    padding: 0 14px;
+  }
+
+  .secondary-btn {
+    font-size: 16px;
+
+  }
+
+   .secondary-btn:hover,
+  .secondary-btn:active {
+    background-color: var(--primary-color);
+  }
+
+  
+  .student-search img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+  }
+
+  .student-search button:hover {
+  background-color: var(--primary-color);
 }
+
+.student-search button:hover .search-icon img {
+  filter: brightness(0) invert(1);
+}
+
+}
+
