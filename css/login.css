@@ -15,17 +15,17 @@
     gap: 10px;
     border: solid 3px #cccccc;
 }
-.login-input {
+.login-input-form {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 10px;
     padding: 0px;
 }
-label {
+.login-label {
     font-weight: 700;
 }
-input {
+.login-input {
     height: 24px;
     max-width: 361px;
     border: solid 1px #cccccc;
@@ -33,15 +33,15 @@ input {
     border-radius: 6px;
     padding: 8px;
 }
-h1 {
+.login-h1 {
     line-height: 0%;
 }
-p {
+.login-p {
     font-size: var(--small-text);
     font-weight: 400;
     text-align: left;
 }
-a {
+.login-a {
     color: var(--color-neutral-dark-gray);
     text-decoration: none;
     font-weight: 700;
@@ -57,10 +57,11 @@ a {
 
 
 @media (min-width: 768px) {
-    p {
+    .login-p {
         font-size: var(--paragraph);
     }
 }
+
 
 @media (min-width: 1024px) {
     .login-page {
@@ -73,7 +74,7 @@ a {
         max-width: 474px;
         border: solid 3px #cccccc;
     }
-    .input {
+    .login-input {
         width: 100%;
     }
     .btn {
