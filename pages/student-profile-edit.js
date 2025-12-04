@@ -84,3 +84,6 @@ export function initStudentProfileEdit() {
     console.log("Profile updated");
   });
 }
+
+
+//<a href="/student-profile-edit" data-link>Edit profile</a>
