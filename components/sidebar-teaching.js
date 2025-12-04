@@ -1,23 +1,26 @@
 export default function SidebarTeaching() {
-  const sidebarContent = document.getElementById("sidebar");
-  const sidebarButton = document.getElementById("sidebar-button");
+  setTimeout(() => {
+    const sidebarContent = document.getElementById("sidebar");
+    const sidebarButton = document.getElementById("sidebar-button");
 
-  sidebarButton.addEventListener("click", function () {
-    sidebarContent.classList.toggle("sidebar-display");
+    if (!sidebarButton || !sidebarContent) return;
 
-    if (sidebarContent.classList.contains("sidebar-display")) {
-      sidebarButton.classList.add("close-state-button");
-    } else {
-      sidebarButton.classList.remove("close-state-button");
-    }
+    sidebarButton.addEventListener("click", () => {
+      sidebarContent.classList.toggle("sidebar-display");
+
+      if (sidebarContent.classList.contains("sidebar-display")) {
+        sidebarButton.classList.add("close-state-button");
+      } else {
+        sidebarButton.classList.remove("close-state-button");
+      }
+    });
   });
 
   return /*HTML*/ `
 <div>
-  <button type="button" class="sidebar-button">
+  <button type="button" id="sidebar-button">
     <img src="./public/icons/green-double-arrows-right.png" alt="sidebar toggle button">
   </button>
-</div>
 <div id="sidebar">
   <a href="#home" class="logo" title="Home">
     <img class="icon" src="./public/icons/dashboard.png" alt="home-logo">
@@ -43,6 +46,7 @@ export default function SidebarTeaching() {
     <img class="icon" src="./public/icons/logout.png" alt="logout-logo">
     <span class="label">Logout</span>
   </a>
+</div>
 </div>
   `;
 }
