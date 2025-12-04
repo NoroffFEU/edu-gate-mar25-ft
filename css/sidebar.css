@@ -1,6 +1,5 @@
-
 :root {
-  --sidebar-width: 250px;  
+  --sidebar-width: 250px;
   --sidebar-collapsed: 100px;
   --bg-color: #ffffff;
   --border-color: #e6e6e6;
@@ -8,13 +7,13 @@
   --gap: 24px;
   --font-color: #333;
   --hover-bg: #f5f7fb;
-    --sidebar-mobile: 60px;
+  --sidebar-mobile: 60px;
 }
 
 /* Sidebar container */
 #sidebar {
-  height: 100vh;                       /* slim sidebar */
-  background-color: #ffffff;          /* white background */
+  height: 100vh; /* slim sidebar */
+  background-color: #ffffff; /* white background */
   position: fixed;
   left: 0;
   width: var(--sidebar-collapsed);
@@ -40,7 +39,7 @@
 /* Sidebar links */
 #sidebar a.logo {
   display: flex;
-  align-items: center;          /* ✅ Vertical alignment */
+  align-items: center; /* ✅ Vertical alignment */
   gap: 12px;
   text-decoration: none;
   color: var(--font-color);
@@ -92,13 +91,14 @@
 
 /* Mobile styles */
 
-
-
 @media (max-width: 767px) {
   /* Sidebar styles for mobile */
   #sidebar {
-    display:none;
-        visibility: hidden;
+    display: none;
+    visibility: hidden;
+  }
+
+  .sidebar-display {
     left: 0;
     width: var(--sidebar-mobile);
     padding-left: 8px;
@@ -108,27 +108,26 @@
     z-index: 100;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
-    align-items: center;  
+    justify-content: flex-start;
+    align-items: center;
     gap: 20px;
   }
 
   /* Hide labels on mobile */
-  #sidebar .label {
+  .sidebar-display .label {
     display: none;
-
   }
 
   /* Icons smaller and clean */
-  #sidebar .icon {
+  .sidebar-display .icon {
     width: 28px;
     height: 28px;
-     object-fit: contain;
-  display: none;
+    object-fit: contain;
+    display: none;
   }
 
   /* Links centered */
-  #sidebar a {
+  .sidebar-display a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,22 +136,31 @@
   }
 
   /* Remove green circle for profile icon */
-  #sidebar a.logo .icon {
+  .sidebar-display a.logo .icon {
     background: none;
     border-radius: 0;
   }
 
-  #sidebar a.logo {
-  display: none;
-  align-items: center;          
-  gap: 6px;
-  text-decoration: none;
-  color: var(--font-color);
-  padding: 8px;
-  border-radius: 8px;
-  transition: background 160ms ease, justify-content 0.3s ease;
-  width: 28px;
-  margin: 0 auto;
-  margin-left: 12px;
-}
+  .sidebar-display a.logo {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 160ms ease, justify-content 0.3s ease;
+    width: 28px;
+    margin: 0 auto;
+    margin-left: 12px;
+  }
+
+  #sidebar-button {
+    all: unset;
+    position: fixed;
+  }
+
+  .close-state-button {
+    transform: rotateY(180deg);
+  }
 }
