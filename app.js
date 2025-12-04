@@ -10,8 +10,15 @@ import SidebarAdmin from "./components/sidebar-admin.js";
 
 document.getElementById("header").innerHTML = Header();
 document.getElementById("footer").innerHTML = Footer();
-document.getElementById("sidebarTeacher").innerHTML = SidebarTeaching();
-document.getElementById("sidebarAdmin").innerHTML = SidebarAdmin(); 
+const sidebarTeacherEl = document.getElementById("sidebarTeacher");
+if (sidebarTeacherEl) {
+  sidebarTeacherEl.innerHTML = SidebarTeaching();
+}
+
+const sidebarAdminEl = document.getElementById("sidebarAdmin");
+if (sidebarAdminEl) {
+  sidebarAdminEl.innerHTML = SidebarAdmin();
+}
 
 initRouter();
 
