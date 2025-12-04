@@ -36,7 +36,7 @@ export default function Registration() {
 
           <div class="form-group">
             <label for="postalCode"class="form-group-label">Postal Code</label>
-            <input id="postalCodeInput" type="number" 
+           <input id="postalCodeInput" type="text" inputmode="numeric" pattern="[0-9]*"
             placeholder="0000" required />
           </div>
           </div>
