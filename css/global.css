@@ -17,6 +17,9 @@ header {
   top: 0;
   z-index: 9;
   background: var(--color-neutral-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .UserLogo {
@@ -28,6 +31,10 @@ header {
     height: 64px;
     object-fit: contain;
   }
+}
+
+.hamburgerMenu {
+	padding-right: 24px;
 }
 
 
