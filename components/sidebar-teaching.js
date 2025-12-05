@@ -12,6 +12,7 @@ export default function SidebarTeaching() {
         sidebarButton.classList.add("close-state-button");
       } else {
         sidebarButton.classList.remove("close-state-button");
+        sidebarButton.id = "sidebar-button";
       }
     });
   });

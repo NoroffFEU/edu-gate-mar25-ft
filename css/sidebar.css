@@ -87,6 +87,10 @@
   transform: translateX(0);
 }
 
+#sidebar-button {
+  display: none;
+}
+
 /* Responsive: collapse sidebar on small screens */
 
 /* Mobile styles */
@@ -94,11 +98,11 @@
 @media (max-width: 767px) {
   /* Sidebar styles for mobile */
   #sidebar {
-    display: none;
     visibility: hidden;
   }
 
-  .sidebar-display {
+  #sidebar.sidebar-display {
+    visibility: visible;
     left: 0;
     width: var(--sidebar-mobile);
     padding-left: 8px;
@@ -113,21 +117,15 @@
     gap: 20px;
   }
 
-  /* Hide labels on mobile */
-  .sidebar-display .label {
-    display: none;
-  }
-
   /* Icons smaller and clean */
-  .sidebar-display .icon {
+  #sidebar.sidebar-display .icon {
     width: 28px;
     height: 28px;
     object-fit: contain;
-    display: none;
   }
 
   /* Links centered */
-  .sidebar-display a {
+  #sidebar.sidebar-display a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,13 +134,12 @@
   }
 
   /* Remove green circle for profile icon */
-  .sidebar-display a.logo .icon {
+  #sidebar.sidebar-display a.logo .icon {
     background: none;
     border-radius: 0;
   }
 
-  .sidebar-display a.logo {
-    display: none;
+  #sidebar.sidebar-display a.logo {
     align-items: center;
     gap: 6px;
     text-decoration: none;
@@ -161,6 +158,10 @@
   }
 
   .close-state-button {
+    all: unset;
+  }
+
+  .close-state-button img {
     transform: rotateY(180deg);
   }
 }
