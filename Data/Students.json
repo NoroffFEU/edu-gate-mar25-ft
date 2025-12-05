@@ -1,814 +1,373 @@
 {
   "users": [
     {
-      "id": "stu-101",
+      "id": "stu-014",
       "role": "student",
-      "firstName": "Segun",
-      "lastName": "Nwankwo",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-102",
-      "role": "student",
-      "firstName": "Femi",
-      "lastName": "Tinubu",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-103",
-      "role": "student",
-      "firstName": "Chinedu",
-      "lastName": "Ibrahim",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-104",
-      "role": "student",
-      "firstName": "Hassan",
-      "lastName": "Ogunleye",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-105",
-      "role": "student",
-      "firstName": "Zainab",
-      "lastName": "Umeh",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-106",
-      "role": "student",
-      "firstName": "Folake",
-      "lastName": "Okonjo",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-107",
-      "role": "student",
-      "firstName": "Chinedu",
-      "lastName": "Fashola",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-108",
-      "role": "student",
-      "firstName": "Oma",
-      "lastName": "Essien",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-109",
-      "role": "student",
-      "firstName": "Chioma",
-      "lastName": "Nwosu",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-110",
-      "role": "student",
-      "firstName": "Chioma",
-      "lastName": "Onifade",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-201",
-      "role": "student",
-      "firstName": "Bisi",
-      "lastName": "Ogunmodede",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-202",
-      "role": "student",
-      "firstName": "Kemi",
-      "lastName": "Oyelowo",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-203",
-      "role": "student",
-      "firstName": "Uche",
-      "lastName": "Ogunbiyi",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-204",
-      "role": "student",
-      "firstName": "Hassan",
-      "lastName": "Ogunlade",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-205",
-      "role": "student",
-      "firstName": "Amaka",
-      "lastName": "Ogunbanjo",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-206",
-      "role": "student",
-      "firstName": "Uche",
-      "lastName": "Owolabi",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-207",
-      "role": "student",
-      "firstName": "Yusuf",
-      "lastName": "Fadeyi",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-208",
-      "role": "student",
-      "firstName": "Fatima",
-      "lastName": "Ogunyemi",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-209",
-      "role": "student",
-      "firstName": "Zainab",
-      "lastName": "Adeyemi",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-210",
-      "role": "student",
-      "firstName": "Adewale",
-      "lastName": "Eze",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-301",
-      "role": "student",
-      "firstName": "Amina",
-      "lastName": "Ogunlana",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-302",
-      "role": "student",
-      "firstName": "Kunle",
-      "lastName": "Garba",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-303",
-      "role": "student",
-      "firstName": "Halima",
-      "lastName": "Olawale",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-304",
-      "role": "student",
-      "firstName": "Zainab",
-      "lastName": "Odukoya",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-305",
-      "role": "student",
-      "firstName": "Ngozi",
-      "lastName": "Ekanem",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-306",
-      "role": "student",
-      "firstName": "Segun",
-      "lastName": "Okorie",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-307",
-      "role": "student",
-      "firstName": "Uche",
-      "lastName": "Oseni",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-308",
-      "role": "student",
-      "firstName": "Emeka",
-      "lastName": "Adebayo",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-309",
-      "role": "student",
-      "firstName": "Oma",
-      "lastName": "Nnaji",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-    {
-      "id": "stu-310",
-      "role": "student",
-      "firstName": "Chinedu",
-      "lastName": "Akinwale",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-001"
-    },
-        {
-      "id": "stu-401",
-      "role": "student",
-      "firstName": "Kunle",
-      "lastName": "Adeoye",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-402",
-      "role": "student",
-      "firstName": "Ibrahim",
-      "lastName": "Ebiye",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-403",
-      "role": "student",
-      "firstName": "Kehinde",
-      "lastName": "Abdullahi",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-404",
-      "role": "student",
-      "firstName": "Kemi",
-      "lastName": "Okonkwor",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-405",
-      "role": "student",
-      "firstName": "Fatima",
-      "lastName": "Sabo",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-406",
-      "role": "student",
-      "firstName": "Kemi",
-      "lastName": "Akpan",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-407",
-      "role": "student",
-      "firstName": "Yewande",
-      "lastName": "Ogunlola",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-408",
-      "role": "student",
-      "firstName": "Zainab",
-      "lastName": "Buhari",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-409",
-      "role": "student",
-      "firstName": "Kehinde",
-      "lastName": "Nasir",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-410",
-      "role": "student",
-      "firstName": "Tunde",
-      "lastName": "Tanko",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-501",
-      "role": "student",
-      "firstName": "Opeyemi",
-      "lastName": "Mbadiwe",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-502",
-      "role": "student",
-      "firstName": "Opeyemi",
-      "lastName": "Ogunbiyi",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-503",
-      "role": "student",
-      "firstName": "Emeka",
-      "lastName": "Adekunle",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-504",
-      "role": "student",
-      "firstName": "Omotola",
-      "lastName": "Adejumo",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-505",
-      "role": "student",
-      "firstName": "Kayode",
-      "lastName": "Olumide",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-506",
-      "role": "student",
-      "firstName": "Zainab",
-      "lastName": "Eweka",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-507",
-      "role": "student",
-      "firstName": "Taiwo",
-      "lastName": "Odetola",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-508",
-      "role": "student",
-      "firstName": "Taiwo",
-      "lastName": "Bashir",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-509",
-      "role": "student",
-      "firstName": "Kemi",
-      "lastName": "Ogunyemi",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-510",
-      "role": "student",
-      "firstName": "Taiwo",
-      "lastName": "Yakubu",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-601",
-      "role": "student",
-      "firstName": "Ngozi",
-      "lastName": "Ogedengbe",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-602",
-      "role": "student",
-      "firstName": "Kehinde",
-      "lastName": "Adebayo",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-603",
-      "role": "student",
-      "firstName": "Omotola",
-      "lastName": "Nnamani",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-604",
-      "role": "student",
-      "firstName": "Segun",
-      "lastName": "Adebajo",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-605",
-      "role": "student",
-      "firstName": "Fatima",
-      "lastName": "Okorie",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-606",
-      "role": "student",
-      "firstName": "Amaka",
-      "lastName": "Nnaji",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-607",
-      "role": "student",
-      "firstName": "Chinedu",
-      "lastName": "Ogbemudia",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-608",
-      "role": "student",
-      "firstName": "Ayodele",
-      "lastName": "Ogunjimi",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-609",
-      "role": "student",
-      "firstName": "Omotola",
-      "lastName": "Okonkwo",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-610",
-      "role": "student",
-      "firstName": "Ifeanyi",
-      "lastName": "Jibrin",
-      "gender": "Male",
-      "class": "SS3",
-      "schoolId": "sch-002"
-    },
-    {
-      "id": "stu-701",
-      "role": "student",
-      "firstName": "Olamide",
-      "lastName": "Tamuno",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-702",
-      "role": "student",
-      "firstName": "Ibrahim",
-      "lastName": "Olumide",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-703",
-      "role": "student",
-      "firstName": "Yewande",
-      "lastName": "Bashir",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-704",
-      "role": "student",
-      "firstName": "Kunle",
-      "lastName": "Eke",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-705",
-      "role": "student",
-      "firstName": "Funke",
-      "lastName": "Buhari",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-706",
-      "role": "student",
-      "firstName": "Opeyemi",
-      "lastName": "Abubakar",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-707",
-      "role": "student",
-      "firstName": "Femi",
-      "lastName": "Sobowale",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-708",
-      "role": "student",
-      "firstName": "Ibrahim",
-      "lastName": "Usman",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-709",
-      "role": "student",
-      "firstName": "Nonso",
-      "lastName": "Adeyinka",
-      "gender": "Male",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-710",
-      "role": "student",
-      "firstName": "Yewande",
-      "lastName": "Nwadike",
-      "gender": "Female",
-      "class": "SS1",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-801",
-      "role": "student",
-      "firstName": "Chioma",
-      "lastName": "Obiano",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-802",
-      "role": "student",
-      "firstName": "Amina",
-      "lastName": "Oke",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-803",
-      "role": "student",
-      "firstName": "Segun",
-      "lastName": "Okafor",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-804",
-      "role": "student",
-      "firstName": "Taiwo",
-      "lastName": "Ihejirika",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-805",
-      "role": "student",
-      "firstName": "Taiwo",
-      "lastName": "Onwubiko",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-806",
-      "role": "student",
-      "firstName": "Yusuf",
-      "lastName": "Okoye",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-807",
-      "role": "student",
-      "firstName": "Aisha",
-      "lastName": "Ogunlola",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-808",
-      "role": "student",
-      "firstName": "Kemi",
-      "lastName": "Adeniran",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-809",
-      "role": "student",
-      "firstName": "Kayode",
-      "lastName": "Okoli",
-      "gender": "Male",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-810",
-      "role": "student",
-      "firstName": "Yewande",
-      "lastName": "Mbadiwe",
-      "gender": "Female",
-      "class": "SS2",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-901",
-      "role": "student",
-      "firstName": "Ibrahim",
-      "lastName": "Odetola",
+      "firstName": "First14",
+      "lastName": "Last14",
       "gender": "Male",
       "class": "SS3",
       "schoolId": "sch-003"
     },
     {
-      "id": "stu-902",
+      "id": "stu-004",
       "role": "student",
-      "firstName": "Kayode",
-      "lastName": "Akpabio",
+      "firstName": "First4",
+      "lastName": "Last4",
+      "gender": "Male",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-085",
+      "role": "student",
+      "firstName": "First85",
+      "lastName": "Last85",
+      "gender": "Female",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-096",
+      "role": "student",
+      "firstName": "First96",
+      "lastName": "Last96",
+      "gender": "Male",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-054",
+      "role": "student",
+      "firstName": "First54",
+      "lastName": "Last54",
+      "gender": "Male",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-073",
+      "role": "student",
+      "firstName": "First73",
+      "lastName": "Last73",
+      "gender": "Female",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-042",
+      "role": "student",
+      "firstName": "First42",
+      "lastName": "Last42",
+      "gender": "Male",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-065",
+      "role": "student",
+      "firstName": "First65",
+      "lastName": "Last65",
+      "gender": "Female",
+      "class": "SS3",
+      "schoolId": "sch-003"
+    },
+    {
+      "id": "stu-063",
+      "role": "student",
+      "firstName": "First63",
+      "lastName": "Last63",
+      "gender": "Female",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-027",
+      "role": "student",
+      "firstName": "First27",
+      "lastName": "Last27",
+      "gender": "Female",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-082",
+      "role": "student",
+      "firstName": "First82",
+      "lastName": "Last82",
+      "gender": "Male",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-067",
+      "role": "student",
+      "firstName": "First67",
+      "lastName": "Last67",
+      "gender": "Female",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-097",
+      "role": "student",
+      "firstName": "First97",
+      "lastName": "Last97",
+      "gender": "Female",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-074",
+      "role": "student",
+      "firstName": "First74",
+      "lastName": "Last74",
       "gender": "Male",
       "class": "SS3",
       "schoolId": "sch-003"
     },
     {
-      "id": "stu-903",
+      "id": "stu-079",
       "role": "student",
-      "firstName": "Amina",
-      "lastName": "Muktar",
+      "firstName": "First79",
+      "lastName": "Last79",
       "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-003"
+      "class": "SS2",
+      "schoolId": "sch-002"
     },
     {
-      "id": "stu-904",
+      "id": "stu-078",
       "role": "student",
-      "firstName": "Ibrahim",
-      "lastName": "Yarima",
+      "firstName": "First78",
+      "lastName": "Last78",
+      "gender": "Male",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-072",
+      "role": "student",
+      "firstName": "First72",
+      "lastName": "Last72",
+      "gender": "Male",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-010",
+      "role": "student",
+      "firstName": "First10",
+      "lastName": "Last10",
+      "gender": "Male",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-076",
+      "role": "student",
+      "firstName": "First76",
+      "lastName": "Last76",
+      "gender": "Male",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-020",
+      "role": "student",
+      "firstName": "First20",
+      "lastName": "Last20",
       "gender": "Male",
       "class": "SS3",
       "schoolId": "sch-003"
     },
     {
-      "id": "stu-905",
+      "id": "stu-023",
       "role": "student",
-      "firstName": "Segun",
-      "lastName": "Ishaq",
+      "firstName": "First23",
+      "lastName": "Last23",
+      "gender": "Female",
+      "class": "SS3",
+      "schoolId": "sch-003"
+    },
+    {
+      "id": "stu-050",
+      "role": "student",
+      "firstName": "First50",
+      "lastName": "Last50",
       "gender": "Male",
       "class": "SS3",
       "schoolId": "sch-003"
     },
     {
-      "id": "stu-906",
+      "id": "stu-068",
       "role": "student",
-      "firstName": "Ngozi",
-      "lastName": "Okonkwor",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-907",
-      "role": "student",
-      "firstName": "Amina",
-      "lastName": "Ezeani",
-      "gender": "Female",
-      "class": "SS3",
-      "schoolId": "sch-003"
-    },
-    {
-      "id": "stu-908",
-      "role": "student",
-      "firstName": "Chinedu",
-      "lastName": "Ogunbiyi",
+      "firstName": "First68",
+      "lastName": "Last68",
       "gender": "Male",
       "class": "SS3",
       "schoolId": "sch-003"
     },
     {
-      "id": "stu-909",
+      "id": "stu-053",
       "role": "student",
-      "firstName": "Opeyemi",
-      "lastName": "Umar",
+      "firstName": "First53",
+      "lastName": "Last53",
       "gender": "Female",
       "class": "SS3",
       "schoolId": "sch-003"
     },
     {
-      "id": "stu-910",
+      "id": "stu-052",
       "role": "student",
-      "firstName": "Yewande",
-      "lastName": "Essien",
+      "firstName": "First52",
+      "lastName": "Last52",
+      "gender": "Male",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-026",
+      "role": "student",
+      "firstName": "First26",
+      "lastName": "Last26",
+      "gender": "Male",
+      "class": "SS3",
+      "schoolId": "sch-003"
+    },
+    {
+      "id": "stu-070",
+      "role": "student",
+      "firstName": "First70",
+      "lastName": "Last70",
+      "gender": "Male",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-058",
+      "role": "student",
+      "firstName": "First58",
+      "lastName": "Last58",
+      "gender": "Male",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-099",
+      "role": "student",
+      "firstName": "First99",
+      "lastName": "Last99",
+      "gender": "Female",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-034",
+      "role": "student",
+      "firstName": "First34",
+      "lastName": "Last34",
+      "gender": "Male",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-018",
+      "role": "student",
+      "firstName": "First18",
+      "lastName": "Last18",
+      "gender": "Male",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-017",
+      "role": "student",
+      "firstName": "First17",
+      "lastName": "Last17",
       "gender": "Female",
       "class": "SS3",
       "schoolId": "sch-003"
+    },
+    {
+      "id": "stu-100",
+      "role": "student",
+      "firstName": "First100",
+      "lastName": "Last100",
+      "gender": "Male",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-029",
+      "role": "student",
+      "firstName": "First29",
+      "lastName": "Last29",
+      "gender": "Female",
+      "class": "SS3",
+      "schoolId": "sch-003"
+    },
+    {
+      "id": "stu-087",
+      "role": "student",
+      "firstName": "First87",
+      "lastName": "Last87",
+      "gender": "Female",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-008",
+      "role": "student",
+      "firstName": "First8",
+      "lastName": "Last8",
+      "gender": "Male",
+      "class": "SS3",
+      "schoolId": "sch-003"
+    },
+    {
+      "id": "stu-060",
+      "role": "student",
+      "firstName": "First60",
+      "lastName": "Last60",
+      "gender": "Male",
+      "class": "SS1",
+      "schoolId": "sch-001"
+    },
+    {
+      "id": "stu-092",
+      "role": "student",
+      "firstName": "First92",
+      "lastName": "Last92",
+      "gender": "Male",
+      "class": "SS3",
+      "schoolId": "sch-003"
+    },
+    {
+      "id": "stu-061",
+      "role": "student",
+      "firstName": "First61",
+      "lastName": "Last61",
+      "gender": "Female",
+      "class": "SS2",
+      "schoolId": "sch-002"
+    },
+    {
+      "id": "stu-035",
+      "role": "student",
+      "firstName": "First35",
+      "lastName": "Last35",
+      "gender": "Female",
+      "class": "SS3",
+      "schoolId": "sch-003"
+    },
+    {
+      "id": "stu-048",
+      "role": "student",
+      "firstName": "First48",
+      "lastName": "Last48",
+      "gender": "Male",
+      "class": "SS1",
+      "schoolId": "sch-001"
     }
   ]
 }
