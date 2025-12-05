@@ -7,6 +7,8 @@ import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import AdminDashboard from "../pages/admin-dashboard.js";
 import StudentProfileEdit from "../pages/student-profile-edit.js";
+import StudentResults from "../pages/student-results.js";
+import Registration from "../pages/registration.js";
 
 const routes = [
   { path: "/", view: Home },
@@ -17,6 +19,9 @@ const routes = [
   { path: "/teacher-dashboard", view: TeacherDashboard },
   { path: "/admin-dashboard", view: AdminDashboard },
   { path: "/student-profile-edit", view: StudentProfileEdit },
+  { path: "/student-results", view: StudentResults },
+  { path: "/registration", view: Registration },
 ];
 
 export default routes;
+
