@@ -61,10 +61,20 @@ a {
 
 }
 
+.breadcrumbs {
+  display: flex;
+  gap: var(--padding-16px);
+  margin: var(--padding-16px);
+  margin-left: 50px;
+  font-size: 18px;
+  color: var(--color-neutral-medium-gray);
+}
+
 .student-heading {
   display: flex;          
   align-items: center;     /* vertical center */
-  gap: 10px;              
+  gap: 10px; 
+             
 }
 
 .chevron-icon {
@@ -89,13 +99,7 @@ a {
   height: 35px;
 }
 
-.breadcrumbs {
-  display: flex;
-  gap: var(--padding-16px);
-  margin: var(--padding-16px);
-  font-size: 18px;
-  color: var(--color-neutral-medium-gray);
-}
+
 
 .your-results {
   color: var(--primary-color);
@@ -280,6 +284,8 @@ align-items: center;
   padding: 12px 24px;
   font-weight: 600;
   padding-top:10px;
+  margin-top:20px;
+  margin-bottom: 20px;
 }
 
 
@@ -302,6 +308,7 @@ align-items: center;
     position: relative;
     color: #28a645;
     min-width: 60px;
+    margin-bottom: 10px;
   }
 
   th::after {
@@ -313,7 +320,7 @@ align-items: center;
     width: 100%;
     text-align: left;
     padding: 14px;
-    display: block;   
+    display: block;  
   }
 
   th:nth-child(1)::after { content: "ID"; width: 60px;} 
