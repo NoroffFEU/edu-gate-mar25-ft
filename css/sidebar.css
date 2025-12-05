@@ -7,88 +7,89 @@
   --gap: 24px;
   --font-color: #333;
   --hover-bg: #f5f7fb;
-  --sidebar-mobile: 60px;
 }
 
-/* Sidebar container */
-#sidebar {
-  height: 100vh; /* slim sidebar */
-  background-color: #ffffff; /* white background */
-  position: fixed;
-  left: 0;
-  width: var(--sidebar-collapsed);
-  background: var(--bg-color);
-  border-right: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
-  padding: 28px 0; /* ✅ Remove left padding in collapsed state */
-  box-sizing: border-box;
-  font-family: var(--font-family);
-  z-index: 100;
-  transition: width 0.3s ease, padding 0.3s ease;
-  overflow: hidden;
-}
+@media (min-width: 768px) {
+  /* Sidebar container */
+  #sidebar {
+    height: 100vh; /* slim sidebar */
+    background-color: #ffffff; /* white background */
+    position: fixed;
+    left: 0;
+    width: var(--sidebar-collapsed);
+    background: var(--bg-color);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    padding: 28px 0; /* ✅ Remove left padding in collapsed state */
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    z-index: 100;
+    transition: width 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+  }
 
-/* Expand on hover */
-#sidebar:hover {
-  width: var(--sidebar-width);
-  padding: 28px 16px; /* ✅ Add padding only when expanded */
-}
+  /* Expand on hover */
+  #sidebar:hover {
+    width: var(--sidebar-width);
+    padding: 28px 16px; /* ✅ Add padding only when expanded */
+  }
 
-/* Sidebar links */
-#sidebar a.logo {
-  display: flex;
-  align-items: center; /* ✅ Vertical alignment */
-  gap: 12px;
-  text-decoration: none;
-  color: var(--font-color);
-  padding: 8px;
-  border-radius: 8px;
-  transition: background 160ms ease, justify-content 0.3s ease;
-  width: 100%;
-  margin: 0 auto;
-  margin-left: 25px;
-}
+  /* Sidebar links */
+  #sidebar a.logo {
+    display: flex;
+    align-items: center; /* ✅ Vertical alignment */
+    gap: 12px;
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 160ms ease, justify-content 0.3s ease;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 25px;
+  }
 
-/* When expanded, left-align content */
-#sidebar:hover a.logo {
-  justify-content: flex-start; /* ✅ Move icon + label to left */
-}
+  /* When expanded, left-align content */
+  #sidebar:hover a.logo {
+    justify-content: flex-start; /* ✅ Move icon + label to left */
+  }
 
-/* Hover effect on links */
-#sidebar a.logo:hover {
-  background: var(--hover-bg);
-}
+  /* Hover effect on links */
+  #sidebar a.logo:hover {
+    background: var(--hover-bg);
+  }
 
-/* Icon styling */
-#sidebar .icon {
-  width: var(--icon-size);
-  height: var(--icon-size);
-  object-fit: contain;
-  display: block;
-}
+  /* Icon styling */
+  #sidebar .icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    object-fit: contain;
+    display: block;
+  }
 
-/* Label hidden by default */
-#sidebar .label {
-  opacity: 0;
-  transform: translateX(-6px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  font-size: 15px;
-  color: var(--font-color);
-  font-size: var(--small-txt);
-  font-weight: 600;
-  white-space: nowrap;
-}
+  /* Label hidden by default */
+  #sidebar .label {
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    font-size: 15px;
+    color: var(--font-color);
+    font-size: var(--small-txt);
+    font-weight: 600;
+    white-space: nowrap;
+  }
 
-/* Show labels when sidebar hovered */
-#sidebar:hover .label {
-  opacity: 1;
-  transform: translateX(0);
-}
+  /* Show labels when sidebar hovered */
+  #sidebar:hover .label {
+    opacity: 1;
+    transform: translateX(0);
+  }
 
-#sidebar-button {
-  display: none;
+  #sidebar-button {
+    display: none;
+  }
 }
 
 /* Responsive: collapse sidebar on small screens */
@@ -104,7 +105,7 @@
   #sidebar.sidebar-display {
     visibility: visible;
     left: 0;
-    width: var(--sidebar-mobile);
+    width: var(--sidebar-width);
     padding-left: 8px;
     padding: 14px 0;
     height: 100vh;
@@ -157,8 +158,10 @@
     position: fixed;
   }
 
-  .close-state-button {
+  #sidebar-button.close-state-button {
     all: unset;
+    position: fixed;
+    right: 0;
   }
 
   .close-state-button img {
