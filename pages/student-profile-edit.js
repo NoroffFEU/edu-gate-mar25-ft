@@ -24,34 +24,56 @@ export default function StudentProfileEdit() {
           </div>
 
           <div class="form-group">
-            <label for="full-name">Full name</label>
+            <label for="full-name">Name:</label>
             <input
-              id="full-name"
-              name="full-name"
+              id="fullname"
+              name="fullname"
               type="text"
-              placeholder="Ola Nordmann"
+              placeholder="Joe Bloggs"
               required
             />
           </div>
 
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input
               id="email"
               name="email"
               type="email"
-              placeholder="example@mail.com"
+              placeholder="joeblog2024@edugate.no"
               required
             />
           </div>
 
           <div class="form-group">
-            <label for="phone">Phone</label>
+            <label for="phone">DOB:</label>
             <input
-              id="phone"
-              name="phone"
-              type="tel"
-              placeholder="+47 123 45 678"
+              id="dob"
+              name="dob"
+              type="date"
+              placeholder="01/01/2002"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Grad Year:</label>
+            <input
+              id="gradYear"
+              name="gradYear"
+              type="number"
+              placeholder="2020"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">School:</label>
+            <input
+              id="school"
+              name="school"
+              type="text"
+              placeholder="The Academy"
               required
             />
           </div>
@@ -87,3 +109,6 @@ export function initStudentProfileEdit() {
 
 
 //<a href="/student-profile-edit" data-link>Edit profile</a>
+
+/*<!-- TEMP: link to profile edit (for development only) -->
+        <a href="/student-profile-edit" data-link>Edit profile</a>*/
