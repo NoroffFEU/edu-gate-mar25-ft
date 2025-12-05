@@ -1,3 +1,137 @@
+/* search functionality */
+
+/* fetch results from JSON file */
+async function getResults(){
+  const response = await fetch('./Data/Results.json');
+  if (!response.ok) {
+    throw new Error('Failed to fetch results');
+  }
+  try {
+  const data = await response.json();
+  return data.results;
+} catch (error) {
+  console.error('Error fetching results:', error);
+  return [];
+}
+}
+
+/* transform results to table rows */
+function transformResults(results){
+  const tableRows = [];
+
+  results.forEach(result => {
+    const year = result.session.split('/')[0];
+    const termNumber = result.term.includes('First') ? '1' :
+    result.term.includes('Second') ? '2' :
+    result.term.includes('Third') ? '3' : '3';
+
+    result.subjects.forEach(subject => {
+      tableRows.push({
+        year: year,
+        term: termNumber,
+        subject: subject.name,
+        exam: subject.name.substring(0, 1).toUpperCase() + termNumber,
+        result: `${subject.score}/120`,
+        grade: subject.grade.toUpperCase(),
+        moreInfo: `<img src="./public/icons/info.png" alt="More information" />`
+      });
+    });
+  });
+  return tableRows;
+  }
+
+  /* search function that filters by year, subject or term */
+  function searchResults(allResults, searchQuery) {
+    if (!searchQuery || searchQuery.trim() === '') {
+      return allResults;
+    }
+    const query = searchQuery.toLowerCase().trim();
+
+    return allResults.filter(result => {
+      if (result.year.toLowerCase().includes(query)) { 
+        return true; 
+      }
+
+      if (result.term.toLowerCase().includes(query) || 
+      (query.includes(result.term)) || 
+      (query === '1' && result.term === '1') ||
+    (query === '2' && result.term === '2') ||
+    (query === '3' && result.term === '3')) { return true; }
+
+      if (result.subject.toLowerCase().includes(query)) { 
+        return true; 
+      }
+      return false;
+    });
+  }
+
+  /* render results to table */
+  function renderResults(results) {
+    const tbody = document.querySelector('#student-results tbody');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+    if (results.length === 0) {
+      tbody.innerHTML = `
+      <tr>
+        <td colspan="7" class="no-results" style="text-align: center; padding: 16px;">No results found</td>
+        </tr>
+        `; 
+        return;
+  }
+
+
+  results.forEach((result, index) => {
+    const rowClass = index % 2 === 0 ? 'student-row-grey' : 'student-row-white';
+    const row = document.createElement('tr');
+    row.className = rowClass;
+    row.innerHTML = `
+    <td>${result.year}</td>
+    <td>${result.term}</td>
+    <td>${result.subject}</td>
+    <td>${result.exam}</td>
+    <td>${result.result}</td>
+    <td>${result.grade}</td>
+    <td class="more-info-button"><img src="./public/icons/info.png" alt="More information" />
+    </td>
+    `;
+    tbody.appendChild(row);
+  });
+}
+
+/* initialize the page */
+export async function initStudentResults() {
+  const results = await getResults();
+  const transformedResults = transformResults(results);
+
+  window.StudentResults = transformedResults;
+
+  renderResults(transformedResults);
+
+  const searchInput = document.querySelector('#student-search input');
+  const searchButton = document.querySelector('#student-search button');
+
+  if (!searchInput || !searchButton) return;
+
+  const performSearch = () => {
+    const query = searchInput.value;
+    const filteredResults = searchResults(window.StudentResults, query);
+    renderResults(filteredResults);
+  };
+
+  searchButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    performSearch();
+  });
+  searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      performSearch();
+    }
+  });
+  searchInput.addEventListener('input', performSearch);
+}
+
+
+
 export default function StudentResults(){
     return /*HTML*/`
 <div id="main">
@@ -36,83 +170,7 @@ export default function StudentResults(){
               </tr>
             </thead>
             <tbody>
-              <tr class="student-row-grey">
-                <td>2019</td>
-                <td>3</td>
-                <td>Mathematics</td>
-                <td>M1</td>
-                <td class="result-score">90/120</td>
-                <td>B</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
-              </tr>
-              <tr class="student-row-white">
-                <td>2019</td>
-                <td>3</td>
-                <td>Physics</td>
-                <td>P3</td>
-                <td class="result-score">102/120</td>
-                <td>A</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
-              </tr>
-              <tr class="student-row-grey">
-                <td>2019</td>
-                <td>3</td>
-                <td>English</td>
-                <td>E2</td>
-                <td class="result-score">80/110</td>
-                <td>B</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
-              </tr>
-              <tr class="student-row-white">
-                <td>2019</td>
-                <td>3</td>
-                <td>English</td>
-                <td>E1</td>
-                <td class="result-score">95/130</td>
-                <td>B</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
-              </tr>
-              <tr class="student-row-grey">
-                <td>2019</td>
-                <td>3</td>
-                <td>Biology</td>
-                <td>B2</td>
-                <td class="result-score">73/120</td>
-                <td>C</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
-              </tr>
-              <tr class="student-row-white">
-                <td>2019</td>
-                <td>3</td>
-                <td>Physics</td>
-                <td>P2</td>
-                <td class="result-score">110/120</td>
-                <td>A</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
-              </tr>
-              <tr class="student-row-grey">
-                <td>2019</td>
-                <td>3</td>
-                <td>History</td>
-                <td>H2</td>
-                <td class="result-score">90/110</td>
-                <td>A</td>
-                <td class="more-info-button">
-                  <img src="./public/icons/info.png" alt="More information" />
-                </td>
-              </tr>
+              
             </tbody>
           </table>
         </div>
