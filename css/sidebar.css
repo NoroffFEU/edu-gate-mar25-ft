@@ -105,8 +105,8 @@
   #sidebar.sidebar-display {
     visibility: visible;
     width: 100vw;
-    justify-items: center;
-    justify-content: center;
+    justify-items: left;
+    justify-content: left;
   }
 
   /* Icons smaller and clean */
@@ -119,18 +119,18 @@
   /* Links centered */
   #sidebar.sidebar-display a {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     width: 100%;
-    padding: 8px 0;
-    margin: 20px 0;
+    padding: 8px 8px;
+    margin: 50px 20px;
   }
 
   /* Remove green circle for profile icon */
   #sidebar.sidebar-display a.logo .icon {
     background: none;
     border-radius: 0;
+    padding-right: 10px;
   }
 
   #sidebar.sidebar-display a.logo {
@@ -138,7 +138,7 @@
     gap: 6px;
     text-decoration: none;
     color: var(--font-color);
-    padding: 8px;
+    padding: 0 10px;
   }
 
   #sidebar-button {
