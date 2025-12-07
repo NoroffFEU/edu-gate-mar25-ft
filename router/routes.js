@@ -8,6 +8,7 @@ import AdminDashboard from "../pages/admin-dashboard.js";
 import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
+import AdminEdit from "../pages/admin-edit.js";
 
 const routes = [
  { path: "/", view: Home },
@@ -18,6 +19,7 @@ const routes = [
  { path: "/signup", view: Signup, afterRender: initSignupForm },
  { path: "/teacher-dashboard", view: TeacherDashboard },
  { path: "/registration", view: Registration },
+ { path: "/admin-edit", view: AdminEdit},
 ];
 
 export default routes;
