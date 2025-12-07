@@ -1,3 +1,27 @@
+/* ---------- Breadcrumb ---------- */
+
+.profile-breadcrumb {
+  font-family: var(--secondary-font);
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-neutral-medium-gray);
+}
+
+.profile-breadcrumb .crumb-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.profile-breadcrumb .crumb-current {
+  color: var(--primary-color); /* grønn “Profile” */
+  font-weight: 600;
+}
+
+.profile-breadcrumb .crumb-separator {
+  margin: 0 0.25rem;
+}
+
+
 /* ---------- Page layout ---------- */
 
 .profile-page {
@@ -54,8 +78,55 @@
   box-shadow: inset 0 0.25rem 0.25rem rgba(0,0,0,0.25);
 }
 
-/* Update-knappen */
+.readonly-field {
+  background-color: #e0e0e0;
+  color: var(--color-neutral-medium-gray);
+  box-shadow: none;
+  cursor: not-allowed;
+}
 
+/* ---------- Avatar ---------- */
+
+.profile-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Selve sirkelen */
+.profile-avatar-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-size: 1.3rem;
+  font-weight: 700;
+  position: relative;
+}
+
+/* Initialene – "JB" */
+.profile-avatar-image .initials {
+  font-family: var(--primary-font);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+/* Kamera-ikonet */
+.camera-icon {
+  width: 20px;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+/* Update-knappen */
 .profile-update-btn {
   background-color: var(--primary-color);
   color: #ffffff;

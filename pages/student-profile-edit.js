@@ -9,19 +9,27 @@ export default function StudentProfileEdit() {
   }
 
   return /*HTML*/ `
+  
     <section class="profile-page">
       <div class="profile-card">
+
+      <div class="profile-breadcrumb">
+        <span class="crumb-link">Dashboard</span>
+        <span class="crumb-separator">&gt;</span>
+        <span class="crumb-current">Profile</span>
+      </div>
+
         <h1>Edit profile</h1>
 
         <form id="profile-edit-form" class="profile-form">
           <div class="profile-avatar">
             <div class="profile-avatar-image">
-              <span>JB</span>
+              <span class="initials">JB</span>
+              <img src="/public/icons/camera-icon.png" alt="Change photo" class="camera-icon" />
             </div>
-            <button type="button" class="btn-secondary">
-              Change picture
-            </button>
+            <button type="button" class="btn-secondary">Change picture</button>
           </div>
+
 
           <div class="form-group">
             <label for="full-name">Name:</label>
@@ -57,26 +65,30 @@ export default function StudentProfileEdit() {
           </div>
 
           <div class="form-group">
-            <label for="phone">Grad Year:</label>
+            <label for="gradYear">Grad Year:</label>
             <input
-              id="gradYear"
-              name="gradYear"
-              type="number"
-              placeholder="2020"
-              required
-            />
-          </div>
+            id="gradYear"
+            name="gradYear"
+            type="number"
+            placeholder="2020"
+            min="1900"
+            max="2050"
+            class="readonly-field"
+            readonly
+          />
+        </div>
 
-          <div class="form-group">
-            <label for="phone">School:</label>
+        <div class="form-group">
+            <label for="school">School:</label>
             <input
-              id="school"
-              name="school"
-              type="text"
-              placeholder="The Academy"
-              required
-            />
-          </div>
+            id="school"
+            name="school"
+            type="text"
+            placeholder="The Academy"
+            class="readonly-field"
+            readonly
+          />
+        </div>
 
           <button type="submit" class="profile-update-btn">
             Save changes
