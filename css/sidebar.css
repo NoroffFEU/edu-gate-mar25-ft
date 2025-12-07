@@ -99,11 +99,11 @@
 @media (max-width: 767px) {
   /* Sidebar styles for mobile */
   #sidebar {
-    visibility: hidden;
+    display: none;
   }
 
   #sidebar.sidebar-display {
-    visibility: visible;
+    display: block;
     width: 100vw;
     justify-items: left;
     justify-content: left;
@@ -137,6 +137,7 @@
     align-items: center;
     gap: 6px;
     text-decoration: none;
+    font-weight: 600;
     color: var(--font-color);
     padding: 0 10px;
   }
@@ -145,11 +146,15 @@
     all: unset;
     position: fixed;
     left: 8px;
+    top: 116px;
+    background: none;
+    border: none;
+    padding: none;
+    z-index: 200;
   }
 
   #sidebar-button.close-state-button {
-    all: unset;
-    position: fixed;
+    left: auto;
     right: 8px;
   }
 
