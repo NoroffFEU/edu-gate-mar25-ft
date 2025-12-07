@@ -142,6 +142,8 @@
     padding: 0 10px;
   }
 
+  /* Button design and positioning */
+
   #sidebar-button {
     all: unset;
     position: fixed;
