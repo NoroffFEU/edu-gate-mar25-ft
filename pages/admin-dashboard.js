@@ -1,7 +1,9 @@
+import SidebarAdmin from "../components/sidebar-admin.js";
+
 export default function AdminDashboard() {
   return /*HTML*/ `
 <main class="dashboard">
-
+<div id="sidebar-container">${SidebarAdmin()}</div>
   <section class="admin-info">
   <h1>Dashboard</h1>
   
