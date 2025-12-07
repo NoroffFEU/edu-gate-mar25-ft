@@ -7,8 +7,7 @@ import StudentResults from "../pages/student-results.js";
 import AdminDashboard from "../pages/admin-dashboard.js";
 import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
-import AdminDashboard from "../pages/admin-dashboard.js";
-import StudentProfile from "../pages/student-profile.js"; 
+import Registration from "../pages/registration.js";
 
 const routes = [
  { path: "/", view: Home },
@@ -22,5 +21,3 @@ const routes = [
 ];
 
 export default routes;
-
-
