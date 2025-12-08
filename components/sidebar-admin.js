@@ -33,6 +33,7 @@ export default function SidebarAdmin() {
         <img class="icon" src="./public/icons/add-results.png" alt="management-logo">
         <span class="label">Results management</span>
       </a>
+    </div>
     <div>
       <a href="#user-management" class="logo" title="User management">
         <img class="icon" src="./public/icons/user-management.png" alt="user-management-logo">
