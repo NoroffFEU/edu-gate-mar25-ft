@@ -350,7 +350,7 @@ align-items: center;
   }
 
   .pagination {
-    width: 320px; 
+    display: inline-block;    
     margin-top: 15px;
     overflow-x: auto;
     padding: 0 14px;

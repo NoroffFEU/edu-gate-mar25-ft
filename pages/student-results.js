@@ -108,10 +108,14 @@ export default function StudentResults() {
       <button id="page-1" class="pagination-button" aria-label="Go to page 1">1</button>
       <button id="page-2" class="pagination-button" aria-label="Go to page 2">2</button>
       <button id="page-3" class="pagination-button" aria-label="Go to page 3">...</button>
+      <button id="page-7" class="pagination-button" aria-label="Go to page 3">7</button>
+      <button id="page-8" class="pagination-button" aria-label="Go to page 3">8</button>
       <button id="page-next" class="pagination-button" aria-label="Go to next page">
         <img src="./public/icons/chevron-single-right.png" alt="Go to next page"/>
       </button>
-      
+     
+
+
       <button id="page-last" class="pagination-button" aria-label="Go to last page">
         <img src="./public/icons/chevron-dubble-right.png" alt="Go to last page"/>
       </button>
@@ -126,3 +130,74 @@ export default function StudentResults() {
 </div>
   `;
 }
+
+export function StudentResultsPagination() {
+  // --- Selectors html ---
+  const allRows = Array.from(document.querySelectorAll('#student-results tbody tr'));
+  const firstButton = document.getElementById('page-first');
+  const prevButton  = document.getElementById('page-previous');
+  const nextButton  = document.getElementById('page-next');
+  const lastButton  = document.getElementById('page-last');
+  const paginationRoot = document.getElementById('pagination');
+
+ 
+/ --- Config + state ---
+  const rowsPerPage = 5;         // Change if you want
+  let currentPage = 1;
+  const totalPages = Math.max(1, Math.ceil(allRows.length / rowsPerPage));
+
+    // --- Core render: show the slice that belongs to a page ---
+    function showPage(page) {
+      
+currentPage = Math.min(Math.max(1, page), totalPages);
+    const start = (currentPage - 1) * rowsPerPage;
+    const end   = start + rowsPerPage;
+
+    
+ allRows.forEach((row, i) => {
+      row.style.display = (i >= start && i < end) ? '' : 'none';
+    });
+
+    updateButtons();
+    highlightActiveNumber();
+  }
+
+
+ // Enable/disable chevrons at boundaries
+  function updateButtons() {
+    const atFirst = currentPage === 1;
+    const atLast  = currentPage === totalPages;
+    firstButton.disabled = atFirst;
+    prevButton.disabled  = atFirst;
+    nextButton.disabled  = atLast;
+    lastButton.disabled  = atLast;
+  }
+
+  function highlightActiveNumber() {
+    const pageButtons = paginationRoot.querySelectorAll('.pagination-button');
+    pageButtons.forEach(button => {
+      const pageNum = parseInt(button.textContent, 10);
+      const isNumeric = Number.isFinite(n);
+      
+      // Disable numeric buttons
+      if (isNumeric) {
+        
+  btn.disabled = (n < 1 || n > totalPages);
+        btn.classList.toggle('active', n === currentPage);
+        if (n === currentPage) {
+          btn.setAttribute('aria-current', 'page');
+        } else {
+          btn.removeAttribute('aria-current');
+        }
+      }
+    });
+  }
+
+// --- Event handlers ---
+
+firstButton.addEventListener('click', () => showPage(1));
+  prevButton .addEventListener('click', () => showPage(currentPage - 1));
+  nextButton .addEventListener('click', () => showPage(currentPage + 1));
+  lastButton .addEventListener('click', () => showPage(totalPages))
+
+  // Delegate clicks for numeric buttons (1, 2, 7, 8; ellipsis "..." ignored automatically)
