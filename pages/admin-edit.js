@@ -10,24 +10,24 @@ export default function AdminEdit() {
  return /*HTML*/ `
    <div class="edit-wrapper">
 
-   <div class="breadcrumb">
-        <span>Dashboard</span>
+  <div class="breadcrumb">
+        <a href="/admin-dashboard" class="breadcrumb-link">Dashboard</a>
         <span class="arrow">></span>
         <span class="current">Profile</span>
-      </div>
+  </div>
 
  <div class="edit-card">
     <h1 class="adminTitle">Edit Profile</h1>
 
   <div class="avatar-wrapper">
-      <img src="/public/icons/user-circle-edit-mobile.png" alt="User avatar" class="avatar-circle"/>
-  </div>
+      <img id="adminAvatarPreview" src="/public/icons/user-circle-edit-mobile.png" alt="User avatar" class="avatar-circle"/>
+      <input type="file" accept="image/*" id="adminAvatarInput" style="display: none;"/>
+</div>
 
   <form id="adminEditForm">
     <div class="formGroups">
           <label for="name">Name:</label>
-            <input id="adminName" type="text" placeholder="Joe Bloggs"
-            novalidate/>        
+          <input id="adminName" type="text" placeholder="Joe Bloggs" novalidate/>        
     </div>
 
     <div class="formGroups">
@@ -44,18 +44,39 @@ export default function AdminEdit() {
           <label for="School">School:</label>
           <input id="adminSchool" type="text" placeholder="The Academy" disabled/>        
     </div>  
-    <button type="submit" class="primary-btn editAdminBtn">Update</button>
-    </form>
-        
-      </div>
     
+    <button type="submit" class="primary-btn editAdminBtn">Update</button>
+    </form>    
       </div>
+    </div>
   `;
 }
 
 export function initAdminProfileEdit() {
  const form = document.querySelector("#adminEditForm");
  if (!form) return;
+
+ const avatar = document.querySelector("#adminAvatarPreview");
+ const fileInput = document.querySelector("#adminAvatarInput");
+
+ if (avatar && fileInput) {
+  // Clicking the avatar opens file picker
+  avatar.addEventListener("click", () => {
+   fileInput.click();
+  });
+
+  // Preview selected image
+  fileInput.addEventListener("change", () => {
+   const file = fileInput.files[0];
+   if (!file) return;
+
+   const reader = new FileReader();
+   reader.onload = () => {
+    avatar.src = reader.result;
+   };
+   reader.readAsDataURL(file);
+  });
+ }
 
  //Show error under an input
  function showError(input, message) {
