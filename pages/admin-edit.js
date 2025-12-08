@@ -1,4 +1,12 @@
 export default function AdminEdit() {
+ const existing = document.querySelector("link[data-profile-style]");
+ if (!existing) {
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = "/css/admin-edit.css";
+  link.setAttribute("data-profile-style", "true");
+  document.head.appendChild(link);
+ }
  return /*HTML*/ `
    <div class="edit-wrapper">
 
@@ -15,30 +23,87 @@ export default function AdminEdit() {
       <img src="/public/icons/user-circle-edit-mobile.png" alt="User avatar" class="avatar-circle"/>
   </div>
 
-  <form class="adminEditForm">
+  <form id="adminEditForm">
     <div class="formGroups">
-          <label for="Name" class="formGroupLabel">Name:</label>
-            <input id="adminInput" type="text" placeholder="Joe Bloggs">        
+          <label for="name">Name:</label>
+            <input id="adminName" type="text" placeholder="Joe Bloggs"
+            novalidate/>        
     </div>
 
     <div class="formGroups">
-          <label for="Email" class="formGroupLabel">Email:</label>
-          <input id="adminInput" type="text" placeholder="joeblog2024@edugate no">        
+          <label for="Email">Email:</label>
+          <input id="adminEmail" type="text" placeholder="joeblog2024@edugate no" novalidate/>        
     </div>
 
     <div class="formGroups">
-          <label for="Date of birth" class="formGroupLabel">Date of birth:</label>
-          <input id="adminInput" type="text" placeholder="01/01/1987">        
+          <label for="Date of birth">Date of birth:</label>
+          <input id="adminDate" type="text" placeholder="01/01/1987" novalidate/>        
     </div>
 
     <div class="formGroups">
-          <label for="School" class="formGroupLabel">School:</label>
-          <input id="adminInput" type="text" placeholder="The Academy">        
+          <label for="School">School:</label>
+          <input id="adminSchool" type="text" placeholder="The Academy" disabled/>        
     </div>  
+    <button type="submit" class="primary-btn editAdminBtn">Update</button>
     </form>
-        <button class="primary-btn editAdminBtn">Update</button>
+        
       </div>
     
       </div>
   `;
+}
+
+export function initAdminProfileEdit() {
+ const form = document.querySelector("#adminEditForm");
+ if (!form) return;
+
+ //Show error under an input
+ function showError(input, message) {
+  let error = input.parentElement.querySelector(".error-message");
+
+  if (!error) {
+   error = document.createElement("div");
+   error.classList.add("error-message");
+   input.parentElement.appendChild(error);
+  }
+
+  error.textContent = message;
+ }
+
+ // Clear error when user focuses field
+ form.querySelectorAll("input").forEach((input) => {
+  input.addEventListener("focus", () => {
+   const error = input.parentElement.querySelector(".error-message");
+   if (error) error.remove();
+  });
+ });
+
+ form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const fullName = form.querySelector("#adminName");
+  const email = form.querySelector("#adminEmail");
+  const date = form.querySelector("#adminDate");
+
+  let hasError = false;
+
+  if (!fullName.value.trim()) {
+   showError(fullName, "Name is required.");
+   hasError = true;
+  }
+
+  if (!email.value.trim()) {
+   showError(email, "Email is required.");
+   hasError = true;
+  }
+
+  if (!date.value.trim()) {
+   showError(date, "Date of birth is required.");
+   hasError = true;
+  }
+
+  if (hasError) return;
+
+  console.log("Profile updated");
+ });
 }
