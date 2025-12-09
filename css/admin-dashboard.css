@@ -1,0 +1,153 @@
+/* mobile first prinsip.. so i dont build desktop first  */
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: var(--secondary-font);
+}
+
+.dashboard {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: var(--padding-32px) var(--padding-16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+
+.dashboard h1 {
+  font-family: var(--primary-font);
+  font-size: var(--heading-1);
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: var(--color-neutral-dark-gray);
+  text-align: center;
+  margin-bottom: var(--padding-32px);
+}
+
+.sim-mobile {
+  margin-bottom: 10px;
+}
+
+.admin-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-name {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: var(--color-neutral-dark-gray);
+  text-align: center;
+
+  margin-top: var(--padding-8px);
+  margin-bottom: var(--padding-8px);
+}
+
+.admin-role {
+  font-family: var(--secondary-font);
+  font-size: var(--small-txt);
+  font-weight: 500;
+  color: var(--color-neutral-dark-gray);
+  margin-bottom: var(--padding-32px);
+}
+
+.dashboard-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.nav-item {
+  width: 160px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: var(--color-neutral-dark-gray);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  gap: var(--padding-8px);
+}
+
+.nav-item p {
+  font-size: var(--small-txt);
+  font-weight: 600;
+}
+
+.nav-item img {
+  width: 55px;
+  height: auto;
+}
+
+.profile {
+  display: none;
+}
+
+.sim-desktop {
+  display: none;
+}
+
+/* this is the desktop version of my task.  */
+
+@media (min-width: 768px) {
+  .dashboard {
+    max-width: 900px;
+    padding: var(--padding-48px);
+  }
+
+  .dashboard h1 {
+    margin-bottom: var(--padding-40px);
+  }
+
+  .admin-name {
+    font-size: 24px;
+  }
+
+  .admin-role {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: var(--padding-48px);
+  }
+
+  .dashboard-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 694px;
+  }
+
+  .nav-item img {
+    width: 80px;
+  }
+
+  .nav-item p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .sim-desktop {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .profile {
+    display: flex;
+  }
+
+  .sim-mobile {
+    display: none;
+  }
+}
