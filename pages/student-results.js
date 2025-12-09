@@ -16,7 +16,7 @@ export default function StudentResults() {
       <h1>Select Student</h1>
     </div>
 
-   
+    
     <div class="student-intro">
       <img class="results-icon" src="./public/icons/results.png" alt="Results icon"/>
       <p>View your results</p>
@@ -140,21 +140,19 @@ export function StudentResultsPagination() {
   const lastButton  = document.getElementById('page-last');
   const paginationRoot = document.getElementById('pagination');
 
- 
-/ --- Config + state ---
+  // --- Config + state ---
   const rowsPerPage = 5;         // Change if you want
   let currentPage = 1;
   const totalPages = Math.max(1, Math.ceil(allRows.length / rowsPerPage));
 
-    // --- Core render: show the slice that belongs to a page ---
-    function showPage(page) {
-      
-currentPage = Math.min(Math.max(1, page), totalPages);
+  // --- Core render: show the slice that belongs to a page ---
+  function showPage(page) {
+    // clamp to valid page range
+    currentPage = Math.min(Math.max(1, page), totalPages);
     const start = (currentPage - 1) * rowsPerPage;
     const end   = start + rowsPerPage;
 
-    
- allRows.forEach((row, i) => {
+    allRows.forEach((row, i) => {
       row.style.display = (i >= start && i < end) ? '' : 'none';
     });
 
@@ -162,42 +160,71 @@ currentPage = Math.min(Math.max(1, page), totalPages);
     highlightActiveNumber();
   }
 
-
- // Enable/disable chevrons at boundaries
+  // Enable/disable chevrons at boundaries
   function updateButtons() {
     const atFirst = currentPage === 1;
     const atLast  = currentPage === totalPages;
-    firstButton.disabled = atFirst;
-    prevButton.disabled  = atFirst;
-    nextButton.disabled  = atLast;
-    lastButton.disabled  = atLast;
+
+    if (firstButton) firstButton.disabled = atFirst;
+    if (prevButton)  prevButton.disabled  = atFirst;
+    if (nextButton)  nextButton.disabled  = atLast;
+    if (lastButton)  lastButton.disabled  = atLast;
   }
 
+  // Highlight the numeric buttons and set aria-current for the active page.
   function highlightActiveNumber() {
-    const pageButtons = paginationRoot.querySelectorAll('.pagination-button');
-    pageButtons.forEach(button => {
-      const pageNum = parseInt(button.textContent, 10);
-      const isNumeric = Number.isFinite(n);
-      
-      // Disable numeric buttons
-      if (isNumeric) {
-        
-  btn.disabled = (n < 1 || n > totalPages);
-        btn.classList.toggle('active', n === currentPage);
+    if (!paginationRoot) return;
+
+    // find only numeric buttons (exclude chevrons and "..." by parsing int)
+    const pageButtons = Array.from(paginationRoot.querySelectorAll('.pagination-button'));
+
+    pageButtons.forEach(btn => {
+      // try to parse integer from button text
+      const text = btn.textContent.trim();
+      const n = parseInt(text, 10);
+
+      // If parsed number is finite and equals a valid page, treat it as a numeric page button
+      if (Number.isFinite(n)) {
+        // disable numeric button if it's outside range (optional)
+        btn.disabled = (n < 1 || n > totalPages);
+
+        // toggle active styling
         if (n === currentPage) {
+          btn.classList.add('active');
           btn.setAttribute('aria-current', 'page');
         } else {
+          btn.classList.remove('active');
           btn.removeAttribute('aria-current');
         }
+      } else {
+        // for non-numeric buttons (chevrons or '...') remove aria-current and active
+        btn.classList.remove('active');
+        btn.removeAttribute('aria-current');
       }
     });
   }
 
-// --- Event handlers ---
+  // --- Event handlers ---
+  if (firstButton) firstButton.addEventListener('click', () => showPage(1));
+  if (prevButton)  prevButton.addEventListener('click', () => showPage(currentPage - 1));
+  if (nextButton)  nextButton.addEventListener('click', () => showPage(currentPage + 1));
+  if (lastButton)  lastButton.addEventListener('click', () => showPage(totalPages));
 
-firstButton.addEventListener('click', () => showPage(1));
-  prevButton .addEventListener('click', () => showPage(currentPage - 1));
-  nextButton .addEventListener('click', () => showPage(currentPage + 1));
-  lastButton .addEventListener('click', () => showPage(totalPages))
+  // Delegate clicks for numeric buttons (works for 1,2,7,8; ignores "..." non-numeric)
+  if (paginationRoot) {
+    paginationRoot.addEventListener('click', (event) => {
+      const btn = event.target.closest('button.pagination-button');
+      if (!btn) return;
 
-  // Delegate clicks for numeric buttons (1, 2, 7, 8; ellipsis "..." ignored automatically)
+      const text = btn.textContent.trim();
+      const n = parseInt(text, 10);
+
+      if (Number.isFinite(n) && n >= 1 && n <= totalPages) {
+        showPage(n);
+      }
+    });
+  }
+
+  // --- Initial render ---
+  showPage(1);
+}
