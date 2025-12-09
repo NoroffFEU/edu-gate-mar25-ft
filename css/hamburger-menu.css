@@ -3,10 +3,15 @@
     top: 0;
     height: 100%;
     width: 393px;
-    right: 0;
+    right: -100%;
     background: white;
     z-index: 100;
     overflow: auto;
+    transition: 0.5s;
+}
+
+.hamburger-panel.active {
+    right: 0;
 }
 
 .hamburger-top {
@@ -16,11 +21,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.hamburger-logo {
-    height: 80px;
-    width: 80px;
 }
 
 .hamburger-close {
@@ -40,6 +40,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    text-decoration: none;
+    color: black;
 }
 
 .hamburger-text {

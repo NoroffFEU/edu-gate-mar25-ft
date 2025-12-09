@@ -1,7 +1,7 @@
 export default function hamburgerBasic() {
     return /*HTML*/ `
   
-      <div class="hamburger-panel">
+      <div class="hamburger-panel" id="hamburger-basic">
   
       <div class="hamburger-top"><img src="./public/img/logo-header.png" class="hamburger-logo"><img src="./public/icons/x-close(1).jpg" class="hamburger-close"></div>
   
