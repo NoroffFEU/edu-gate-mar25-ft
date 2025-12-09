@@ -1,0 +1,255 @@
+.result-container {
+  display: grid;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  text-align: left;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.breadcrumbs a {
+  color: #757575;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.breadcrumb-separator {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.breadcrumb-current {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 314.75px;
+  background: #fff;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 10px 12px;
+  font-size: 16px;
+  outline: none;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-right: none;
+}
+
+.search-button {
+  background: #fff;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.add-result-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-result-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 24px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-result-btn:hover {
+  background-color: #45a049;
+}
+
+.results-table-container {
+  display: grid;
+  width: 1280px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.results-table {
+  border-collapse: collapse;
+}
+
+.result-header-row {
+  text-align: left;
+}
+
+.result-header-row th {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: var(--heading-2);
+}
+
+.result-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.result-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 600;
+}
+
+.edit {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.result-row {
+  background-color: #f3f3f3;
+  text-align: left;
+}
+
+.result-row-secondary {
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.results-table td,
+.results-table th {
+  padding: 16px;
+  font-size: 20px;
+  font-family: var(--secondary-font);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  width: 560px;
+  height: 72px;
+  padding: 16px 0;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.page-number,
+.page-nav,
+.page-ellipsis {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  color: #757575;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-number.active {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background: white;
+}
+
+.page-ellipsis {
+  cursor: default;
+  border: 1px solid #e0e0e0;
+}
+
+.page-ellipsis:hover {
+  background: white;
+}
+
+.page-nav img {
+  width: 19.45px;
+  height: 15.63px;
+}
+
+.page-nav img.chevron-single {
+  width: 10.09px;
+  height: 15.63px;
+}
+
+.back-to-dashboard-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.back-to-dashboard-btn {
+  padding: 10px 20px;
+  border: 2px solid var(--secondary-color);
+  background: white;
+  color: var(--secondary-color);
+  border-radius: 6px;
+  font-size: 26px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-dashboard-btn:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
