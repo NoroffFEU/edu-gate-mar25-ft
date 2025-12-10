@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   margin: 0;
-  background-color: var(--color-neutral-gray);
+  background-color: var(--color-neutral-gray) !important;
   padding: 0;
 }
 
