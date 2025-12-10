@@ -1,4 +1,4 @@
-body {
+.signup-page {
   position: relative;
 }
 
@@ -9,7 +9,7 @@ body {
 /* Shared styling for alert*/
 .alert {
   position: absolute;
-  top: 86px;
+  top: 16px;
   right: 0;
   width: 337px;
   height: 114px;
@@ -96,7 +96,7 @@ body {
 @media (min-width: 1024px) {
   /* Shared styling for alert desktop*/
   .alert {
-    top: 140px;
+    top: -50px;
     width: 450px;
     height: 167px;
   }
@@ -117,7 +117,7 @@ body {
   }
 
   .signup-card {
-    padding-top: 0git;
+    padding-top: 0;
   }
 
   /* Styling for success alert desktop*/
