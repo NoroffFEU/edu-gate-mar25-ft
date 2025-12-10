@@ -8,7 +8,6 @@ body {
 
 /* header */
 header {
-	margin-bottom: 25px;
 	border: var(--color-neutral-medium-gray);
 	border-style: inset;
 	border-width: 0.5px;
