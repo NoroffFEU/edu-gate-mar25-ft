@@ -65,8 +65,12 @@ export function initSignupForm() {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const password = form.querySelector("#password").value;
-    const confirm = form.querySelector("#confirm-password").value;
+    const passwordInput = form.querySelector("#password");
+    const confirmInput = form.querySelector("#confirm-password");
+    if (!passwordInput || !confirmInput) return;
+
+    const password = passwordInput.value;
+    const confirm = confirmInput.value;
 
     const alertContainer = document.querySelector("#alert-container");
     if (!alertContainer) return;
