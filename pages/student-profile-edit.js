@@ -9,37 +9,47 @@ export default function StudentProfileEdit() {
   }
 
   return /*HTML*/ `
-  
-    <section class="profile-page">
+
+      <section class="profile-page">
+      <!-- Breadcrumb-->
+            <div class="profile-breadcrumb">
+              <span class="crumb-link">Dashboard</span>
+              <span class="crumb-separator">&gt;</span>
+              <span class="crumb-current">Profile</span>
+            </div>
+
       <div class="profile-card">
 
-      <div class="profile-breadcrumb">
-        <span class="crumb-link">Dashboard</span>
-        <span class="crumb-separator">&gt;</span>
-        <span class="crumb-current">Profile</span>
-      </div>
+        <h3>Edit Profile</h3>
 
-        <h1>Edit profile</h1>
-
+        <!-- Profile picture-->
         <form id="profile-edit-form" class="profile-form">
-          <div class="profile-avatar">
-            <div class="profile-avatar-image">
-              <span class="initials">JB</span>
-              <img src="/public/icons/camera-icon.png" alt="Change photo" class="camera-icon" />
-            </div>
-            <button type="button" class="btn-secondary">Change picture</button>
-          </div>
+        <div class="profile-avatar">
+        <div class="profile-avatar-wrapper">
+            <button class="avatar-upload-btn" type="button">
+              <img
+                id="adminAvatarPreview"
+                src="/public/icons/user-circle-edit-mobile.png"
+                alt="User avatar"
+                class="avatar-circle"
+              />
+            </button>
 
+            <input type="file" id="adminAvatarInput" accept="image/*" hidden />
+        </div>
+        </div>
 
+          <!-- The form -->
           <div class="form-group">
-            <label for="full-name">Name:</label>
+            <label for="fullname">Name:</label>
             <input
               id="fullname"
               name="fullname"
               type="text"
               placeholder="Joe Bloggs"
-              required
+              novalidate
             />
+            <div class="error-message"></div>
           </div>
 
           <div class="form-group">
@@ -49,19 +59,33 @@ export default function StudentProfileEdit() {
               name="email"
               type="email"
               placeholder="joeblog2024@edugate.no"
-              required
+              novalidate
             />
+            <div class="error-message"></div>
           </div>
 
           <div class="form-group">
-            <label for="phone">DOB:</label>
+            <label for="dob">DOB:</label>
             <input
               id="dob"
               name="dob"
-              type="date"
+              type="dob"
               placeholder="01/01/2002"
-              required
+              novalidate
             />
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group id-desktop-only">
+            <label for="student-id">ID:</label>
+            <input
+            id="student-id"
+            name="student-id"
+            type="text"
+            placeholder="1921840"
+            class="readonly-field"
+            readonly
+          />
           </div>
 
           <div class="form-group">
@@ -69,14 +93,12 @@ export default function StudentProfileEdit() {
             <input
             id="gradYear"
             name="gradYear"
-            type="number"
+            type="text"
             placeholder="2020"
-            min="1900"
-            max="2050"
             class="readonly-field"
             readonly
           />
-        </div>
+          </div>
 
         <div class="form-group">
             <label for="school">School:</label>
@@ -91,7 +113,7 @@ export default function StudentProfileEdit() {
         </div>
 
           <button type="submit" class="profile-update-btn">
-            Save changes
+            Update
           </button>
         </form>
       </div>
@@ -99,24 +121,62 @@ export default function StudentProfileEdit() {
   `;
 }
 
+
+
 export function initStudentProfileEdit() {
   const form = document.querySelector("#profile-edit-form");
   if (!form) return;
 
+  // ---- Create and display error message 
+  function showError(input, message) {
+    let error = input.parentElement.querySelector(".error-message");
+
+    if (!error) {
+      error = document.createElement("div");
+      error.classList.add("error-message");
+      input.parentElement.appendChild(error);
+    }
+
+    error.textContent = message;
+  }
+
+  // ---- Clear error 
+  form.querySelectorAll("input").forEach((input) => {
+    input.addEventListener("focus", () => {
+      const error = input.parentElement.querySelector(".error-message");
+      if (error) error.remove();
+    });
+  });
+
+  // ---- Form validation
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const fullName = form.querySelector("#full-name").value.trim();
-    const email = form.querySelector("#email").value.trim();
-    const phone = form.querySelector("#phone").value.trim();
+    const fullName = form.querySelector("#fullname");
+    const email = form.querySelector("#email");
+    const dob = form.querySelector("#dob");
 
-    if (!fullName || !email || !phone) {
-      console.log("Please fill in all fields");
-      return;
+    let hasError = false;
+
+    if (!fullName.value.trim()) {
+      showError(fullName, "Name is required.");
+      hasError = true;
     }
 
-    console.log("Profile updated");
-  });
+    if (!email.value.trim()) {
+    showError(email, "Email is required.");
+    hasError = true;
+    }
+
+    if (!dob.value.trim()) {
+    showError(dob, "Date of birth is required.");
+    hasError = true;
+    }
+
+    if (hasError) return;
+
+  console.log("Profile updated");
+ });
 }
 
 
