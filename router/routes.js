@@ -24,3 +24,5 @@ const routes = [
   { path: "/student-profile-edit", view: StudentProfileEdit },
   { path: "/registration", view: Registration },
 ];
+
+export default routes;
