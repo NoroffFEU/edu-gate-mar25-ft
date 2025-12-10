@@ -1,10 +1,6 @@
 
 
-html {
-  width: 100dvw;
-  height: 100dvh;
-  overflow-x: hidden;
-}
+
 
 main {
   margin: 0 auto;
@@ -293,7 +289,7 @@ align-items: center;
 
   #student-page {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     overflow-x: hidden;
   }
 
@@ -302,60 +298,64 @@ align-items: center;
   }
 
 
-
-  th {
-    font-size: 0;
-    position: relative;
-    color: #28a645;
-    min-width: 60px;
-    margin-bottom: 10px;
-  }
-
-  th::after {
-    font-size: 16px;
-    color: #28a645;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+th { 
+  font-size: 0; 
+  position: relative; 
+  color: #28a645; 
+  margin-bottom: 10px; 
+  height: 50px;
+  padding: 0 15px;
+    box-sizing: border-box;
     text-align: left;
-    padding: 14px;
-    display: block;  
-  }
+}
 
-  th:nth-child(1)::after { content: "ID"; width: 60px;} 
-  th:nth-child(2)::after { content: "F.Name"; width: 100px;}
-  th:nth-child(3)::after { content: "L.Name"; width: 100px;}
-  th:nth-child(4)::after { content: "Year"; width: 0px;}
+th::after { 
+font-size: 14px; 
+color: #28a645;
+position: absolute; 
+left: 12px;
+top: 0;
+display: block;
+}
+
+  
+th:nth-child(1)::after { content: "ID"; width: 30px; left: 15px; }      /* NEW: nudge ID */
+  th:nth-child(2)::after { content: "F.Name"; width: 90px; left: 8px; }  /* slight nudge */
+  th:nth-child(3)::after { content: "L.Name"; width: 80px; left: 20px; }
+  th:nth-child(4)::after { content: "Year"; width: 60px; left: 8px; }
+
 
   .student-results-table-container {
-    width: 360px;
-    margin: 0 auto;
-    overflow-x: auto;
-    padding-right: 14px; 
+ 
+  margin: 0 auto;
+  padding: 0 8px;     
+  overflow: hidden; 
+  width: 100%;
+  max-width: 340px;
   }
 
   .student-results {
-    width: 370px;
     font-size: 14px;
     margin-bottom:20px;
+
   }
+
 
   td {
     padding: 12px;
+    min-width: 0;
   }
 
-  #page-2, #page-7 {
-    display: none;
-  }
 
   .pagination {
     display: flex;  
     justify-content: center;
     width: 100% ;
+   max-width: 330px;
     margin-top: 15px;
     overflow-x: auto;
     padding: 0 14px;
+    box-sizing: border-box;
   }
 
   .secondary-btn {
