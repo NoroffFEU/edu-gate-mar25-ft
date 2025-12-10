@@ -8,16 +8,18 @@ import AdminDashboard from "../pages/admin-dashboard.js";
 import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
+import AddStudent from "../pages/add-students.js";
 
 const routes = [
- { path: "/", view: Home },
- { path: "/about", view: About },
- { path: "/login", view: Login },
- { path: "/student-results", view: StudentResults },
- { path: "/admin-dashboard", view: AdminDashboard },
- { path: "/signup", view: Signup, afterRender: initSignupForm },
- { path: "/teacher-dashboard", view: TeacherDashboard },
- { path: "/registration", view: Registration },
+  { path: "/", view: Home },
+  { path: "/about", view: About },
+  { path: "/login", view: Login },
+  { path: "/student-results", view: StudentResults },
+  { path: "/admin-dashboard", view: AdminDashboard },
+  { path: "/signup", view: Signup, afterRender: initSignupForm },
+  { path: "/teacher-dashboard", view: TeacherDashboard },
+  { path: "/registration", view: Registration },
+  { path: "/add-students", view: AddStudent },
 ];
 
 export default routes;
