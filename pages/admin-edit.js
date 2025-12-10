@@ -11,7 +11,7 @@ export default function AdminEdit() {
    <div class="edit-wrapper">
 
   <div class="breadcrumb">
-        <a href="/admin-dashboard" class="breadcrumb-link">Dashboard</a>
+        <a href="/admin-dashboard" class="breadcrumb-link" alt="Green circular avatar with the white initials JB and a small camera icon in the lower-right corner">Dashboard</a>
         <span class="arrow">></span>
         <span class="current">Profile</span>
   </div>
@@ -26,23 +26,27 @@ export default function AdminEdit() {
 
   <form id="adminEditForm">
     <div class="formGroups">
-          <label for="name">Name:</label>
-          <input id="adminName" type="text" placeholder="Joe Bloggs" novalidate/>        
+      <label class="adminLabel">Name: 
+          <input id="adminName" type="text" placeholder="Joe Bloggs" novalidate/>
+      </label>      
     </div>
 
     <div class="formGroups">
-          <label for="Email">Email:</label>
-          <input id="adminEmail" type="text" placeholder="joeblog2024@edugate no" novalidate/>        
+      <label class="adminLabel">Email:
+          <input id="adminEmail" type="text" placeholder="joeblog2024@edugate no" novalidate/>
+      </label>        
     </div>
 
     <div class="formGroups">
-          <label for="Date of birth">Date of birth:</label>
-          <input id="adminDate" type="text" placeholder="01/01/1987" novalidate/>        
+      <label class="adminLabel">Date of birth:
+          <input id="adminDate" type="text" placeholder="01/01/1987" novalidate/>
+      </label>        
     </div>
 
     <div class="formGroups">
-          <label for="School">School:</label>
-          <input id="adminSchool" type="text" placeholder="The Academy" disabled/>        
+      <label class="adminLabel">School:
+          <input id="adminSchool" type="text" placeholder="The Academy" disabled/>
+      </label>        
     </div>  
     
     <button type="submit" class="primary-btn editAdminBtn">Update</button>
