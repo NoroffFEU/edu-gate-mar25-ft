@@ -24,9 +24,10 @@ function router() {
     const view = route ? route.view : NotFound;
     document.querySelector("#app").innerHTML = view();
 
-    if (route && route.afterRender) {
+    if (route && typeof route.afterRender === "function") {
   route.afterRender();
 }
+
 }
 
 function navigateTo(url) {

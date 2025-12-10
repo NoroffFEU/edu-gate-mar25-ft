@@ -8,7 +8,7 @@ import StudentResults from "../pages/student-results.js";
 import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import AdminDashboard from "../pages/admin-dashboard.js";
-import StudentProfileEdit from "../pages/student-profile-edit.js";
+import StudentProfileEdit, { initStudentProfileEdit } from "../pages/student-profile-edit.js";
 import Registration from "../pages/registration.js";
 
 const routes = [
@@ -21,7 +21,7 @@ const routes = [
   { path: "/admin-dashboard", view: AdminDashboard },
   { path: "/signup", view: Signup, afterRender: initSignupForm },
   { path: "/teacher-dashboard", view: TeacherDashboard },
-  { path: "/student-profile-edit", view: StudentProfileEdit },
+  { path: "/student-profile-edit", view: StudentProfileEdit, afterRender: initStudentProfileEdit },
   { path: "/registration", view: Registration },
 ];
 
