@@ -1,6 +1,9 @@
+import SidebarTeacher from "../components/sidebar-teaching.js";
+
 export default function AddStudent() {
   return /*HTML*/ `
     <div>
+    <div id="sidebar-container">${SidebarTeacher()}</div>
         <div class="breadcrumbs">
             <p>Dashboard</p>
             <p>></p>
