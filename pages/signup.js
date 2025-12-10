@@ -77,7 +77,7 @@ export function initSignupForm() {
       alertContainer.innerHTML = Alert(
         "failed",
         "Failed Sign Up!",
-        "Wrong password or email address!"
+        "Passwords do not match!"
       );
 
       const closeButton = alertContainer.querySelector(".alert-close");
