@@ -2,7 +2,6 @@ import { getStudentById } from '../utils/student-api.js';
 
 export default function StudentResult() {
     const currentStudentId = "stu-101";
-    
     async function loadStudentData() {
         const student = await getStudentById(currentStudentId);
         if (student) {
