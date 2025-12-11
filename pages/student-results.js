@@ -97,29 +97,30 @@ export default function StudentResults() {
 
     <!-- Pagination -->
     <div class="pagination" id="pagination">
-      <button id="page-first" class="pagination-button" aria-label="Go to first page">
-        <img src="./public/icons/chevron-dubble-left.png" alt="Go to first page"/>
-      </button>
+  <button id="page-first" class="pagination-button" aria-label="Go to first page" type="button">
+    <img src="./public/icons/chevron-dubble-left.png" alt="Go to first page"/>
+  </button>
 
-      <button id="page-previous" class="pagination-button" aria-label="Go to previous page">
-        <img src="./public/icons/chevron-single-left.png" alt="Go to previous page"/>
-      </button>
+  <button id="page-previous" class="pagination-button" aria-label="Go to previous page" type="button">
+    <img src="./public/icons/chevron-single-left.png" alt="Go to previous page"/>
+  </button>
 
-      <button id="page-1" class="pagination-button" aria-label="Go to page 1">1</button>
-      <button id="page-2" class="pagination-button" aria-label="Go to page 2">2</button>
-      <button id="page-3" class="pagination-button" aria-label="Go to page 3">...</button>
-      <button id="page-7" class="pagination-button" aria-label="Go to page 3">7</button>
-      <button id="page-8" class="pagination-button" aria-label="Go to page 3">8</button>
-      <button id="page-next" class="pagination-button" aria-label="Go to next page">
-        <img src="./public/icons/chevron-single-right.png" alt="Go to next page"/>
-      </button>
-     
+  
+<button id="page-1" class="pagination-button active-page-button" data-page="1" aria-label="Go to page 1" type="button">1</button>
+<button id="page-2" class="pagination-button" data-page="2" aria-label="Go to page 2" type="button">2</button>
+<button id="page-3-gap" class="pagination-button" aria-label="Gap" type="button" disabled>...</button>
+<button id="page-7" class="pagination-button" data-page="7" aria-label="Go to page 7" type="button">7</button>
+<button id="page-8" class="pagination-button" data-page="8" aria-label="Go to page 8" type="button">8</button>
 
 
-      <button id="page-last" class="pagination-button" aria-label="Go to last page">
-        <img src="./public/icons/chevron-dubble-right.png" alt="Go to last page"/>
-      </button>
-    </div>
+  <button id="page-next" class="pagination-button" aria-label="Go to next page" type="button">
+    <img src="./public/icons/chevron-single-right.png" alt="Go to next page"/>
+  </button>
+
+  <button id="page-last" class="pagination-button" aria-label="Go to last page" type="button">
+    <img src="./public/icons/chevron-dubble-right.png" alt="Go to last page"/>
+  </button>
+</div>
 
     <!-- Back Button -->
     <div class="button-wrapper">
@@ -131,100 +132,31 @@ export default function StudentResults() {
   `;
 }
 
-export function StudentResultsPagination() {
-  // --- Selectors html ---
-  const allRows = Array.from(document.querySelectorAll('#student-results tbody tr'));
-  const firstButton = document.getElementById('page-first');
-  const prevButton  = document.getElementById('page-previous');
-  const nextButton  = document.getElementById('page-next');
-  const lastButton  = document.getElementById('page-last');
-  const paginationRoot = document.getElementById('pagination');
 
-  // --- Config + state ---
-  const rowsPerPage = 5;         // Change if you want
-  let currentPage = 1;
-  const totalPages = Math.max(1, Math.ceil(allRows.length / rowsPerPage));
+ export function selectPageNumber() {
+  const pageButtons = document.querySelectorAll("div#pagination button");
+  // console.log("pageButtons", pageButtons)
 
-  // --- Core render: show the slice that belongs to a page ---
-  function showPage(page) {
-    // clamp to valid page range
-    currentPage = Math.min(Math.max(1, page), totalPages);
-    const start = (currentPage - 1) * rowsPerPage;
-    const end   = start + rowsPerPage;
+  pageButtons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      const clickedButton = event.target;
 
-    allRows.forEach((row, i) => {
-      row.style.display = (i >= start && i < end) ? '' : 'none';
-    });
-
-    updateButtons();
-    highlightActiveNumber();
-  }
-
-  // Enable/disable chevrons at boundaries
-  function updateButtons() {
-    const atFirst = currentPage === 1;
-    const atLast  = currentPage === totalPages;
-
-    if (firstButton) firstButton.disabled = atFirst;
-    if (prevButton)  prevButton.disabled  = atFirst;
-    if (nextButton)  nextButton.disabled  = atLast;
-    if (lastButton)  lastButton.disabled  = atLast;
-  }
-
-  // Highlight the numeric buttons and set aria-current for the active page.
-  function highlightActiveNumber() {
-    if (!paginationRoot) return;
-
-    // find only numeric buttons (exclude chevrons and "..." by parsing int)
-    const pageButtons = Array.from(paginationRoot.querySelectorAll('.pagination-button'));
-
-    pageButtons.forEach(btn => {
-      // try to parse integer from button text
-      const text = btn.textContent.trim();
-      const n = parseInt(text, 10);
-
-      // If parsed number is finite and equals a valid page, treat it as a numeric page button
-      if (Number.isFinite(n)) {
-        // disable numeric button if it's outside range (optional)
-        btn.disabled = (n < 1 || n > totalPages);
-
-        // toggle active styling
-        if (n === currentPage) {
-          btn.classList.add('active');
-          btn.setAttribute('aria-current', 'page');
-        } else {
-          btn.classList.remove('active');
-          btn.removeAttribute('aria-current');
-        }
-      } else {
-        // for non-numeric buttons (chevrons or '...') remove aria-current and active
-        btn.classList.remove('active');
-        btn.removeAttribute('aria-current');
+      const page = clickedButton.dataset.page;
+      if (page) {
+        // clear styles off the other buttons
+        pageButtons.forEach((button) =>
+          button.classList.remove("active-page-button")
+        );
+        clickedButton.classList.add("active-page-button");
       }
     });
-  }
-
-  // --- Event handlers ---
-  if (firstButton) firstButton.addEventListener('click', () => showPage(1));
-  if (prevButton)  prevButton.addEventListener('click', () => showPage(currentPage - 1));
-  if (nextButton)  nextButton.addEventListener('click', () => showPage(currentPage + 1));
-  if (lastButton)  lastButton.addEventListener('click', () => showPage(totalPages));
-
-  // Delegate clicks for numeric buttons (works for 1,2,7,8; ignores "..." non-numeric)
-  if (paginationRoot) {
-    paginationRoot.addEventListener('click', (event) => {
-      const btn = event.target.closest('button.pagination-button');
-      if (!btn) return;
-
-      const text = btn.textContent.trim();
-      const n = parseInt(text, 10);
-
-      if (Number.isFinite(n) && n >= 1 && n <= totalPages) {
-        showPage(n);
-      }
-    });
-  }
-
-  // --- Initial render ---
-  showPage(1);
+  });
 }
+
+// function callbackExample(someFunction) {
+//   someFunction();
+// }
+
+// callbackExample(function () {
+//   console.log("HELLO");
+// });
