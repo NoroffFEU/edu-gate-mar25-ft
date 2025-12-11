@@ -10,6 +10,7 @@ import TeacherDashboard from "../pages/teacher-dashboard.js";
 import AdminDashboard from "../pages/admin-dashboard.js";
 import StudentProfileEdit, { initStudentProfileEdit } from "../pages/student-profile-edit.js";
 import Registration from "../pages/registration.js";
+import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
 
 const routes = [
   { path: "/", view: Home },
@@ -23,6 +24,8 @@ const routes = [
   { path: "/teacher-dashboard", view: TeacherDashboard },
   { path: "/student-profile-edit", view: StudentProfileEdit, afterRender: initStudentProfileEdit },
   { path: "/registration", view: Registration },
+  { path: "/admin-edit", view: AdminEdit, afterRender: initAdminProfileEdit },
 ];
+
 
 export default routes;
