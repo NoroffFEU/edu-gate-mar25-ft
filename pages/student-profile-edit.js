@@ -31,7 +31,7 @@ export default function StudentProfileEdit() {
                 id="adminAvatarPreview"
                 src="/public/icons/user-circle-edit-mobile.png"
                 alt="User avatar"
-                class="avatar-circle"
+                class="avatar-circle-img"
               />
             </button>
 
@@ -178,9 +178,3 @@ export function initStudentProfileEdit() {
   console.log("Profile updated");
  });
 }
-
-
-//<a href="/student-profile-edit" data-link>Edit profile</a>
-
-/*<!-- TEMP: link to profile edit (for development only) -->
-        <a href="/student-profile-edit" data-link>Edit profile</a>*/
