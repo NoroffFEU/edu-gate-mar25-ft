@@ -97,29 +97,25 @@ export default function StudentResults() {
 
     <!-- Pagination -->
     <div class="pagination" id="pagination">
-  <button id="page-first" class="pagination-button" aria-label="Go to first page" type="button">
-    <img src="./public/icons/chevron-dubble-left.png" alt="Go to first page"/>
-  </button>
+  <button id="page-first" class="pagination-button" data-page="page-first"  aria-label="Go to first page" type="button">
+<img src="./public/icons/chevron-single-left.png" alt="Last Page Icon" /> </button>
 
-  <button id="page-previous" class="pagination-button" aria-label="Go to previous page" type="button">
-    <img src="./public/icons/chevron-single-left.png" alt="Go to previous page"/>
-  </button>
+ </button>
+
+  <button id="page-previous" class="pagination-button" data-page="page-previous" aria-label="Go to previous page" type="button">
+Previous </button>
 
   
 <button id="page-1" class="pagination-button active-page-button" data-page="1" aria-label="Go to page 1" type="button">1</button>
 <button id="page-2" class="pagination-button" data-page="2" aria-label="Go to page 2" type="button">2</button>
-<button id="page-3-gap" class="pagination-button" aria-label="Gap" type="button" disabled>...</button>
+<button id="page-3-gap" class="pagination-button" >...</button>
 <button id="page-7" class="pagination-button" data-page="7" aria-label="Go to page 7" type="button">7</button>
 <button id="page-8" class="pagination-button" data-page="8" aria-label="Go to page 8" type="button">8</button>
 
+<button id="page-next" class="pagination-button" data-page="page-next" aria-label="Go to next page" type="button"> Next </button>
 
-  <button id="page-next" class="pagination-button" aria-label="Go to next page" type="button">
-    <img src="./public/icons/chevron-single-right.png" alt="Go to next page"/>
-  </button>
-
-  <button id="page-last" class="pagination-button" aria-label="Go to last page" type="button">
-    <img src="./public/icons/chevron-dubble-right.png" alt="Go to last page"/>
-  </button>
+<button id="page-last" class="pagination-button" data-page="page-last" aria-label="Go to last page" type="button">
+<img src="./public/icons/chevron-single-right.png" alt="Last Page Icon" /> </button>
 </div>
 
     <!-- Back Button -->
@@ -133,9 +129,9 @@ export default function StudentResults() {
 }
 
 
- export function selectPageNumber() {
+export function selectPageNumber() {
   const pageButtons = document.querySelectorAll("div#pagination button");
-  // console.log("pageButtons", pageButtons)
+  console.log("pageButtons", pageButtons)
 
   pageButtons.forEach(function (button) {
     button.addEventListener("click", function (event) {
@@ -148,10 +144,20 @@ export default function StudentResults() {
           button.classList.remove("active-page-button")
         );
         clickedButton.classList.add("active-page-button");
+
+
+        //console.log("Current Page:", currentPage);
+        // Here you would typically fetch and display data for the selected page
+
+
+
+
       }
+
     });
-  });
-}
+
+
+  }
 
 // function callbackExample(someFunction) {
 //   someFunction();

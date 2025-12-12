@@ -97,6 +97,22 @@ footer img {
   display: none;
 }
 
+@media(max-width: 767px) {
+  .mobile-footer {
+    display: block;
+  }
+
+  .desktop-footer {
+    display: none;
+  }
+}
+
+.mobile-footer img {
+  width: 100%;
+  max-width: 340px;
+  height: 220px;
+}
+
 @media (min-width: 425px) {
   .mobile-footer {
     display: none;
@@ -106,6 +122,8 @@ footer img {
     display: block;
   }
 }
+
+
 
 @media (max-width: 424px) {
   footer img {
