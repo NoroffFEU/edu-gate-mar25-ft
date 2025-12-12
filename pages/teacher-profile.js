@@ -43,7 +43,10 @@ export default function TeacherProfilePage() {
     <div class="profile-card__wrapper">
       <h2>Profile</h2>
 
-      <div class="profile-avatar">JB</div>
+      <div class="profile-avatar">
+      <img src="./public/img/Student initials mobile.png" alt="Profile initials" class="avatar-mobile">
+      <img src="./public/img/Student initials.png" alt="Profile initials" class="avatar-desktop">
+      </div>
 
       <div class="profile-field">
         <span class="profile-label">Name:</span>
