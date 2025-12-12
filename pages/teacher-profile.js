@@ -1,3 +1,31 @@
+async function getTeachers() {
+  const response = await fetch("./Data/Teachers.json");
+  if (!response.ok) {
+    throw new Error("Failed to fetch teacher");
+  }
+  try {
+    const data = await response.json();
+    return data.users;
+  } catch (error) {
+    console.error("Error fetching results:", error);
+    return [];
+  }
+}
+
+async function getSchools() {
+  const response = await fetch("./Data/Schools.json");
+  if (!response.ok) {
+    throw new Error("Failed to fetch school");
+  }
+  try {
+    const data = await response.json();
+    return data.schools;
+  } catch (error) {
+    console.error("Error fetching results:", error);
+    return [];
+  }
+}
+
 export default function TeacherProfilePage() {
   return /*HTML*/ `
   <section class="profile-card">
