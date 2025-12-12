@@ -1,5 +1,5 @@
 import SidebarTeacher from "../components/sidebar-teaching.js";
-import * as XLSX from "xlsx";
+import * as XLSX from "../xlsx/xlsx.js";
 
 export default function AddStudent() {
   setTimeout(() => {
