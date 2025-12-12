@@ -4,6 +4,7 @@ export default function TeacherDashboard() {
       <div main-content>
         <div class="user-info">
           <h1>Dashboard</h1>
+          <a href="/teacher-profile" data-link>
           <img
             src="../public/img/Student initials.png"
             alt="student initials icon"
@@ -15,6 +16,7 @@ export default function TeacherDashboard() {
             class="mobile-img"
           />
           <h2>Joe Bloggs</h2>
+          </a>
           <p>Teacher at Edugate school</p>
         </div>
         <div class="options">
