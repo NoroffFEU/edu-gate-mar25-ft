@@ -9,7 +9,9 @@ import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
-import TeacherProfilePage from "../pages/teacher-profile.js";
+import TeacherProfilePage, {
+  initTeacherProfile,
+} from "../pages/teacher-profile.js";
 
 const routes = [
   { path: "/", view: Home },
@@ -22,7 +24,11 @@ const routes = [
   { path: "/teacher-dashboard", view: TeacherDashboard },
   { path: "/registration", view: Registration },
   { path: "/admin-edit", view: AdminEdit, afterRender: initAdminProfileEdit },
-  { path: "/teacher-profile", view: TeacherProfilePage },
+  {
+    path: "/teacher-profile",
+    view: TeacherProfilePage,
+    afterRender: initTeacherProfile,
+  },
 ];
 
 export default routes;

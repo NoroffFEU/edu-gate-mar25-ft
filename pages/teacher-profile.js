@@ -1,3 +1,4 @@
+/* fetch teachers from JSON file */
 async function getTeachers() {
   const response = await fetch("./Data/Teachers.json");
   if (!response.ok) {
@@ -12,6 +13,7 @@ async function getTeachers() {
   }
 }
 
+/* fetch schools from JSON file */
 async function getSchools() {
   const response = await fetch("./Data/Schools.json");
   if (!response.ok) {
@@ -24,6 +26,15 @@ async function getSchools() {
     console.error("Error fetching results:", error);
     return [];
   }
+}
+
+export async function initTeacherProfile() {
+  const teachers = await getTeachers();
+  const schools = await getSchools();
+
+  // temporary, to check that it works
+  console.log("Teachers from JSON:", teachers);
+  console.log("Schools from JSON:", schools);
 }
 
 export default function TeacherProfilePage() {
