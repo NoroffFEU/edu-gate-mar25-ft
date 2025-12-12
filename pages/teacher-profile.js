@@ -41,7 +41,7 @@ export default function TeacherProfilePage() {
   return /*HTML*/ `
   <section class="profile-card">
     <div class="profile-card__wrapper">
-      <h2>Profile</h2>
+      <h2 class="profile-title">Profile</h2>
 
       <div class="profile-avatar">
       <img src="./public/img/Student initials mobile.png" alt="Profile initials" class="avatar-mobile">
@@ -78,7 +78,7 @@ export default function TeacherProfilePage() {
         <span class="profile-value"></span>
       </div>
 
-      <button class="secondary-btn">Edit Profile</button>
+      <button class="secondary-btn edit-profile-btn">Edit Profile</button>
     </div>
   </section>
    `;

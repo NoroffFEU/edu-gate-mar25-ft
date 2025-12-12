@@ -1,0 +1,45 @@
+.profile-card {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-16px);
+}
+
+.profile-card__wrapper {
+  max-width: 612px;
+  padding: var(--padding-32px);
+  border: 1px solid var(--color-neutral-medium-gray);
+}
+
+.profile-avatar,
+.profile-title,
+.avatar-mobile,
+.avatar-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-mobile {
+  display: block;
+}
+
+.avatar-desktop {
+  display: none;
+}
+
+.edit-profile-btn {
+  height: 44px;
+  min-width: 195px;
+  margin-top: var(--padding-16px);
+  font-weight: 600;
+  font-size: var(--paragraph);
+}
+
+@media (min-width: 768px) {
+  .avatar-mobile {
+    display: none;
+  }
+  .avatar-desktop {
+    display: block;
+  }
+}
