@@ -68,10 +68,10 @@ export default function StudentResult() {
                   <tr class="result-row-secondary">
                     <td>2019</td>
                     <td class="align-right">3</td>
-                    <td>Mathematics</td>
-                    <td>M1</td>
-                    <td>90/120</td>
-                    <td>B</td>
+                    <td>Physics</td>
+                    <td>P3</td>
+                    <td>102/120</td>
+                    <td>A</td>
                     <td class="result-actions"><p class="edit">Edit</p><button>Delete</button></td>
                   </tr>
                 </tbody>
@@ -79,9 +79,9 @@ export default function StudentResult() {
                   <tr class="result-row">
                     <td>2019</td>
                     <td class="align-right">3</td>
-                    <td>Mathematics</td>
-                    <td>M1</td>
-                    <td>90/120</td>
+                    <td>English</td>
+                    <td>E2</td>
+                    <td>80/110</td>
                     <td>B</td>
                     <td class="result-actions"><p class="edit">Edit</p><button>Delete</button></td>
                   </tr>
@@ -89,10 +89,10 @@ export default function StudentResult() {
                 <tbody id="results-tbody">
                   <tr class="result-row-secondary">
                     <td>2019</td>
-                    <td class="align-right">3</td>
-                    <td>Mathematics</td>
-                    <td>M1</td>
-                    <td>90/120</td>
+                    <td class="align-right">2</td>
+                    <td>English</td>
+                    <td>E1</td>
+                    <td>95/130</td>
                     <td>B</td>
                     <td class="result-actions"><p class="edit">Edit</p><button>Delete</button></td>
                   </tr>
@@ -101,10 +101,32 @@ export default function StudentResult() {
                   <tr class="result-row">
                     <td>2019</td>
                     <td class="align-right">3</td>
-                    <td>Mathematics</td>
-                    <td>M1</td>
-                    <td>90/120</td>
-                    <td>B</td>
+                    <td>Biology</td>
+                    <td>B2</td>
+                    <td>73/120</td>
+                    <td>C</td>
+                    <td class="result-actions"><p class="edit">Edit</p><button>Delete</button></td>
+                  </tr>
+                </tbody>
+                <tbody id="results-tbody">
+                  <tr class="result-row-secondary">
+                    <td>2019</td>
+                    <td class="align-right">2</td>
+                    <td>Physics</td>
+                    <td>P2</td>
+                    <td>110/120</td>
+                    <td>A</td>
+                    <td class="result-actions"><p class="edit">Edit</p><button>Delete</button></td>
+                  </tr>
+                </tbody>
+                <tbody id="results-tbody">
+                  <tr class="result-row">
+                    <td>2019</td>
+                    <td class="align-right">1</td>
+                    <td>History</td>
+                    <td>H2</td>
+                    <td>90/110</td>
+                    <td>A</td>
                     <td class="result-actions"><p class="edit">Edit</p><button>Delete</button></td>
                   </tr>
                 </tbody>
