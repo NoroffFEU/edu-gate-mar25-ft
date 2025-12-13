@@ -16,6 +16,6 @@ export default function Home() {
         <a href="#" class="btn btn--secondary">Log In</a>
       </div>
     </section>  
-
+  </div>
     `;
 }
