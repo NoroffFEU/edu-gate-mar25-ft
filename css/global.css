@@ -2,12 +2,12 @@ html,
 body {
   height: 100%;
   margin: 0;
+  background-color: var(--color-neutral-gray) !important;
   padding: 0;
 }
 
 /* header */
 header {
-	margin-bottom: 25px;
 	border: var(--color-neutral-medium-gray);
 	border-style: inset;
 	border-width: 0.5px;
