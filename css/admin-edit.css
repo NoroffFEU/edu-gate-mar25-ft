@@ -117,6 +117,14 @@
   font-size: 26px;
  }
 
+ #adminSchool {
+  background-color: #e0e0e0;
+  color: var(--color-neutral-medium-gray);
+  box-shadow: none;
+  cursor: not-allowed;
+  border: 1px solid #cccccc;
+ }
+
  #adminEditForm {
   max-width: 400px;
  }

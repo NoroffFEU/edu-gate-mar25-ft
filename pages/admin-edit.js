@@ -45,7 +45,7 @@ export default function AdminEdit() {
 
     <div class="formGroups">
       <label class="adminLabel">School:
-          <input id="adminSchool" type="text" placeholder="The Academy" disabled/>
+          <input id="adminSchool" type="text" placeholder="The Academy" readonly/>
       </label>        
     </div>  
     
