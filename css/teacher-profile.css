@@ -1,3 +1,10 @@
+/* Include padding and border inside width calculations */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* layout containers */
 .profile-card {
   display: flex;
@@ -8,15 +15,22 @@
 .profile-card__wrapper {
   max-width: 612px;
   width: 100%;
-  padding: var(--padding-32px);
+  padding: var(--padding-16px);
   border: 3px solid #cccccc;
+  margin: var(--padding-48px) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: var(--padding-48px) 0;
 }
 
-/* profile fields */
+/* profile fields wrapper */
+.profile-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* individual rows */
 .profile-field {
   display: flex;
   font-size: var(--small-txt);
@@ -24,7 +38,7 @@
 }
 
 .profile-label {
-  min-width: 140px;
+  min-width: 130px;
   font-weight: 700;
 }
 
@@ -36,18 +50,13 @@
 .profile-title {
   font-size: var(--heading-3);
   font-weight: 600;
-}
-
-.profile-avatar,
-.profile-title,
-.avatar-mobile,
-.avatar-desktop {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .profile-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: var(--padding-32px);
 }
 
@@ -71,7 +80,12 @@
 
 /* responsive */
 @media (min-width: 768px) {
-  /* layout containers */
+  /* layout */
+  .profile-card__wrapper {
+    padding: var(--padding-32px);
+  }
+
+  /* avatar */
   .avatar-mobile {
     display: none;
   }
@@ -79,7 +93,7 @@
     display: block;
   }
 
-  /* avatar and title */
+  /* title */
   .profile-title {
     font-size: var(--heading-1);
     font-weight: 700;
@@ -94,7 +108,7 @@
     min-width: 180px;
   }
 
-  /* edit button overrides */
+  /* edit button */
   .edit-profile-btn {
     height: 59px;
     min-width: 190px;
