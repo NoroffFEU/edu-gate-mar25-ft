@@ -28,13 +28,21 @@ async function getSchools() {
   }
 }
 
+/* Load first teacher and first school into the profile fields */
 export async function initTeacherProfile() {
   const teachers = await getTeachers();
   const schools = await getSchools();
 
-  // temporary, to check that it works
-  console.log("Teachers from JSON:", teachers);
-  console.log("Schools from JSON:", schools);
+  const teacher = teachers[0];
+  const school = schools[0];
+  const values = document.querySelectorAll(".profile-card .profile-value");
+
+  values[0].textContent = teacher.firstName + " " + teacher.lastName;
+  values[1].textContent = "joeblog2020@edugate.no";
+  values[2].textContent = "19/11/1988";
+  values[3].textContent = teacher.id;
+  values[4].textContent = "Teacher";
+  values[5].textContent = school.name;
 }
 
 export default function TeacherProfilePage() {
@@ -50,32 +58,32 @@ export default function TeacherProfilePage() {
 
       <div class="profile-field">
         <span class="profile-label">Name:</span>
-        <span class="profile-value">Lorem ipsum</span>
+        <span class="profile-value"></span>
       </div>
 
       <div class="profile-field">
         <span class="profile-label">Email:</span>
-        <span class="profile-value">Lorem ipsum</span>
+        <span class="profile-value"></span>
       </div>
 
       <div class="profile-field">
         <span class="profile-label">Date of birth:</span>
-        <span class="profile-value">Lorem ipsum</span>
+        <span class="profile-value"></span>
       </div>
 
       <div class="profile-field">
         <span class="profile-label">ID:</span>
-        <span class="profile-value">Lorem ipsum</span>
+        <span class="profile-value"></span>
       </div>
 
       <div class="profile-field">
         <span class="profile-label">Position:</span>
-        <span class="profile-value">Lorem ipsum</span>
+        <span class="profile-value"></span>
       </div>
 
       <div class="profile-field">
         <span class="profile-label">School:</span>
-        <span class="profile-value">Lorem ipsum</span>
+        <span class="profile-value"></span>
       </div>
 
       <button class="secondary-btn edit-profile-btn">Edit Profile</button>
