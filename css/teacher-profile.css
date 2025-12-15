@@ -46,6 +46,14 @@
   flex: 1;
 }
 
+.short-label {
+  display: inline;
+}
+
+.full-label {
+  display: none;
+}
+
 /* avatar and title */
 .profile-title {
   font-size: var(--heading-3);
@@ -106,6 +114,14 @@
 
   .profile-label {
     min-width: 180px;
+  }
+
+  .short-label {
+    display: none;
+  }
+
+  .full-label {
+    display: inline;
   }
 
   /* edit button */

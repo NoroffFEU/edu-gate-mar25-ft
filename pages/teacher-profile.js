@@ -35,7 +35,7 @@ export async function initTeacherProfile() {
 
   const teacher = teachers[0];
   const school = schools[0];
-  const values = document.querySelectorAll(".profile-card .profile-value");
+  const values = document.querySelectorAll(".profile-field .profile-value");
 
   values[0].textContent = teacher.firstName + " " + teacher.lastName;
   values[1].textContent = "joeblog2020@edugate.no";
@@ -56,35 +56,38 @@ export default function TeacherProfilePage() {
       <img src="./public/img/Student initials.png" alt="Profile initials" class="avatar-desktop">
       </div>
 
-      <div class="profile-field">
-        <span class="profile-label">Name:</span>
-        <span class="profile-value"></span>
-      </div>
+      <div class="profile-fields">
+        <div class="profile-field">
+          <span class="profile-label">Name:</span>
+          <span class="profile-value"></span>
+        </div>
 
-      <div class="profile-field">
-        <span class="profile-label">Email:</span>
-        <span class="profile-value"></span>
-      </div>
+        <div class="profile-field">
+          <span class="profile-label">Email:</span>
+          <span class="profile-value"></span>
+        </div>
 
-      <div class="profile-field">
-        <span class="profile-label">Date of birth:</span>
-        <span class="profile-value"></span>
-      </div>
+        <div class="profile-field">
+          <span class="profile-label full-label">Date of birth:</span>
+          <span class="profile-label short-label">DOB:</span>
+          <span class="profile-value"></span>
+        </div>
 
-      <div class="profile-field">
-        <span class="profile-label">ID:</span>
-        <span class="profile-value"></span>
-      </div>
+        <div class="profile-field">
+          <span class="profile-label">ID:</span>
+          <span class="profile-value"></span>
+        </div>
 
-      <div class="profile-field">
-        <span class="profile-label">Position:</span>
-        <span class="profile-value"></span>
-      </div>
+        <div class="profile-field">
+          <span class="profile-label">Position:</span>
+          <span class="profile-value"></span>
+        </div>
 
-      <div class="profile-field">
-        <span class="profile-label">School:</span>
-        <span class="profile-value"></span>
-      </div>
+        <div class="profile-field">
+          <span class="profile-label">School:</span>
+          <span class="profile-value"></span>
+        </div>
+      </div>  
 
       <button class="secondary-btn edit-profile-btn">Edit Profile</button>
     </div>
