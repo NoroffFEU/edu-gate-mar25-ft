@@ -3,8 +3,6 @@ import Home from '../pages/home.js'
 import About from '../pages/about.js'
 import Login from '../pages/login.js'
 import Contact from '../pages/contact.js'
-import StudentDashboard from '../pages/student-dashboard.js'
-import StudentResults from "../pages/student-results.js";
 import YourResults, { initYourResults } from '../pages/your-results.js'
 import AdminDashboard from "../pages/admin-dashboard.js";
 import Signup, { initSignupForm } from "../pages/signup.js";
