@@ -47,6 +47,13 @@ export async function initTeacherProfile() {
 
 export default function TeacherProfilePage() {
   return /*HTML*/ `
+<div class="teacher-page-wrapper">
+  <nav class="teacher-breadcrumb">
+        <a href="#" class="breadcrumb-link">Dashboard</a>
+        <span class="breadcrumb-arrow">></span>
+        <a href="#" class="breadcrumb-link breadcrumb-link__active">Profile</a>
+  </nav>
+
   <section class="profile-card">
     <div class="profile-card__wrapper">
       <h2 class="profile-title">Profile</h2>
@@ -90,6 +97,7 @@ export default function TeacherProfilePage() {
       </div>  
 
       <button class="secondary-btn edit-profile-btn">Edit Profile</button>
+    </div>  
     </div>
   </section>
    `;

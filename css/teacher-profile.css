@@ -5,7 +5,34 @@
   box-sizing: border-box;
 }
 
+/* breaccrumb*/
+.teacher-breadcrumb {
+  max-width: 1280px;
+  width: 100%;
+  color: var(--color-neutral-medium-gray);
+  display: flex;
+  gap: var(--padding-16px);
+  padding: var(--padding-16px) var(--padding-8px);
+}
+
+.breadcrumb-link {
+  font-size: var(--paragraph);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.breadcrumb-link__active {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
 /* layout containers */
+.teacher-page-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .profile-card {
   display: flex;
   justify-content: center;
@@ -17,7 +44,7 @@
   width: 100%;
   padding: var(--padding-16px);
   border: 3px solid #cccccc;
-  margin: var(--padding-48px) 0;
+  margin: var(--padding-24px) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +65,7 @@
 }
 
 .profile-label {
-  min-width: 130px;
+  min-width: 110px;
   font-weight: 700;
 }
 
@@ -109,7 +136,7 @@
 
   /* profile fields */
   .profile-field {
-    font-size: var(--padding-16px);
+    font-size: var(--paragraph);
   }
 
   .profile-label {
