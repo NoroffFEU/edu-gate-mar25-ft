@@ -1,18 +1,4 @@
-.profile-field {
-  display: flex;
-  font-size: var(--small-txt);
-  margin-bottom: var(--padding-16px);
-}
-
-.profile-label {
-  min-width: 140px;
-  font-weight: 700;
-}
-
-.profile-value {
-  flex: 1;
-}
-
+/* layout containers */
 .profile-card {
   display: flex;
   justify-content: center;
@@ -29,6 +15,23 @@
   align-items: center;
 }
 
+/* profile fields */
+.profile-field {
+  display: flex;
+  font-size: var(--small-txt);
+  margin-bottom: var(--padding-16px);
+}
+
+.profile-label {
+  min-width: 140px;
+  font-weight: 700;
+}
+
+.profile-value {
+  flex: 1;
+}
+
+/* avatar and title */
 .profile-avatar,
 .profile-title,
 .avatar-mobile,
@@ -38,15 +41,20 @@
   align-items: center;
 }
 
+.profile-avatar {
+  padding-bottom: var(--padding-32px);
+}
+
+/* avatar images */
 .avatar-mobile {
   display: block;
-  padding-bottom: var(--padding-32px);
 }
 
 .avatar-desktop {
   display: none;
 }
 
+/* edit button overrides */
 .edit-profile-btn {
   height: 44px;
   min-width: 195px;
@@ -55,6 +63,7 @@
   font-size: var(--paragraph);
 }
 
+/* responsive */
 @media (min-width: 768px) {
   .avatar-mobile {
     display: none;
