@@ -1,38 +1,38 @@
 html,
 body {
-  height: 100%;
-  margin: 0;
-  background-color: var(--color-neutral-gray) !important;
-  padding: 0;
+ height: 100%;
+ margin: 0;
+ background-color: var(--color-neutral-gray) !important;
+ padding: 0;
 }
 
 /* header */
 header {
-	border: var(--color-neutral-medium-gray);
-	border-style: inset;
-	border-width: 0.5px;
-	height: 70px;
-	
-	position: sticky;
-	top: 0;
-	z-index: 9; 
-	background: var(--color-neutral-gray);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+ border: var(--color-neutral-medium-gray);
+ border-style: inset;
+ border-width: 0.5px;
+ height: 70px;
+
+ position: sticky;
+ top: 0;
+ z-index: 9;
+ background: var(--color-neutral-gray);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 
 .headerLogo {
-	width: 80px;
-	height: 80px;
+ width: 80px;
+ height: 80px;
 }
 
 .hamburgerMenu {
-	padding-right: 24px;
+ padding-right: 24px;
 }
 
 header ul {
-	display: none;
+ display: none;
 }
 /* /header */
 
@@ -46,6 +46,7 @@ header ul {
  border-radius: 6px;
  padding: 10px 20px;
  cursor: pointer;
+ text-decoration: none;
 }
 
 .primary-btn:hover {
@@ -60,6 +61,7 @@ header ul {
  border-radius: 6px;
  padding: 10px 20px;
  cursor: pointer;
+ text-decoration: none;
 }
 
 .secondary-btn:hover {
@@ -82,141 +84,132 @@ header ul {
 
 /*/*buttons*/
 
-
 /* footer */
 
-
-
-
 footer {
-  display: flex;
-  flex-direction: row;
+ display: flex;
+ flex-direction: row;
 }
 
 footer img {
-  height: 250px;
-  min-width: 350px;
-  margin: 0 auto;
+ height: 250px;
+ min-width: 350px;
+ margin: 0 auto;
 }
 
 .desktop-footer {
-  display: none;
+ display: none;
 }
 
 @media (min-width: 425px) {
-  .mobile-footer {
-    display: none;
-  }
+ .mobile-footer {
+  display: none;
+ }
 
-  .desktop-footer {
-    display: block;
-  }
+ .desktop-footer {
+  display: block;
+ }
 }
 
 @media (max-width: 424px) {
-	footer img {
-		width: 100%;
-		min-width: 1px;
-	}
+ footer img {
+  width: 100%;
+  min-width: 1px;
+ }
 }
 
-
 @media (min-width: 768px) {
+ /* header */
+ header {
+  height: 125px;
+ }
 
-	/* header */ 
-	 header {
-		 height: 125px;
-	 }
- 
-	 .headerLogo {
-		 width: 120px;
-		 height: 120px;
-	 }
- 
-	 .UserLogo {
-		 width: 50px;
-		 height: 50px;
-	 }
- 
-	 header ul {
-		 display: flex;
-		 align-items: center;
-		 justify-content: space-between;
-		 list-style: none;
-		 padding-right: 12px;
-	 }
-	 
-	 li a {
-		 text-decoration: none;
-		 color: black;
-		 padding: 10px 32px;
-		 font-size: 20px;
-		 font-weight: 600;
-		 display: block;
-		 position: relative;
-		 overflow: hidden;
-	 }
- 
-	 li a::after {
-		 content: '';
-		 position: absolute;
-		 width: 0;
-		 height: 3px;
-		 bottom: 0;
-		 left: 0;
-		 background-color: var(--primary-color);
-		 transition: width 0.3s ease;
-	 }
- 
-	 li a:hover::after {
-		 width: 100%;
-		 align-items: center;
-	 }
- 
-	 li a.removeHover::after {
-		 display: none;
-	 }
- 
-	 .active {
-		 padding-bottom: 10px;
-		 border-bottom: var(--primary-color);
-		 }
- 
-	 li a.active::after {
-		 width: 100%;
-	 }
- 
- 
-	 .hamburgerMenu {
-		 display: none;
-	 }
- 
-	 .firstHeader {
-		margin-right: 48px;
-	 }
-	 /* /header */
+ .headerLogo {
+  width: 120px;
+  height: 120px;
  }
- 
- @media (min-width: 1024px) {
-	
-	 /* Header */ 
-	 header {
-		 height: 176px;
-	 }
- 
-	 .headerLogo {
-		 width: 160px;
-		 height: 160px;
-	 }
- 
-	 .UserLogo {
-		 width: 64px;
-		 height: 64px;
-	 }
- 
-	 li a {
-		 padding: 10px 60px;
-	 }
-	 /* /header */
- 
+
+ .UserLogo {
+  width: 50px;
+  height: 50px;
  }
+
+ header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 12px;
+ }
+
+ li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 32px;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  position: relative;
+  overflow: hidden;
+ }
+
+ li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+ }
+
+ li a:hover::after {
+  width: 100%;
+  align-items: center;
+ }
+
+ li a.removeHover::after {
+  display: none;
+ }
+
+ .active {
+  padding-bottom: 10px;
+  border-bottom: var(--primary-color);
+ }
+
+ li a.active::after {
+  width: 100%;
+ }
+
+ .hamburgerMenu {
+  display: none;
+ }
+
+ .firstHeader {
+  margin-right: 48px;
+ }
+ /* /header */
+}
+
+@media (min-width: 1024px) {
+ /* Header */
+ header {
+  height: 176px;
+ }
+
+ .headerLogo {
+  width: 160px;
+  height: 160px;
+ }
+
+ .UserLogo {
+  width: 64px;
+  height: 64px;
+ }
+
+ li a {
+  padding: 10px 60px;
+ }
+ /* /header */
+}
