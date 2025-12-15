@@ -1,5 +1,5 @@
 export default function Home() {
-  return /*HTML*/ `
+ return /*HTML*/ `
     <section class="home__container">
 
       <div class="home__media">
@@ -12,8 +12,8 @@ export default function Home() {
       </div>
 
       <div class="home__actions">
-        <a href="/signup" data-link class="btn">Sign Up</a>
-        <a href="#" class="btn btn--secondary">Log In</a>
+        <a href="/signup" data-link class="primary-btn">Sign Up</a>
+        <a href="#" class="secondary-btn">Log In</a>
       </div>
     </section>  
   </div>
