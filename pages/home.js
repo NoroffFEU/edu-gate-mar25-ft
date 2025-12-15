@@ -19,6 +19,6 @@ export default function Home() {
         <a href="/teacher-dashboard" data-link>Teacher dashboard</a>
       </div>
     </section>  
-
+  </div>
     `;
 }
