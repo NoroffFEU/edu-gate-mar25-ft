@@ -40,8 +40,9 @@ export default function Registration() {
             placeholder="0000" required />
           </div>
           </div>
-
-          <button type="submit" class="primary-btn regBtn">Submit</button>
+          <div class="reg-div">
+          <button type="submit" class="btn btn--primary">Submit</button>
+          </div>
         </form>
       </div>
   `;

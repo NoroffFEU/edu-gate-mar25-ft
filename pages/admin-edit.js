@@ -49,7 +49,9 @@ export default function AdminEdit() {
       </label>        
     </div>  
     
-    <button type="submit" class="primary-btn editAdminBtn">Update</button>
+    <div class="admin-div">
+    <button type="submit" class="btn btn--primary">Update</button>
+    </div>
     </form>    
       </div>
     </div>
