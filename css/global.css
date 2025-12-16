@@ -1,219 +1,252 @@
 html,
 body {
- height: 100%;
- margin: 0;
- background-color: var(--color-neutral-gray) !important;
- padding: 0;
+  height: 100%;
+  margin: 0;
+  background-color: var(--color-neutral-gray) !important;
+  padding: 0;
 }
 
 /* header */
 header {
- border: var(--color-neutral-medium-gray);
- border-style: inset;
- border-width: 0.5px;
- height: 70px;
+  border: var(--color-neutral-medium-gray);
+  border-style: inset;
+  border-width: 0.5px;
+  height: 70px;
 
- position: sticky;
- top: 0;
- z-index: 9;
- background: var(--color-neutral-gray);
- display: flex;
- justify-content: space-between;
- align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background: var(--color-neutral-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .headerLogo {
- width: 80px;
- height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .hamburgerMenu {
- padding-right: 24px;
+  padding-right: 24px;
 }
 
 header ul {
- display: none;
+  display: none;
 }
 /* /header */
 
 /* buttons */
 
 .btn {
- font-size: 16px;
- font-weight: 600;
- border-radius: 6px;
- padding: 10px 20px;
- cursor: pointer;
- text-decoration: none;
- white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 /* Modifiers */
 
 .btn--primary {
- background-color: var(--primary-color);
- border: 2px solid var(--primary-color);
- color: #fff;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: #fff;
 }
 
 .btn--primary:hover {
- background-color: #388e3c;
+  background-color: #388e3c;
 }
 
 .btn--secondary {
- background-color: transparent;
- border: 2px solid var(--secondary-color);
- color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .btn--secondary:hover {
- background-color: #bbdefb;
+  background-color: #bbdefb;
 }
 
 .btn--alert {
- background-color: var(--accent-color);
- border: 2px solid var(--accent-color);
- color: #fff;
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: #fff;
 }
 
 .btn--alert:hover {
- background-color: #e64a19;
+  background-color: #e64a19;
 }
 
 @media (min-width: 768px) {
- .btn {
-  font-size: 26px;
- }
+  .btn {
+    font-size: 26px;
+  }
 }
 
 /*/*buttons*/
 
+/* form fields validation states */
+
+/* reset */
+input,
+textarea {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+/* base */
+input,
+textarea {
+  height: 50px;
+  margin: var(--padding-16px);
+  padding: 0 var(--padding-8px);
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+input:valid {
+  border-color: var(--primary-color);
+}
+
+input:invalid {
+  border-color: var(--accent-color);
+}
+
+/* /form fields validation states */
+
 /* footer */
 
 footer {
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 footer img {
- height: 250px;
- min-width: 350px;
- margin: 0 auto;
+  height: 250px;
+  min-width: 350px;
+  margin: 0 auto;
 }
 
 .desktop-footer {
- display: none;
+  display: none;
 }
 
 @media (min-width: 425px) {
- .mobile-footer {
-  display: none;
- }
+  .mobile-footer {
+    display: none;
+  }
 
- .desktop-footer {
-  display: block;
- }
+  .desktop-footer {
+    display: block;
+  }
 }
 
 @media (max-width: 424px) {
- footer img {
-  width: 100%;
-  min-width: 1px;
- }
+  footer img {
+    width: 100%;
+    min-width: 1px;
+  }
 }
 
 @media (min-width: 768px) {
- /* header */
- header {
-  height: 125px;
- }
+  /* header */
+  header {
+    height: 125px;
+  }
 
- .headerLogo {
-  width: 120px;
-  height: 120px;
- }
+  .headerLogo {
+    width: 120px;
+    height: 120px;
+  }
 
- .UserLogo {
-  width: 50px;
-  height: 50px;
- }
+  .UserLogo {
+    width: 50px;
+    height: 50px;
+  }
 
- header ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  padding-right: 12px;
- }
+  header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-right: 12px;
+  }
 
- li a {
-  text-decoration: none;
-  color: black;
-  padding: 10px 32px;
-  font-size: 20px;
-  font-weight: 600;
-  display: block;
-  position: relative;
-  overflow: hidden;
- }
+  li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
 
- li a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--primary-color);
-  transition: width 0.3s ease;
- }
+  li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+  }
 
- li a:hover::after {
-  width: 100%;
-  align-items: center;
- }
+  li a:hover::after {
+    width: 100%;
+    align-items: center;
+  }
 
- li a.removeHover::after {
-  display: none;
- }
+  li a.removeHover::after {
+    display: none;
+  }
 
- .active {
-  padding-bottom: 10px;
-  border-bottom: var(--primary-color);
- }
+  .active {
+    padding-bottom: 10px;
+    border-bottom: var(--primary-color);
+  }
 
- li a.active::after {
-  width: 100%;
- }
+  li a.active::after {
+    width: 100%;
+  }
 
- .hamburgerMenu {
-  display: none;
- }
+  .hamburgerMenu {
+    display: none;
+  }
 
- .firstHeader {
-  margin-right: 48px;
- }
- /* /header */
+  .firstHeader {
+    margin-right: 48px;
+  }
+  /* /header */
 }
 
 @media (min-width: 1024px) {
- /* Header */
- header {
-  height: 176px;
- }
+  /* Header */
+  header {
+    height: 176px;
+  }
 
- .headerLogo {
-  width: 160px;
-  height: 160px;
- }
+  .headerLogo {
+    width: 160px;
+    height: 160px;
+  }
 
- .UserLogo {
-  width: 64px;
-  height: 64px;
- }
+  .UserLogo {
+    width: 64px;
+    height: 64px;
+  }
 
- li a {
-  padding: 10px 60px;
- }
- /* /header */
+  li a {
+    padding: 10px 60px;
+  }
+  /* /header */
 }

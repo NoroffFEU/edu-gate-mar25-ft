@@ -15,14 +15,12 @@ export default function Home() {
         <a href="/signup" data-link class="primary-btn">Sign Up</a>
         <a href="#" class="secondary-btn">Log In</a>
       </div>
-
-      <!-- Temporary test input for styling validation states -->
-      <div class="test-field"> 
-        <label for="test">Test</label> 
-        <input id="test" type="text" placeholder="Test" required /> 
-      </div>
-
     </section>  
-  </div>
+
+     <!-- Temporary test input for styling validation states -->
+    <div class="test-field"> 
+      <label for="test">Test</label> 
+      <input id="test" type="text" placeholder="Test" required /> 
+    </div>
     `;
 }
