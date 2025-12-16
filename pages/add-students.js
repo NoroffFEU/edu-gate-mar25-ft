@@ -1,7 +1,22 @@
 import SidebarTeacher from "../components/sidebar-teaching.js";
-import * as XLSX from "../xlsx/xlsx.js";
 
 export default function AddStudent() {
+  const sheetStyles = document.createElement("link");
+  sheetStyles.href =
+    "https://cdn.jsdelivr.net/npm/jspreadsheet-ce@4.15.0/dist/jspreadsheet.css";
+  sheetStyles.rel = "stylesheet";
+
+  const xlsxScript = document.createElement("script");
+  xlsxScript.src =
+    "https://cdn.jsdelivr.net/npm/jspreadsheet-ce@4.15.0/dist/jspreadsheet.js";
+
+  const parseXlsx = document.createElement("script");
+  parseXlsx.src = "https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js";
+
+  document.head.appendChild(sheetStyles);
+  document.head.appendChild(xlsxScript);
+  document.head.appendChild(parseXlsx);
+
   setTimeout(() => {
     // display spreadsheet with example input when site is loaded
     const spreadsheet = document.getElementById("spreadsheet");
@@ -15,10 +30,10 @@ export default function AddStudent() {
       ],
     ];
 
-    console.log(XLSX);
+    console.log(xlsx);
 
-    let ws = XLSX.utils.aoa_to_sheet(exampleData);
-    const html = XLSX.utils.sheet_to_html(ws);
+    let ws = xlsx.utils.aoa_to_sheet(exampleData);
+    const html = xlsx.utils.sheet_to_html(ws);
 
     spreadsheet.innerHTML = html;
 
