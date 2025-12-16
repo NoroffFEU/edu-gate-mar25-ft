@@ -16,7 +16,7 @@
   #sidebar {
     height: 100vh; /* slim sidebar */
     background-color: #ffffff; /* white background */
-    position: fixed;
+    position: absolute;
     left: 0;
     width: var(--sidebar-collapsed);
     background: var(--bg-color);
@@ -27,7 +27,7 @@
     padding: 28px 0; /* ✅ Remove left padding in collapsed state */
     box-sizing: border-box;
     font-family: var(--font-family);
-    z-index: 100;
+    z-index: 8;
     transition: width 0.3s ease, padding 0.3s ease;
     overflow: hidden;
   }
@@ -109,7 +109,7 @@
 
   #sidebar.sidebar-display {
     transform: translateX(0);
-    z-index: 200;
+    z-index: 7;
     position: absolute;
     width: 100vw;
     justify-items: left;
@@ -161,7 +161,7 @@
     background: none;
     border: none;
     padding: none;
-    z-index: 300;
+    z-index: 8;
   }
 
   #sidebar-button.close-state-button {
