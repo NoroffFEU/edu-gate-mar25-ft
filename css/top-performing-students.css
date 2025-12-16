@@ -40,6 +40,19 @@
   margin-top: 8px;
 }
 
+.section-header h1 {
+  font-family: var(--primary-font);
+  color: var(--color-neutral-dark-gray);
+  font-weight: 700;
+  line-height: var(--line-height);
+}
+
+.seaction-header p {
+  font-family: var(--secondary-font);
+  font-size: var(--paragraph);
+  font-weight: 400;
+}
+
 .book-icon {
   width: 32px;
   height: 32px;
