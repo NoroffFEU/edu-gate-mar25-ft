@@ -118,7 +118,6 @@ input:valid {
 input:invalid {
   border-color: var(--accent-color);
 }
-
 /* /form fields validation states */
 
 /* footer */
