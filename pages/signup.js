@@ -1,13 +1,13 @@
+import Alert from "../components/alert.js";
 
 export default function Signup() {
-
-    const existing = document.querySelector('link[data-signup-style]');
+  const existing = document.querySelector("link[data-signup-style]");
   if (!existing) {
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "/css/signup.css";
-      link.setAttribute("data-signup-style", "true");
-      document.head.appendChild(link);
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "/css/signup.css";
+    link.setAttribute("data-signup-style", "true");
+    document.head.appendChild(link);
   }
 
   return /*HTML*/ `
@@ -50,29 +50,48 @@ export default function Signup() {
 
           <button type="submit" class="btn">Submit</button>
         </form>
-
+        
+        <div id="alert-container">
         <!-- Alert-boks LATER -->
+        </div>
       </div>
   `;
-
 }
 
 export function initSignupForm() {
   const form = document.querySelector("#signup-form");
   if (!form) return;
 
-  form.addEventListener("submit", e => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const password = document.querySelector("#password").value;
-    const confirm = document.querySelector("#confirm-password").value;
+    const passwordInput = form.querySelector("#password");
+    const confirmInput = form.querySelector("#confirm-password");
+    if (!passwordInput || !confirmInput) return;
 
-    /* -------- Extra function -----------
+    const password = passwordInput.value;
+    const confirm = confirmInput.value;
+
+    const alertContainer = document.querySelector("#alert-container");
+    if (!alertContainer) return;
+
+    alertContainer.innerHTML = "";
+
     if (password !== confirm) {
-      alert("Passwords do not match");
+      alertContainer.innerHTML = Alert(
+        "failed",
+        "Failed Sign Up!",
+        "Passwords do not match!"
+      );
+
+      const closeButton = alertContainer.querySelector(".alert-close");
+      if (closeButton) {
+        closeButton.addEventListener("click", () => {
+          alertContainer.innerHTML = "";
+        });
+      }
+
       return;
     }
-
-    alert("Form passed validation ✅");*/
   });
 }
