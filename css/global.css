@@ -120,11 +120,11 @@ textarea:focus {
 /* Error styles are shown only after submit.
    JS should add `.is-submitted` to the form */
 form.is-submitted input:invalid {
-  border-color: red;
+  border-color: var(--accent-color);
 }
 
 form.is-submitted input:invalid:focus {
-  border-color: red;
+  border-color: var(--accent-color);
 }
 /* /form fields validation states */
 
