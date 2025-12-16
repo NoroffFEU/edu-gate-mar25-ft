@@ -36,4 +36,22 @@
   text-align: center;
 }
 
+.example-table-desktop {
+  max-width: 80vw;
+}
+
+.example-table-mobile {
+  display: none;
+}
+
 /* mobile styles */
+
+@media (max-width: 767px) {
+  .example-table-desktop {
+    display: none;
+  }
+  .example-table-mobile {
+    max-width: 80vw;
+    display: block;
+  }
+}

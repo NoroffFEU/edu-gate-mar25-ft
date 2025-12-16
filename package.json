@@ -22,12 +22,14 @@
     "url": "https://github.com/sulenchy/edu-gate/issues"
   },
   "homepage": "https://github.com/sulenchy/edu-gate#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@jspreadsheet/parser": "^5.8.9"
+  },
   "directories": {
     "doc": "docs"
   },
   "keywords": [],
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.0"
   }
 }

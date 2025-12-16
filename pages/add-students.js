@@ -5,21 +5,8 @@ export default function AddStudent() {
   setTimeout(() => {
     const spreadsheetInfo = document.getElementById("spreadsheet-info");
     const uploadBtn = document.getElementById("uploadBtn");
-    let parsedData = null;
 
     // parse excel-file
-
-
-
-    document.getElementById("excelFile")
-      .addEventListener("change", async (event) => {
-        const fileInput = event.target.files[0];
-        if(!fileInput) return;
-
-        try{
-
-        }
-      });
 
     // validation logic
 
