@@ -28,7 +28,8 @@ header {
 }
 
 .hamburgerMenu {
- padding-right: 24px;
+	padding-right: 24px;
+	cursor: pointer;
 }
 
 header ul {
