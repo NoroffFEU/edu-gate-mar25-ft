@@ -16,11 +16,5 @@ export default function Home() {
         <a href="#" class="secondary-btn">Log In</a>
       </div>
     </section>  
-
-     <!-- Temporary test input for styling validation states -->
-    <div class="test-field"> 
-      <label for="test">Test</label> 
-      <input id="test" type="text" placeholder="Test" required /> 
-    </div>
     `;
 }
