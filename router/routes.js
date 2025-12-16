@@ -1,5 +1,4 @@
 // views
-
 import Home from "../pages/home.js";
 import About from "../pages/about.js";
 import Login, { initLoginForm } from "../pages/login.js";

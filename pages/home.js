@@ -13,7 +13,7 @@ export default function Home() {
 
       <div class="home__actions">
         <a href="/signup" data-link class="btn">Sign Up</a>
-        <a href="#" class="btn btn--secondary">Log In</a>
+        <a href="/login" class="btn btn--secondary">Log In</a>
       </div>
     </section>  
 
