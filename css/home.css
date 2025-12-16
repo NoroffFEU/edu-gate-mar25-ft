@@ -53,25 +53,6 @@
  padding: 20px 0;
 }
 
-/* .btn {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  border: 3px solid var(--primary-color);
-  border-radius: 6px;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  width: 110px;
-
-  text-decoration: none;
-}
-
-.btn--secondary {
-  background-color: transparent;
-  color: var(--secondary-color);
-  border: 3px solid var(--secondary-color);
-  text-decoration: none;
-} */
-
 /* Media queries  */
 
 @media (min-width: 768px) {
@@ -85,19 +66,12 @@
   flex-direction: row;
   gap: 16px;
   justify-content: center;
-
   position: absolute;
   bottom: 20px;
   left: 0;
   width: 100%;
-
   gap: 30px;
   bottom: 30px;
- }
-
- .btn {
-  padding: 10px 20px;
-  width: 90px;
  }
 
  .home__media {

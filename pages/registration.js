@@ -41,7 +41,7 @@ export default function Registration() {
           </div>
           </div>
           <div class="reg-div">
-          <button type="submit" class="primary-btn">Submit</button>
+          <button type="submit" class="btn btn--primary">Submit</button>
           </div>
         </form>
       </div>
