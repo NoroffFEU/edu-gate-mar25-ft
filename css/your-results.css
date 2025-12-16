@@ -213,7 +213,7 @@ td {
   font-size: var(--heading-3);
 }
 
-#page-1 {
+.active {
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
   font-weight: 500;
