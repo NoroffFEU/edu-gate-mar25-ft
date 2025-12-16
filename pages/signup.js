@@ -48,7 +48,7 @@ export default function Signup() {
             placeholder="Repeat password" required />
           </div>
           <div class="btn-div">
-          <button type="submit" class="primary-btn">Submit</button>
+          <button type="submit" class="btn btn--primary">Submit</button>
           </div>
         </form>
         

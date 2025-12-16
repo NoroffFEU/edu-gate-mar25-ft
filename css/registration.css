@@ -71,6 +71,10 @@
  margin: 0 auto;
 }
 
+.reg-div > button {
+ width: fit-content;
+}
+
 input::placeholder {
  color: var(--color-neutral-medium-gray);
  font-family: var(--secondary-font);

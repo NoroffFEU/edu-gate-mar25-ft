@@ -80,17 +80,18 @@
  border: 1px solid var(--primary-color);
 }
 
-.editAdminBtn {
- display: flex;
- margin: 0 auto;
- margin-top: 1rem;
- font-size: 16px;
-}
-
 .error-message {
  color: var(--accent-color);
  font-size: 13px;
  margin-top: 4px;
+}
+
+.admin-div {
+ margin: 0 auto;
+}
+
+.admin-div > button {
+ width: fit-content;
 }
 
 @media (min-width: 767px) {
@@ -131,12 +132,5 @@
 
  .form {
   gap: 20px;
- }
-
- .editAdminBtn {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 1rem;
-  font-size: 26px;
  }
 }
