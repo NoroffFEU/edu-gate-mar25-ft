@@ -1,19 +1,24 @@
 .hamburger-panel {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 393px;
-    right: -100%;
-    background: white;
-    z-index: 100;
-    overflow: auto;
-    transition: 0.5s;
-    box-shadow: -5px 5px 20px var(--color-neutral-medium-gray);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;                /* Take full viewport width on mobile */
+  max-width: 393px;           /* But never larger than your design width */
+  background: white;
+  z-index: 100;
+  overflow: auto;
+  box-shadow: -5px 5px 20px var(--color-neutral-medium-gray);
+
+  /* NEW: hide panel off-screen using transform instead of right:-100% */
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
 }
 
 .hamburger-panel.active {
-    right: 0;
+  transform: translateX(0);   /* Slide in when active */
 }
+
 
 .hamburger-top {
     background-color: var(--color-neutral-gray);
@@ -56,9 +61,10 @@
 }
 
 .hamburger-text {
-    font-size: 18px;
+    font-size: 20px;
     padding-right: 36px;
     text-align: right;
+    font-weight: 400;
 }
 
 .hamburger-icon {
