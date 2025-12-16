@@ -1,12 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .profile-page{
     padding: 70px 16px 0;
     width: 100%;
-    max-width: 600px;
+    max-width: 612px;
     min-height: 100vh;
     margin: 0 auto;
 }
 
+.profile-image{
+    display: block;
+}
+
 .profile-breadcrumb{
+    width: 100%;
     display: flex;
     gap: 16px;
     font: var(--paragraph);
@@ -20,21 +31,20 @@
 }
 
 .profile__card{
-    background-color: var(--color-neutral-gray);
-    border: 1px solid var(--color-neutral-medium-gray) ;
-    padding: 0 32px 32px;
-    border-radius: 2px;
+    width: 100%;
+    max-width: 612px;
+    padding: var(--padding-16px);
+    margin: var(--padding-24px) 0;
+    border: 3px solid #ccc;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
-
 }
 
 .profile-title{
     text-align: center;
     margin-bottom: 1rem;
-    font: var(--heading-1);
+    font: var(--heading-3);
     font-size: 1.4rem;
     font-weight: 700;
 }
