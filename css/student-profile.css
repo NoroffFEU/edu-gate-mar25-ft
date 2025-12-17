@@ -24,6 +24,8 @@
     padding: 16px;
     width: fit-content;
     height: fit-content;
+    line-height: 100%;
+    letter-spacing: var(--letter-spacing);
 }
 
 .profile-breadcrumb-active{
@@ -44,9 +46,10 @@
 .profile-title{
     text-align: center;
     margin-bottom: 1rem;
-    font: var(--heading-3);
-    font-size: 1.4rem;
+    font-size: var(--heading-3);
     font-weight: 700;
+    letter-spacing: var(--letter-spacing);
+    line-height:var(--line-height);
 }
 
 
@@ -69,6 +72,8 @@
 .profile-label{
     font-weight: 700;
     flex: 0 0 110px;
+    letter-spacing: var(--letter-spacing);
+    line-height:var(--line-height);
 }
 
 .profile-value{
@@ -76,6 +81,8 @@
     text-align: left;
     font-weight: 500;
     min-width: 0;
+    letter-spacing: var(--letter-spacing);
+    line-height:var(--line-height);
 }
 
 .profile-edit-button{
@@ -114,12 +121,12 @@
     .profile__row{
         gap: 24px;
     }   
+
 }
 /*responsiveness for lager desktop */
 @media (min-width: 1024px) {
     .profile-page{
         min-height: 900px ;
-        gap: 80px;
     }
 
     .profile-breadcrumb{
@@ -131,4 +138,5 @@
     .profile__row{
         gap: 24px;
     }   
+
 }
