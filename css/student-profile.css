@@ -17,10 +17,10 @@
 }
 
 .profile-breadcrumb{
-    width: 100%;
     display: flex;
     gap: 16px;
-    font: var(--paragraph);
+    font-size: var(--paragraph);
+    font-family: var(--primary-font);
     padding: 16px;
     width: fit-content;
     height: fit-content;
