@@ -122,6 +122,10 @@
         gap: 24px;
     }   
 
+    .profile__row p {
+    font-size: 16px;
+    }
+
 }
 /*responsiveness for lager desktop */
 @media (min-width: 1024px) {
@@ -138,5 +142,9 @@
     .profile__row{
         gap: 24px;
     }   
+
+    .profile__row p {
+    font-size: 16px;
+    }
 
 }
