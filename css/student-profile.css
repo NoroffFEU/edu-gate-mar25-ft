@@ -115,3 +115,20 @@
         gap: 24px;
     }   
 }
+/*responsiveness for lager desktop */
+@media (min-width: 1024px) {
+    .profile-page{
+        min-height: 900px ;
+        gap: 80px;
+    }
+
+    .profile-breadcrumb{
+        gap: 24px;
+        width: fit-content;
+        padding: 16px 0;  
+        font-weight: 400;
+    }
+    .profile__row{
+        gap: 24px;
+    }   
+}
