@@ -8,7 +8,7 @@
   --gap: 24px;
   --font-color: #333;
   --hover-bg: #f5f7fb;
-    --sidebar-mobile: 60px;
+  --sidebar-mobile: 60px;
 }
 
 /* Sidebar container */
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap);
-  padding: 28px 0; /* ✅ Remove left padding in collapsed state */
+  padding: 28px 0; 
   box-sizing: border-box;
   font-family: var(--font-family);
   z-index: 100;

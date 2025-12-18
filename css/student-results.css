@@ -1,10 +1,3 @@
-html {
-  width: 100dvw;
-  height: 100dvh;
-  overflow-x: hidden;
-  background-color: var(--color-neutral-gray);
-}
-
 main {
   margin: 0 auto;
   overflow-x: hidden;
@@ -15,25 +8,30 @@ main {
 body {
   width: 100dvw;
 }
+
 h1,
 h2,
 h3 {
   font-family: var(--primary-font);
   color: var(--color-neutral-dark-gray);
-  font-weight: 700;
+
   line-height: var(--line-height);
 }
+
 h1,
 h2,
 h3 {
   letter-spacing: var(--letter-spacing);
 }
+
 h1 {
   font-size: var(--heading-1);
 }
+
 h2 {
   font-size: var(--heading-2);
 }
+
 h3 {
   font-size: var(--heading-3);
 }
@@ -52,20 +50,61 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
+
+.student-results-container h1 {
+  font-size: 32px;
+
+}
+
 .breadcrumbs {
   display: flex;
   gap: var(--padding-16px);
   margin: var(--padding-16px);
+  margin-left: 50px;
   font-size: 18px;
   color: var(--color-neutral-medium-gray);
 }
+
+.student-heading {
+  display: flex;
+  align-items: center;
+  /* vertical center */
+  gap: 10px;
+
+}
+
+.chevron-icon {
+  display: none;
+  width: 25px;
+  height: 25px;
+  filter: invert(44%) sepia(86%) saturate(421%) hue-rotate(84deg) brightness(94%) contrast(92%);
+  /* green */
+
+}
+
+
+.student-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.student-intro img {
+  width: 35px;
+  height: 35px;
+}
+
+
 
 .your-results {
   color: var(--primary-color);
 }
 
-.results-icon {
+.search-student img {
   display: none;
 }
 
@@ -103,7 +142,6 @@ a {
   transition: background-color 0.5s ease;
 }
 
-/* had to have different pixel height for input and button to align them. Because of "padding block" on input block text(?) */
 
 .search-icon img {
   width: 20px;
@@ -131,7 +169,7 @@ a {
 
 table {
   max-width: 1280px;
-  width: 90dvw;
+  width: 1200px;
   height: 600px;
   border-collapse: separate;
   border-spacing: 0;
@@ -139,14 +177,13 @@ table {
   border-radius: 6px;
   margin: 0 auto;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 tbody tr:hover {
-  background-color: color-mix(
-    in srgb,
-    var(--color-neutral-medium-gray) 15%,
-    white
-  );
+  background-color: color-mix(in srgb,
+      var(--color-neutral-medium-gray) 15%,
+      white);
   cursor: pointer;
 }
 
@@ -166,12 +203,13 @@ th {
   color: var(--primary-color);
   font-family: var(--primary-font);
   font-size: var(--heading-2);
+
 }
 
 th,
 td {
   padding: var(--padding-16px);
-  text-align: left;
+  text-align: center;
   vertical-align: top;
   letter-spacing: var(--letter-spacing);
 }
@@ -183,6 +221,7 @@ td {
 .more-info-button {
   display: none;
 }
+
 
 .pagination {
   position: relative;
@@ -213,113 +252,184 @@ td {
   font-size: var(--heading-3);
 }
 
-#page-1 {
+#page-next {
+  width: 55px;
+}
+
+
+#page-previous {
+  width: 50px;
+}
+
+
+.active-page-button {
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
   font-weight: 500;
 }
 
+
 #page-first,
 #page-previous {
-  opacity: 0.5;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.secondary-btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: var(--padding-32px);
-  font-weight: 600;
+.button-wrapper {
+
+  width: 100%;
+  text-align: center;
 }
+
+/* Button itself */
+.secondary-btn {
+  display: inline-block;
+  justify-items: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-weight: 600;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
 @media (max-width: 767px) {
-  .student-results-table-container {
-    width: 100dvw;
+
+  #student-page {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
   }
 
-  .results-icon {
+  .chevron-icon {
+    display: inline-block;
+  }
+
+
+  th {
+
+    font-size: 0;
+    position: relative;
+    color: #28a645;
+    gap: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  th::after {
+    font-size: 15px;
+    color: #28a645;
+    position: absolute;
+    left: 12px;
+    top: 0;
     display: block;
-    width: 32px;
-    height: 32px;
   }
 
-  .student-search {
-    width: 90dvw;
+
+  th:nth-child(1)::after {
+    content: "ID";
+    width: 30px;
+    left: 15px;
   }
 
-  .student-search button {
-    max-width: 50px;
+  /* NEW: nudge ID */
+  th:nth-child(2)::after {
+    content: "F.Name";
+    width: 90px;
+    left: 8px;
   }
 
-  .student-results-table-container table {
-    height: 481.53px;
+  /* slight nudge */
+  th:nth-child(3)::after {
+    content: "L.Name";
+    width: 80px;
+    left: 20px;
   }
 
-  .more-info-button {
+  th:nth-child(4)::after {
+    content: "Year";
+    width: 60px;
+    left: 8px;
+  }
+
+
+  .student-results-table-container {
+
+    margin: 0 auto;
+    padding: 0 8px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 330px;
+  }
+
+  .student-results {
+    font-size: 14px;
+    margin-bottom: 20px;
+
+  }
+
+
+  td {
+    padding: 12px;
+    min-width: 0;
+  }
+
+
+
+  .pagination {
     display: flex;
-    vertical-align: top;
     justify-content: center;
-    align-items: center;
+    gap: 7px;
+    width: 90%;
+    max-width: 250px;
+    margin: 15px auto;
+    box-sizing: border-box;
   }
 
-  .more-info-button img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .year-column,
-  .term-column,
-  .result-column {
-    display: none;
-  }
-
-  td:nth-child(1),
-  td:nth-child(2),
-  td:nth-child(5) {
-    display: none;
-  }
-
-  #page-2,
-  #page-7 {
-    display: none;
-  }
 
   .secondary-btn {
     font-size: 16px;
+
   }
+
+  .secondary-btn:hover,
+  .secondary-btn:active {
+    background-color: var(--primary-color);
+  }
+
+
+  .student-search img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+  }
+
+  .student-search button:hover {
+    background-color: var(--primary-color);
+  }
+
+  .student-search button:hover .search-icon img {
+    filter: brightness(0) invert(1);
+  }
+
 }
 
-@media (max-width: 425px) {
-  table {
-    font-size: 12px;
-  }
+@media (max-width: 426px) {
+  tr {
 
-  th {
-    font-size: 16px;
-  }
-
-  td {
+    margin-bottom: 14px;
     font-size: 14px;
   }
 
-  .pagination {
-    gap: var(--padding-8px);
-  }
+}
 
-  .pagination button {
-    width: 32px;
-    height: 32px;
-    border: 0.5px solid var(--color-neutral-medium-gray);
-    border-radius: 6px;
-    color: var(--color-neutral-medium-gray);
-    cursor: pointer;
-  }
-
-  .pagination-button img {
-    width: 12px;
-    height: 12px;
-    position: relative;
-  }
+th {
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  text-align: center;
 }

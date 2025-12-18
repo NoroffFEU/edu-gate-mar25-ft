@@ -22,7 +22,13 @@ function router() {
 
     const route = routes.find(r => r.path === path);
     const view = route ? route.view : NotFound;
-    document.querySelector("#app").innerHTML = view();
+
+      const app = document.querySelector("#app");
+
+  if (app) {
+    app.innerHTML = view();
+  }
+ 
 
     if (route && route.afterRender) {
   route.afterRender();
