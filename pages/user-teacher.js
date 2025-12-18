@@ -14,7 +14,6 @@ export default function UserTeacher(){
     </nav>
 
    <section class = "profile__card">
-
     <form>
         <div>
             <label for="id">ID:</label>
@@ -44,9 +43,12 @@ export default function UserTeacher(){
             <label for="school">School:</label>
             <input id= "school" name= "school" type="text" value="The Academy" />
         </div>
+        <div class="form__button">
+            <button type="button" class= "profile-update-button">Update</button>
+            <button type="button" class= "profile-update-button">Delete user </button>
+        </div>
     </form>
-    <button class = "profile-update-button">Update</button>
-    <button class = "profile-update-button"> Delete user </button>
+
    </section>
 `;
 
