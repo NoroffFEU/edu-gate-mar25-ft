@@ -59,10 +59,12 @@ export default function AdminEdit() {
     <button type="submit" class="btn btn--primary">Update</button>
     </div>
     </form>    
-      </div>
-    </div>
+  </div>
+</div>
   `;
 }
+
+/* Upload image to profile */
 
 export function initAdminProfileEdit() {
  const form = document.querySelector("#adminEditForm");
@@ -72,7 +74,7 @@ export function initAdminProfileEdit() {
  const fileInput = document.querySelector("#adminAvatarInput");
 
  if (avatar && fileInput) {
-  // Clicking the avatar opens file picker
+  // When user clicks - file uploader
   avatar.addEventListener("click", () => {
    fileInput.click();
   });

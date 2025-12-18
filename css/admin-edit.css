@@ -1,6 +1,7 @@
 .edit-wrapper {
  margin: 0 auto;
  padding: 40px 48px;
+ background-color: var(--color-neutral-gray);
 }
 
 .breadcrumb {
@@ -21,8 +22,10 @@
  color: var(--primary-color);
  font-weight: 600;
 }
+
 .edit-card {
  max-width: 700px;
+ background: var(--color-neutral-gray);
 }
 
 .adminTitle {
@@ -74,7 +77,6 @@
  border: 1px solid #cccccc;
 }
 
-
 .admin-div {
  margin: 0 auto;
 }
@@ -93,11 +95,10 @@
  }
 
  .edit-card {
-  background: white;
-  border: 1px solid #cccccc;
+  border: 3px solid #cccccc;
   border-radius: 4px;
   padding: 40px 50px;
-  max-width: 520px;
+  max-width: 480px;
   margin: 0 auto;
  }
 

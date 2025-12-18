@@ -18,9 +18,23 @@ const routes = [
  { path: "/student-dashboard", view: StudentDashboard },
  { path: "/student-results", view: StudentResults },
  { path: "/admin-dashboard", view: AdminDashboard },
- { path: "/signup", view: Signup, afterRender: initSignupForm },
+ {
+  path: "/signup",
+  view: Signup,
+  afterRender: () => {
+   initSignupForm();
+   initFormValidation();
+  },
+ },
  { path: "/teacher-dashboard", view: TeacherDashboard },
- { path: "/registration", view: Registration },
+ {
+  path: "/registration",
+  view: Registration,
+  afterRender: () => {
+   initSignupForm();
+   initFormValidation();
+  },
+ },
  {
   path: "/admin-edit",
   view: AdminEdit,
