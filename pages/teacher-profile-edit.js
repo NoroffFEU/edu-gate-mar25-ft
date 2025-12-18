@@ -125,11 +125,6 @@ export default function TeacherProfileEdit() {
   `;
 }
 
-/* MIDLERTIDIG LINK 
-<a href="/teacher-profile-edit" data-link>Teacher Edit profile</a>
-*/
-
-
 export function initTeacherProfileEdit() {
   const form = document.querySelector("#profile-edit-form");
   if (!form) return;
