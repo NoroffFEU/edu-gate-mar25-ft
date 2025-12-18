@@ -1,16 +1,16 @@
+import Alert from "../components/alert.js";
 
 export default function Signup() {
+ const existing = document.querySelector("link[data-signup-style]");
+ if (!existing) {
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = "/css/signup.css";
+  link.setAttribute("data-signup-style", "true");
+  document.head.appendChild(link);
+ }
 
-    const existing = document.querySelector('link[data-signup-style]');
-  if (!existing) {
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "/css/signup.css";
-      link.setAttribute("data-signup-style", "true");
-      document.head.appendChild(link);
-  }
-
-  return /*HTML*/ `
+ return /*HTML*/ `
     <section class="signup-page">
       <div class="signup-card">
         <h1>Sign up</h1>
@@ -47,32 +47,52 @@ export default function Signup() {
             <input id="confirm-password" type="password"
             placeholder="Repeat password" required />
           </div>
-
-          <button type="submit" class="btn">Submit</button>
+          <div class="btn-div">
+          <button type="submit" class="btn btn--primary">Submit</button>
+          </div>
         </form>
-
+        
+        <div id="alert-container">
         <!-- Alert-boks LATER -->
+        </div>
       </div>
   `;
-
 }
 
 export function initSignupForm() {
-  const form = document.querySelector("#signup-form");
-  if (!form) return;
+ const form = document.querySelector("#signup-form");
+ if (!form) return;
 
-  form.addEventListener("submit", e => {
-    e.preventDefault();
+ form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    const password = document.querySelector("#password").value;
-    const confirm = document.querySelector("#confirm-password").value;
+  const passwordInput = form.querySelector("#password");
+  const confirmInput = form.querySelector("#confirm-password");
+  if (!passwordInput || !confirmInput) return;
 
-    /* -------- Extra function -----------
-    if (password !== confirm) {
-      alert("Passwords do not match");
-      return;
-    }
+  const password = passwordInput.value;
+  const confirm = confirmInput.value;
 
-    alert("Form passed validation ✅");*/
-  });
+  const alertContainer = document.querySelector("#alert-container");
+  if (!alertContainer) return;
+
+  alertContainer.innerHTML = "";
+
+  if (password !== confirm) {
+   alertContainer.innerHTML = Alert(
+    "failed",
+    "Failed Sign Up!",
+    "Passwords do not match!"
+   );
+
+   const closeButton = alertContainer.querySelector(".alert-close");
+   if (closeButton) {
+    closeButton.addEventListener("click", () => {
+     alertContainer.innerHTML = "";
+    });
+   }
+
+   return;
+  }
+ });
 }

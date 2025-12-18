@@ -5,10 +5,12 @@ import Footer from "./components/footer.js";
 import studentResults, { selectPageNumber } from "./pages/student-results.js";
 
 
+
 document.getElementById("header").innerHTML = Header();
 document.getElementById("footer").innerHTML = Footer();
 document.getElementById("student-page").innerHTML = studentResults();
 
 selectPageNumber();
+
 
 initRouter();
