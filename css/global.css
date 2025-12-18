@@ -28,12 +28,8 @@ header {
 }
 
 .hamburgerMenu {
-<<<<<<< HEAD
-  padding-right: 24px;
-=======
 	padding-right: 24px;
 	cursor: pointer;
->>>>>>> 1b7e3031d634546bea250bc7a65d7e3852e38525
 }
 
 header ul {
@@ -109,7 +105,7 @@ textarea {
 input,
 textarea {
   height: 50px;
-  margin: var(--padding-16px);
+  /* margin: var(--padding-16px); */
   padding: 0 var(--padding-8px);
   border: 1px solid #cccccc;
   border-radius: 6px;
@@ -132,6 +128,14 @@ form.is-submitted input:invalid {
 form.is-submitted input:invalid:focus {
   border-color: var(--accent-color);
 }
+
+.error-message {
+ color: var(--accent-color);
+ font-weight: 400;
+ font-size: 16px;
+ margin-top: 4px;
+}
+
 /* /form fields validation states */
 
 /* footer */
