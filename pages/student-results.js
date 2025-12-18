@@ -45,12 +45,14 @@ export default function StudentResults() {
 
           <tr class="student-row-grey">
     
-          <td>1921840</td><td>Joe</td>
+          <td>1921840</td>
+          <td>Joe</td>
           <td>Bloggs</td>
           <td>2020</td>
           </tr>
 
           <tr class="student-row-white">
+
           <td>1921840</td>
           <td>Joe</td>
           <td>Bloggs</td>
@@ -58,13 +60,16 @@ export default function StudentResults() {
           </tr>
 
           <tr class="student-row-grey">
+
           <td>1921840</td>
-          <td>Joe</td><td>Bloggs</td>
+          <td>Joe</td>
+          <td>Bloggs</td>
           <td>2020</td>
           </tr>
 
 
           <tr class="student-row-white">
+
           <td>1921840</td>
           <td>Joe</td>
           <td>Bloggs</td>
@@ -72,13 +77,16 @@ export default function StudentResults() {
           </tr>
 
            <tr class="student-row-grey">
+
           <td>1921840</td>
-          <td>Joe</td><td>Bloggs</td>
+          <td>Joe</td>
+          <td>Bloggs</td>
           <td>2020</td>
           </tr>
 
 
           <tr class="student-row-white">
+
           <td>1921840</td>
           <td>Joe</td>
           <td>Bloggs</td>
@@ -86,8 +94,10 @@ export default function StudentResults() {
           </tr>
 
            <tr class="student-row-grey">
+
           <td>1921840</td>
-          <td>Joe</td><td>Bloggs</td>
+          <td>Joe</td>
+          <td>Bloggs</td>
           <td>2020</td>
           </tr>
 
@@ -108,9 +118,9 @@ export default function StudentResults() {
   
 <button id="page-1" class="pagination-button active-page-button" data-page="1"  aria-label="Go to page 1" type="button">1</button>
 <button id="page-2" class="pagination-button" data-page="2" aria-label="Go to page 2" type="button"  >2</button>
-<button id="page-3-gap" class="pagination-button " aria-label="Gap" type="button" disabled>...</button>
-<button id="page-7" class="pagination-button " data-page="7" aria-label="Go to page 7 " type="button">7</button>
-<button id="page-8" class="pagination-button" data-page="8" aria-label="Go to page 8" type="button">8</button>
+<button id="page-3-gap" class="pagination-button " data-page="3" aria-label="Go to page 3" type="button">3</button>
+<button id="page-4" class="pagination-button " data-page="4" aria-label="Go to page 4 " type="button">4</button>
+<button id="page-5" class="pagination-button" data-page="5" aria-label="Go to page 5" type="button">5</button>
 
 
   <button id="page-next" class="pagination-button" data-page="page-next" aria-label="Go to next page"  type="button" >
@@ -128,22 +138,22 @@ export default function StudentResults() {
 
 
 export function selectPageNumber() {
-  const rowsPerPage = 7; // 
+  const rowsPerPage = 7;
   const tableRows = Array.from(
     document.querySelectorAll("#student-results tbody tr")
   );
 
   const pageButtons = document.querySelectorAll(
-    "#pagination button[data-page]"
+    "#pagination button[data-page]:not([data-page^='page-'])"
   );
 
   const firstBtn = document.querySelector("#page-first");
   const prevBtn = document.querySelector("#page-previous");
   const nextBtn = document.querySelector("#page-next");
   const lastBtn = document.querySelector("#page-last");
-
-  const totalPages = Math.ceil(tableRows.length / rowsPerPage);
   let currentPage = 1;
+
+
 
   // ==========================
   // SHOW ROWS FOR PAGE
@@ -154,9 +164,7 @@ export function selectPageNumber() {
     tableRows.forEach((row, index) => {
       const start = (page - 1) * rowsPerPage;
       const end = start + rowsPerPage;
-
-      row.style.display =
-        index >= start && index < end ? "" : "none";
+      row.style.display = index >= start && index < end ? "" : "none";
     });
 
     updateActiveButton();
@@ -182,7 +190,7 @@ export function selectPageNumber() {
     firstBtn.disabled = currentPage === 1;
     prevBtn.disabled = currentPage === 1;
     nextBtn.disabled = currentPage === totalPages;
-    lastBtn.disabled = currentPage === totalPages;
+    lastBtn.disabled = currentPage === 8;
   }
 
   // ==========================
@@ -191,32 +199,49 @@ export function selectPageNumber() {
   pageButtons.forEach(button => {
     button.addEventListener("click", () => {
       const page = Number(button.dataset.page);
-      if (currentPage > 2 && currentPage < 7) {
-        pageButtons.forEach(btn =>
-          btn.classList.remove("active-page-button")
-        );
-      }
-
+      if (!page) return;
       renderPage(page);
     });
   });
+
+
+  nextBtn.addEventListener("click", () => {
+    if (currentPage < totalPages) {
+      renderPage(currentPage + 1);
+    }
+  });
+
 
   // ==========================
   // ARROWS
   // ==========================
   firstBtn.addEventListener("click", () => renderPage(1));
-  lastBtn.addEventListener("click", () => renderPage(totalPages));
+  lastBtn.addEventListener("click", () => renderPage(8));
 
   prevBtn.addEventListener("click", () => {
     if (currentPage > 1) renderPage(currentPage - 1);
   });
 
   nextBtn.addEventListener("click", () => {
-    if (currentPage < totalPages) renderPage(currentPage + 1);
+    if (currentPage + 1) renderPage(currentPage + 1);
   });
 
   // ==========================
   // INIT
   // ==========================
   renderPage(1);
+
+
+
+  const searchInput = document.querySelector("#search");
+  tableRows = Array.from(
+    document.querySelectorAll("#student-results tbody tr")
+  )
+
+  let searchValue = "";
+
+
+
+
 }
+

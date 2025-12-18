@@ -362,8 +362,8 @@ td {
     margin: 0 auto;
     padding: 0 8px;
     overflow: hidden;
-    width: 100%;
-    max-width: 340px;
+    width: 90%;
+    max-width: 330px;
   }
 
   .student-results {
@@ -383,10 +383,9 @@ td {
   .pagination {
     display: flex;
     justify-content: center;
-    gap: 8px;
-    /* space between buttons */
-    width: 100%;
-    max-width: 300px;
+    gap: 7px;
+    width: 90%;
+    max-width: 250px;
     margin: 15px auto;
     box-sizing: border-box;
   }
