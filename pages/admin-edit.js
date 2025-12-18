@@ -45,11 +45,13 @@ export default function AdminEdit() {
 
     <div class="formGroups">
       <label class="adminLabel">School:
-          <input id="adminSchool" type="text" placeholder="The Academy" disabled/>
+          <input id="adminSchool" type="text" placeholder="The Academy" readonly/>
       </label>        
     </div>  
     
-    <button type="submit" class="primary-btn editAdminBtn">Update</button>
+    <div class="admin-div">
+    <button type="submit" class="btn btn--primary">Update</button>
+    </div>
     </form>    
       </div>
     </div>
