@@ -5,11 +5,11 @@ export default function UserTeacher(){
         <span>&gt; </span>
         <span>Select user</span>
         <span>&gt;</span>
-        <span class = "profile-breadcrumb-active"> Manager user </span>
+        <span class = "profile-breadcrumb-active"> Manage user </span>
     </nav> 
 
     <nav>
-        <h1> Manage User </h1>
+        <h1> Manage user </h1>
         <p>Edit the user info below:</p>
     </nav>
 
@@ -45,6 +45,8 @@ export default function UserTeacher(){
             <input id= "school" name= "school" type="text" value="The Academy" />
         </div>
     </form>
+    <button class = "profile-update-button">Update</button>
+    <button class = "profile-update-button"> Delete user </button>
    </section>
 `;
 
