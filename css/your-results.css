@@ -191,13 +191,16 @@ td {
   align-items: center;
   margin: var(--padding-16px);
   gap: var(--padding-16px);
+  width: 100dvw;
+  min-width: 300px;
 }
 
 .pagination img {
   position: relative;
 }
 
-.pagination-button {
+.pagination-button,
+.ellipsis {
   background-color: white;
   border: 0.5px solid var(--color-neutral-medium-gray);
   cursor: pointer;
@@ -211,6 +214,17 @@ td {
   align-items: center;
   font-weight: 400;
   font-size: var(--heading-3);
+}
+
+.ellipsis {
+  width: 23px;
+  height: 23px;
+}
+
+#page-buttons {
+  display: flex;
+  gap: var(--padding-16px);
+  align-items: center;
 }
 
 #page-1 {

@@ -108,112 +108,96 @@ function transformResults(allResults){
   }
   
   
-  function paginationButtons(totalResults){
-    const totalPages = getTotalPages(totalResults);
-
+  function paginate(allResults, currentPage){
+    const totalPages = getTotalPages(allResults.length);
+    const pageButtonsContainer = document.getElementById('page-buttons');
     const currentPageDisplay = document.getElementById('current-page-display');
     const totalPagesDisplay = document.getElementById('total-pages-display');
-    if (currentPageDisplay) {
-      currentPageDisplay.textContent = currentPage;
-    }
-    if (totalPagesDisplay) {
-      totalPagesDisplay.textContent = totalPages;
-    }
+  
+    if (currentPageDisplay) currentPageDisplay.textContent = currentPage;
+    if (totalPagesDisplay) totalPagesDisplay.textContent = totalPages;
     
-    const firstButton = document.getElementById('page-first');
-    const previousButton = document.getElementById('page-previous');
-    const nextButton = document.getElementById('page-next');
-    const lastButton = document.getElementById('page-last');
-    const page1Button = document.getElementById('page-1');
-    const page2Button = document.getElementById('page-2');
-    const dotButton = document.getElementById('dot-button');
-    const page7Button = document.getElementById('page-7');
-    const page8Button = document.getElementById('page-8');
-
-    const isMobile = window.innerWidth < 767;
-
-    if (totalPages > 7) {
-      if (page7Button && !isMobile) {
-        page7Button.style.display = '';
-      }
-      if (page8Button && !isMobile) {
-        page8Button.style.display = '';
-      }
-    } else {
-      if (page7Button) {  
-        page7Button.style.display = 'none';
-      }
-      if (page8Button) {
-        page8Button.style.display = 'none';
-      }
+    const paginationContainer = document.getElementById('pagination');
+    if (paginationContainer) {
+      paginationContainer.style.display = totalPages <= 1 ? 'none' : 'flex';
     }
-
-    if (totalPages > 3) {
-      if (dotButton) {    
-        dotButton.style.display = '';
-      }
-    } else {
-      if (dotButton) {
-        dotButton.style.display = 'none';
-      }
-    }
-
-    function disableButtons(button, isDisabled) 
-    {
-      if (button) {
-        button.disabled = isDisabled;
-        button.style.opacity = isDisabled ? '0.5' : '1';
-        button.style.pointerEvents = isDisabled ? 'none' : 'auto';
-      }
-    }
-    
-    if (currentPage === 1) {
-      if (firstButton) {
-        disableButtons(firstButton, true);
-      }
-      if (previousButton) {
-        disableButtons(previousButton, true);
-      }
-    } else {
-      if (firstButton) {
-        disableButtons(firstButton, false);
-      }
-      if (previousButton) {
-        disableButtons(previousButton, false);
-      }
-    }
-    
-    if (currentPage === totalPages) {
-      if (lastButton) {
-        disableButtons(lastButton, true);
-      }
-      if (nextButton) {
-        disableButtons(nextButton, true);
-      }
-    } else {
-      if (lastButton) {
-        disableButtons(lastButton, false);
-      }
-      if (nextButton) {
-        disableButtons(nextButton, false);
-      }
-    }
-    
-    [page1Button, page2Button, page7Button, page8Button].forEach(button => {
-      if (button) {
-        button.classList.add('pagination-button');
+  
+    if (!pageButtonsContainer) return;
+    pageButtonsContainer.innerHTML = '';
+  
+    const createButton = (page) => {
+      const button = document.createElement('button');
+      button.id = `page-${page}`;
+      button.className = 'pagination-button';
+      button.textContent = page;
+      
+      if (page === currentPage) {
+        button.classList.add('active');
+        button.style.border = '2px solid var(--primary-color)';
+        button.style.color = 'var(--primary-color)';
+        button.style.fontWeight = '500';
+      } else {
         button.style.border = '0.5px solid var(--color-neutral-medium-gray)';
         button.style.color = 'var(--color-neutral-medium-gray)';
       }
-    });
+      
+      button.onclick = () => updatePage(allResults, page);
+      return button;
+    };
+  
+    const createEllipsis = () => {
+      const ellipsis = document.createElement('span');
+      ellipsis.className = 'ellipsis';
+      ellipsis.textContent = '...';
+      ellipsis.style.cursor = 'default';
+      return ellipsis;
+    };
+  
     
-    const activeButton = document.getElementById(`page-${currentPage}`);
-    
-    if (activeButton) {
-      activeButton.classList.add('pagination-button');
-      activeButton.style.border = '2px solid var(--primary-color)';
-      activeButton.style.color = 'var(--primary-color)';
+
+
+  
+    // Always show: 1, X, ..., Y, totalPages
+  // If 7 or fewer pages, show all
+  if (totalPages <= 5) {
+    for (let i = 1; i <= totalPages; i++) {
+      pageButtonsContainer.appendChild(createButton(i));
     }
+    return;
+  }
+
+    if (currentPage <= 2) {
+      pageButtonsContainer.appendChild(createButton(1));
+      pageButtonsContainer.appendChild(createButton(2));
+      pageButtonsContainer.appendChild(createEllipsis());
+      pageButtonsContainer.appendChild(createButton(totalPages - 1));
+      pageButtonsContainer.appendChild(createButton(totalPages));
+      return;
+    } else if (currentPage >= 3 && currentPage <= totalPages / 2) {
+      pageButtonsContainer.appendChild(createButton(1));
+      pageButtonsContainer.appendChild(createButton(currentPage));
+      pageButtonsContainer.appendChild(createEllipsis());
+      pageButtonsContainer.appendChild(createButton(totalPages - 1));
+      pageButtonsContainer.appendChild(createButton(totalPages));
+      return;
+    }
+    else if (currentPage === totalPages) {
+      pageButtonsContainer.appendChild(createButton(1));
+      pageButtonsContainer.appendChild(createButton(2));
+      pageButtonsContainer.appendChild(createEllipsis());
+      pageButtonsContainer.appendChild(createButton(totalPages - 1));
+      pageButtonsContainer.appendChild(createButton(totalPages));
+      return;
+    }
+    else if (currentPage >= totalPages / 2) {
+      pageButtonsContainer.appendChild(createButton(1));
+      pageButtonsContainer.appendChild(createButton(2));
+      pageButtonsContainer.appendChild(createEllipsis());
+      pageButtonsContainer.appendChild(createButton(currentPage));
+      pageButtonsContainer.appendChild(createButton(totalPages));
+      return;
+    }
+
   }
 
   function updatePage(currentResults, page) {
@@ -224,68 +208,64 @@ function transformResults(allResults){
     
     currentPage = page;
     renderResults(currentResults, page);
-    paginationButtons(currentResults.length);
+    paginate(currentResults, page);
+    setupNavigationButtons(currentResults);
   }
   
-  function handlePageChange() {
-    const totalPages = getTotalPages(currentResults.length);
+  function setupNavigationButtons(allResults) {
+    const totalPages = getTotalPages(allResults.length);
     
-    const firstButton = document.getElementById('page-first');
+    // Get all navigation buttons
+    const firstButton = document.getElementById("page-first");
+    const previousButton = document.getElementById("page-previous");
+    const nextButton = document.getElementById("page-next");
+    const lastButton = document.getElementById("page-last");
+  
+    // Helper function to disable/enable buttons
+    const setButtonState = (button, disabled) => {
+      if (!button) return;
+      button.disabled = disabled;
+      button.style.opacity = disabled ? "0.5" : "1";
+      button.style.pointerEvents = disabled ? "none" : "auto";
+    };
+  
+    // First button - disabled on page 1
     if (firstButton) {
       firstButton.onclick = () => {
-        updatePage(currentResults, 1);
+        updatePage(allResults, 1);
       };
+      setButtonState(firstButton, currentPage === 1);
     }
-    
-    const previousButton = document.getElementById('page-previous');
+  
+    // Previous button - disabled on page 1
     if (previousButton) {
       previousButton.onclick = () => {
         if (currentPage > 1) {
-          updatePage(currentResults, currentPage - 1);
+          updatePage(allResults, currentPage - 1);
         }
       };
+      setButtonState(previousButton, currentPage === 1);
     }
-    const page1Button = document.getElementById('page-1');
-    if (page1Button) {
-      page1Button.onclick = () => {
-        updatePage(currentResults, 1);
-      };
-    }
-    const page2Button = document.getElementById('page-2');
-    if (page2Button) {
-      page2Button.onclick = () => {
-        updatePage(currentResults, 2);
-      };
-    }
-
-    const page7Button = document.getElementById('page-7');
-    
-    if (page7Button) {
-      page7Button.onclick = () => {
-        updatePage(currentResults, 7);
-      };
-    }
-    const page8Button = document.getElementById('page-8');
-    if (page8Button) {
-        page8Button.onclick = () => {
-        updatePage(currentResults, 8);
-      };
-    }
-    const nextButton = document.getElementById('page-next');
+  
+    // Next button - disabled on last page
     if (nextButton) {
       nextButton.onclick = () => {
         if (currentPage < totalPages) {
-          updatePage(currentResults, currentPage + 1);
+          updatePage(allResults, currentPage + 1);
         }
       };
+      setButtonState(nextButton, currentPage === totalPages);
     }
-    const lastButton = document.getElementById('page-last');
+  
+    // Last button - disabled on last page
     if (lastButton) {
       lastButton.onclick = () => {
-        updatePage(currentResults, totalPages);
+        updatePage(allResults, totalPages);
       };
+      setButtonState(lastButton, currentPage === totalPages);
     }
   }
+  
 
 
 
@@ -301,9 +281,9 @@ function transformResults(allResults){
 
     renderResults(transformedResults, currentPage);
 
-    paginationButtons(transformedResults.length);
+    paginate(transformedResults, currentPage);
 
-    handlePageChange();
+    setupNavigationButtons(transformedResults);
   
     const searchInput = document.querySelector('#student-search input');
     const searchButton = document.querySelector('#student-search button');
@@ -322,9 +302,9 @@ function transformResults(allResults){
 
       renderResults(filteredResults, currentPage);
 
-      paginationButtons(filteredResults.length);
+      paginate(filteredResults, currentPage);
 
-
+      setupNavigationButtons(filteredResults);
 
     };
   
@@ -410,46 +390,8 @@ function transformResults(allResults){
               alt="Go to previous page"
             />
           </button>
-          <button
-            id="page-1"
-            class="pagination-button"
-            type="button"
-            aria-label="Go to page 1"
-          >
-            1
-          </button>
-          <button
-            id="page-2"
-            class="pagination-button"
-            type="button"
-            aria-label="Go to page 2"
-          >
-            2
-          </button>
-          <button
-            id="dot-button"
-            class="pagination-button"
-            type="button"
-            aria-label="bundled pages"
-          >
-            ...
-          </button>
-          <button
-            id="page-7"
-            class="pagination-button"
-            type="button"
-            aria-label="Go to page 7"
-          >
-            7
-          </button>
-          <button
-            id="page-8"
-            class="pagination-button"
-            type="button"
-            aria-label="Go to page 8"
-          >
-            8
-          </button>
+
+          <div id="page-buttons"></div>
 
           <button
             id="page-next"
@@ -482,3 +424,7 @@ function transformResults(allResults){
     </div>
     `;
 }
+
+
+
+
