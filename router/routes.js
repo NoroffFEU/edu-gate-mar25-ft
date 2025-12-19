@@ -9,6 +9,7 @@ import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
+import { initFormValidation } from "../pages/form-field-validation.js";
 import TeacherProfilePage, {
   initTeacherProfile,
 } from "../pages/teacher-profile.js";
@@ -20,14 +21,30 @@ const routes = [
   { path: "/student-dashboard", view: StudentDashboard },
   { path: "/student-results", view: StudentResults },
   { path: "/admin-dashboard", view: AdminDashboard },
-  { path: "/signup", view: Signup, afterRender: initSignupForm },
-  { path: "/teacher-dashboard", view: TeacherDashboard },
-  { path: "/registration", view: Registration },
-  { path: "/admin-edit", view: AdminEdit, afterRender: initAdminProfileEdit },
   {
-    path: "/teacher-profile",
-    view: TeacherProfilePage,
-    afterRender: initTeacherProfile,
+    path: "/signup",
+    view: Signup,
+    afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+    },
+  },
+  { path: "/teacher-dashboard", view: TeacherDashboard },
+  {
+    path: "/registration",
+    view: Registration,
+    afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+    },
+  },
+  {
+    path: "/admin-edit",
+    view: AdminEdit,
+    afterRender: () => {
+      initAdminProfileEdit();
+      initFormValidation();
+    },
   },
 ];
 

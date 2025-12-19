@@ -1,0 +1,80 @@
+.hamburger-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;                /* Take full viewport width on mobile */
+  max-width: 393px;           /* But never larger than your design width */
+  background: white;
+  z-index: 100;
+  overflow: auto;
+  box-shadow: -5px 5px 20px var(--color-neutral-medium-gray);
+
+  /* NEW: hide panel off-screen using transform instead of right:-100% */
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+ 
+.hamburger-panel.active {
+  transform: translateX(0);   /* Slide in when active */
+}
+
+
+.hamburger-top {
+    background-color: var(--color-neutral-gray);
+	margin-bottom: 25px;
+	border: var(--color-neutral-medium-gray);
+	border-style: solid;
+	border-width: 0.5px;
+	height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-logo {
+    height: 80px;
+    width: 80px;
+}
+
+.hamburger-close {
+    height: 20px;
+    width: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hamburger-main {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 48px;
+}
+
+.hamburger-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-text {
+    font-size: 20px;
+    padding-right: 36px;
+    text-align: right;
+    font-weight: 400;
+}
+
+.hamburger-icon {
+    height: auto;
+    width: 32px; 
+}
+
+.hamburger-logout {
+    border-top: 3px solid var(--color-neutral-gray);
+    margin-top: 48px;
+    padding-top: 20px;
+}
+
