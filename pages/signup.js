@@ -97,7 +97,6 @@ export function initSignupForm() {
    }
    return;
   }
-
   // Form is valid – do your fetch or submit here
   console.log("Form is valid – submit or fetch()");
  });
