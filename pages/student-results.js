@@ -190,7 +190,7 @@ export function selectPageNumber() {
     firstBtn.disabled = currentPage === 1;
     prevBtn.disabled = currentPage === 1;
     nextBtn.disabled = currentPage === totalPages;
-    lastBtn.disabled = currentPage === 8;
+    lastBtn.disabled = currentPage === 5;
   }
 
   // ==========================
@@ -216,7 +216,7 @@ export function selectPageNumber() {
   // ARROWS
   // ==========================
   firstBtn.addEventListener("click", () => renderPage(1));
-  lastBtn.addEventListener("click", () => renderPage(8));
+  lastBtn.addEventListener("click", () => renderPage(5));
 
   prevBtn.addEventListener("click", () => {
     if (currentPage > 1) renderPage(currentPage - 1);
@@ -231,16 +231,37 @@ export function selectPageNumber() {
   // ==========================
   renderPage(1);
 
+  const searchInput = document.getElementById("student-search");
+
+  let users = []
+
+  searchInput = document.querySelector("input", e => {
+    const value = e.target.value.toLowerCase();
+    User.forEach(user => {
+      const isVisible =
+        user.firstName.toLowerCase().includes(value) ||
+        user.lastName.toLowerCase().includes(value) ||
+        user.id.toLowerCase().includes(value) ||
+        user.year.toLowerCase().includes(value);
+      user.element.classList.toggle("hide", !isVisible);
+    })
+  });
 
 
-  const searchInput = document.querySelector("#search");
-  tableRows = Array.from(
-    document.querySelectorAll("#student-results tbody tr")
-  )
 
-  let searchValue = "";
-
-
+  fetch("https://jsonplaceholder.typicode.com/posts")
+    .then(res => res.json())
+    .then(data => {
+      users = data.map(user => {
+        const card = userCardTemplate.content.cloneNode(true).children[0];
+        const header = card.querySelector(".user-card-header");
+        const body = card.querySelector(".user-card-body");
+        header.textContent = id.user.id;
+        body.textContent = user.firstName;
+        userCardContainer.append(card);
+        return { name: user.name, email: user.email, element: card };
+      });
+    });
 
 
 }
