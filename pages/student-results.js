@@ -203,7 +203,7 @@ export default function StudentResults(){
             />
           </button>
           </div>
-          <button class="secondary-btn">Back to dashboard</button>
+          <button class="btn btn--secondary">Back to dashboard</button>
       </div>
     </div>
     `;
