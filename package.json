@@ -22,9 +22,6 @@
     "url": "https://github.com/sulenchy/edu-gate/issues"
   },
   "homepage": "https://github.com/sulenchy/edu-gate#readme",
-  "dependencies": {
-    "@jspreadsheet/parser": "^5.8.9"
-  },
   "directories": {
     "doc": "docs"
   },

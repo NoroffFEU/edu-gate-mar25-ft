@@ -1,78 +1,104 @@
 import SidebarTeacher from "../components/sidebar-teaching.js";
-const { default: spreadsheet } = await import("./spreadsheet/parser.js");
+
+// Load CSS/JS once
+async function loadJSpreadsheet() {
+  // 1) CSS
+  if (!document.querySelector('link[data-jss-css="1"]')) {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href =
+      "https://cdn.jsdelivr.net/npm/jspreadsheet-ce/dist/jspreadsheet.css";
+    link.dataset.jssCss = "1";
+    document.head.appendChild(link);
+  }
+
+  // Global
+
+  if (!window.jspreadsheet) {
+    await new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src =
+        "https://cdn.jsdelivr.net/npm/jspreadsheet-ce/dist/jspreadsheet.js";
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+
+  // 2) JS modules
+  const parserModule = await import("https://esm.sh/@jspreadsheet/parser");
+
+  console.log("jspreadsheet global:", window.jspreadsheet);
+
+  return {
+    jspreadsheet: window.jspreadsheet,
+    parser: parserModule.default,
+  };
+}
 
 export default function AddStudent() {
-  setTimeout(() => {
+  setTimeout(async () => {
     const container = document.getElementById("spreadsheet");
     const fileInput = document.getElementById("excel-file");
-    const uploadBtn = document.getElementById("uploadBtn");
+    if (!container || !fileInput) return;
 
-    container.innerHTML = "";
+    const { jspreadsheet, parser } = await loadJSpreadsheet();
 
-    let spreadsheet = null;
+    let sheetInstance = null;
+
+    const columns = [
+      { type: "text", title: "first_name" },
+      { type: "text", title: "surname" },
+      { type: "number", title: "grad_year" },
+      { type: "number", title: "id" },
+      { type: "date", title: "dob" },
+    ];
+
     const exampleData = [
-      ["first_name", "surname", "grad_year", "id", "dob"][
-        ("First Name",
+      [
+        "First Name",
         "Last Name",
         "Year of Graduation",
-        "School Student ID Number",
-        "Date of Birth")
+        "Student ID",
+        "Date of Birth",
       ],
     ];
 
-    // display example spreadsheet upon loading the page
-
-    (spreadsheet = jspreadsheet(container, {
+    sheetInstance = jspreadsheet(container, {
       data: exampleData,
-
       readOnly: true,
-      editable: false,
-
       allowInsertRow: false,
       allowInsertColumn: false,
       allowDeleteRow: false,
       allowDeleteColumn: false,
-      allowRenameColumn: false,
-      allowSorting: false,
-      allowFilter: false,
+    });
 
-      columns: [
-        { type: "text", title: "first_name" },
-        { type: "text", title: "surname" },
-        { type: "number", title: "grad_year" },
-        { type: "number", title: "id" },
-        { type: "date", title: "dob" },
-      ],
-    })),
-      // display uploaded file after chosen, and switch out with the example spreadsheet
+    if (!fileInput.dataset.listenerAttached) {
+      fileInput.dataset.listenerAttached = "1";
 
-      fileInput.addEventListener("change", (event) => {
-        const file = event.target.files[0];
+      fileInput.addEventListener("change", async (event) => {
+        const file = event.target.files?.[0];
         if (!file) return;
 
-        if (spreadsheet) {
-          spreadsheet.destroy();
+        if (sheetInstance) {
+          sheetInstance.destroy();
           container.innerHTML = "";
         }
 
-        spreadsheet = jspreadsheet(container, {
+        sheetInstance = jspreadsheet(container, {
           file,
+          columns,
           readOnly: true,
           editable: false,
           loadingSpin: true,
         });
       });
-
-    // validation logic
-
-    // send input to server
-    // display error messages
-    // display success message
+    }
   }, 0);
 
   return /*HTML*/ `
     <div>
-    <div id="sidebar-container">${SidebarTeacher()}</div>
+      <div id="sidebar-container">${SidebarTeacher()}</div>
       <div class="breadcrumbs">
         <p>Dashboard</p>
         <p>></p>
@@ -90,7 +116,5 @@ export default function AddStudent() {
         <button type="button" class="secondary-btn">Back to dashboard</button>
       </div>
     </div>
-    `;
+  `;
 }
-
-AddStudent();
