@@ -295,11 +295,6 @@ td {
     display: none;
   }
 
-  #page-2,
-  #page-7 {
-    display: none;
-  }
-
   .secondary-btn {
     font-size: 16px;
   }
@@ -331,9 +326,14 @@ td {
     cursor: pointer;
   }
 
+  .ellipsis {
+    width: 16px;
+    height: 16px;
+  }
+
   .pagination-button img {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     position: relative;
   }
 }

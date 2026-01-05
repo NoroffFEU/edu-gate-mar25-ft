@@ -109,6 +109,9 @@ function transformResults(allResults){
   
   
   function paginate(allResults, currentPage){
+
+  let isMobile = window.innerWidth < 768;
+
     const totalPages = getTotalPages(allResults.length);
     const pageButtonsContainer = document.getElementById('page-buttons');
     const currentPageDisplay = document.getElementById('current-page-display');
@@ -157,15 +160,31 @@ function transformResults(allResults){
 
 
   
-    // Always show: 1, X, ..., Y, totalPages
-  // If 7 or fewer pages, show all
-  if (totalPages <= 5) {
-    for (let i = 1; i <= totalPages; i++) {
-      pageButtonsContainer.appendChild(createButton(i));
+    // If 5 or fewer pages, show all (same for mobile and desktop)
+    if (totalPages <= 5) {
+      for (let i = 1; i <= totalPages; i++) {
+        pageButtonsContainer.appendChild(createButton(i));
+      }
+      return;
     }
-    return;
-  }
 
+    // MOBILE
+    if (isMobile) {
+      if (currentPage <= totalPages / 2) {
+        // First half: show currentPage on left, totalPages on right
+        pageButtonsContainer.appendChild(createButton(currentPage));
+        pageButtonsContainer.appendChild(createEllipsis());
+        pageButtonsContainer.appendChild(createButton(totalPages));
+      } else {
+        // Second half: show 1 on left, currentPage on right
+        pageButtonsContainer.appendChild(createButton(1));
+        pageButtonsContainer.appendChild(createEllipsis());
+        pageButtonsContainer.appendChild(createButton(currentPage));
+      }
+      return;
+    }
+
+    // DESKTOP
     if (currentPage <= 2) {
       pageButtonsContainer.appendChild(createButton(1));
       pageButtonsContainer.appendChild(createButton(2));
@@ -180,16 +199,14 @@ function transformResults(allResults){
       pageButtonsContainer.appendChild(createButton(totalPages - 1));
       pageButtonsContainer.appendChild(createButton(totalPages));
       return;
-    }
-    else if (currentPage === totalPages) {
+    } else if (currentPage === totalPages) {
       pageButtonsContainer.appendChild(createButton(1));
       pageButtonsContainer.appendChild(createButton(2));
       pageButtonsContainer.appendChild(createEllipsis());
       pageButtonsContainer.appendChild(createButton(totalPages - 1));
       pageButtonsContainer.appendChild(createButton(totalPages));
       return;
-    }
-    else if (currentPage >= totalPages / 2) {
+    } else if (currentPage >= totalPages / 2) {
       pageButtonsContainer.appendChild(createButton(1));
       pageButtonsContainer.appendChild(createButton(2));
       pageButtonsContainer.appendChild(createEllipsis());
@@ -322,6 +339,15 @@ function transformResults(allResults){
       performSearch();
     });
    }
+
+    // Re-run pagination when window resizes
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        paginate(currentResults, currentPage);
+      }, 250);
+    });
   }
   
   
