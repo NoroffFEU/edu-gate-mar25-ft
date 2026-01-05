@@ -292,7 +292,8 @@ export default function StudentResult() {
             <span class="breadcrumb-current">Student Results</span>
           </nav>
           <div class="result-content result-loading">
-            <h1>Student Result Page</h1>
+            <h1>Student Results</h1>
+            <img src="public/icons/results.png" alt="Results Icon" class="results-icon-mobile">
             <p>Here are the results for <span class="student-name">Loading...</span>.</p>
 <div class="search-wrapper">          
 <div class="search-container">
