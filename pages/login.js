@@ -1,9 +1,11 @@
+import Alert from "../components/alert.js";
 export default function Login(){
 
     return /*HTML*/`
     
     <div class="login-page">
        <div class="login-form">
+            <div id="login-alert"></div>
             <h1 class="login-h1" >Log in</h1>
             <div class="login-form-input">
                 <label class="login-label" for="email">Email</label>
@@ -24,10 +26,10 @@ export default function Login(){
         </div>
     </div>  
     `;
-    
 }
 
 export function initLoginForm() {
+    const alertContainer = document.getElementById("login-alert");
     const submitBtn = document.getElementById("login-submit");
 
     const emailInput = document.getElementById("email");
@@ -39,10 +41,11 @@ export function initLoginForm() {
     // React on click of button
     submitBtn.addEventListener("click", (e) => {
         e.preventDefault();
+        alertContainer.innerHTML = "";
     
     let isValid = true;
 
-     // Remove error-styling
+    // Remove error-styling
     emailError.textContent = "";
     emailInput.classList.remove("login-input-error");
     passwordError.textContent = "";
@@ -61,8 +64,18 @@ export function initLoginForm() {
         isValid = false;
     }
 
+    // Show success-message
     if (isValid) {
-        console.log("Works");
+        alertContainer.innerHTML = Alert(
+            "success",
+            "Success!",
+            "You are now logged in. Please check your email for instructions on how to verify your account."
+        );
+        const closeBtn = alertContainer.querySelector(".alert-close");
+
+        closeBtn.addEventListener("click", () => {
+            alertContainer.innerHTML = "";
+        });
     }
     });
 

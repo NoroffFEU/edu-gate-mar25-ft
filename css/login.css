@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     padding: var(--padding-16px);
     gap: var(--padding-16px);
 }
