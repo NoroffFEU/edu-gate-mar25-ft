@@ -37,45 +37,57 @@
   font-weight: 400;
 }
 
+.results-icon-mobile {
+  display: none;
+}
+
 .search-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 361px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
 }
 
 .search-container {
   display: flex;
   align-items: center;
-  width: 314.75px;
+  width: 100%;
+  height: 100%;
   background: #fff;
 }
 
 .search-input {
   flex: 1;
-  border: none;
-  padding: 10px 12px;
+  height: 50px;
+  padding: 0 12px;
   font-size: 16px;
   outline: none;
-  padding: 15px;
   border: 1px solid #ccc;
   border-right: none;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  border-right: none;
+  box-sizing: border-box;
 }
 
 .search-button {
   background: #fff;
-  border: none;
-  padding: 14px;
+  height: 50px;
+  width: 50px;
+  padding: 0;
   cursor: pointer;
   font-size: 16px;
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   border: 1px solid var(--primary-color);
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  box-sizing: border-box;
 }
 
 .search-button img {
@@ -272,6 +284,13 @@
     font-size: 14px;
   }
 
+  .results-icon-mobile {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 16px auto;
+  }
+
   .result-content h1 {
     font-size: 32px;
     margin-bottom: 16px;
@@ -300,6 +319,26 @@
   .add-result-btn {
     font-size: 18px;
     padding: 8px 16px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+  }
+
+  .add-result-btn::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    background-image: url("../public/icons/plus.png");
+    background-size: 16px 16px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .results-table-container {
@@ -331,14 +370,14 @@
 
   .results-table thead th:nth-child(3),
   .results-table thead th:nth-child(4),
-  .results-table thead th:nth-child(5) {
+  .results-table thead th:nth-child(6) {
     display: block;
     flex: 1;
   }
 
   .results-table thead th:nth-child(1),
   .results-table thead th:nth-child(2),
-  .results-table thead th:nth-child(6),
+  .results-table thead th:nth-child(5),
   .results-table thead th:nth-child(7) {
     display: none;
   }
