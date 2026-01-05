@@ -153,11 +153,9 @@ export function selectPageNumber() {
   const lastBtn = document.querySelector("#page-last");
   let currentPage = 1;
 
+  const totalPages = 5; // ← comme tu fais déjà
 
 
-  // ==========================
-  // SHOW ROWS FOR PAGE
-  // ==========================
   function renderPage(page) {
     currentPage = page;
 
@@ -171,9 +169,7 @@ export function selectPageNumber() {
     updateArrowButtons();
   }
 
-  // ==========================
-  // ACTIVE BUTTON
-  // ==========================
+
   function updateActiveButton() {
     pageButtons.forEach(btn => {
       btn.classList.toggle(
@@ -183,19 +179,15 @@ export function selectPageNumber() {
     });
   }
 
-  // ==========================
-  // ARROWS STATE
-  // ==========================
+
   function updateArrowButtons() {
     firstBtn.disabled = currentPage === 1;
     prevBtn.disabled = currentPage === 1;
     nextBtn.disabled = currentPage === totalPages;
-    lastBtn.disabled = currentPage === 5;
+    lastBtn.disabled = currentPage === totalPages;
   }
 
-  // ==========================
-  // PAGE NUMBER CLICKS
-  // ==========================
+
   pageButtons.forEach(button => {
     button.addEventListener("click", () => {
       const page = Number(button.dataset.page);
@@ -205,64 +197,34 @@ export function selectPageNumber() {
   });
 
 
-  nextBtn.addEventListener("click", () => {
-    if (currentPage < totalPages) {
-      renderPage(currentPage + 1);
-    }
-  });
-
-
-  // ==========================
-  // ARROWS
-  // ==========================
   firstBtn.addEventListener("click", () => renderPage(1));
-  lastBtn.addEventListener("click", () => renderPage(5));
+  prevBtn.addEventListener("click", () => renderPage(currentPage - 1));
+  nextBtn.addEventListener("click", () => renderPage(currentPage + 1));
+  lastBtn.addEventListener("click", () => renderPage(totalPages));
 
-  prevBtn.addEventListener("click", () => {
-    if (currentPage > 1) renderPage(currentPage - 1);
-  });
 
-  nextBtn.addEventListener("click", () => {
-    if (currentPage + 1) renderPage(currentPage + 1);
-  });
-
-  // ==========================
-  // INIT
-  // ==========================
   renderPage(1);
-
-  const searchInput = document.getElementById("student-search");
-
-  let users = []
-
-  searchInput = document.querySelector("input", e => {
-    const value = e.target.value.toLowerCase();
-    User.forEach(user => {
-      const isVisible =
-        user.firstName.toLowerCase().includes(value) ||
-        user.lastName.toLowerCase().includes(value) ||
-        user.id.toLowerCase().includes(value) ||
-        user.year.toLowerCase().includes(value);
-      user.element.classList.toggle("hide", !isVisible);
-    })
-  });
-
-
-
-  fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(res => res.json())
-    .then(data => {
-      users = data.map(user => {
-        const card = userCardTemplate.content.cloneNode(true).children[0];
-        const header = card.querySelector(".user-card-header");
-        const body = card.querySelector(".user-card-body");
-        header.textContent = id.user.id;
-        body.textContent = user.firstName;
-        userCardContainer.append(card);
-        return { name: user.name, email: user.email, element: card };
-      });
-    });
 
 
 }
 
+/*  SEARCH */
+
+export function selectSearch() {
+  const searchInput = document.querySelector('#student-search input');
+  console.log("searchInput =", searchInput);
+
+  searchInput.addEventListener("input", () => {
+    const searchValue = searchInput.value.toLowerCase();
+    row.dataset.visible = rowText.includes(searchValue) ? "1" : "0";
+
+
+    tableRows.forEach(row => {
+      const rowText = row.textContent.toLowerCase();
+      row.dataset.visible = rowText.includes(searchValue) ? "1" : "0";
+
+    });
+    currentPage = 1;
+    renderPage(1);
+  });
+}
