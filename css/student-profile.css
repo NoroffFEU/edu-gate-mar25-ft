@@ -71,7 +71,7 @@
 
 .profile-label{
     font-weight: 700;
-    flex: 0 0 110px;
+    flex: 0 0 80px;
     letter-spacing: var(--letter-spacing);
     line-height:var(--line-height);
 }
@@ -126,6 +126,22 @@
     font-size: 16px;
     }
 
+    .profile-label{
+    font-weight: 700;
+    flex: 0 0 96px;
+    letter-spacing: var(--letter-spacing);
+    line-height:var(--line-height);
+}
+
+    .profile-value{
+    flex: 1 1 auto;
+    text-align: left;
+    font-weight: 500;
+    min-width: 0;
+    letter-spacing: var(--letter-spacing);
+    line-height:var(--line-height);
+}
+
 }
 /*responsiveness for lager desktop */
 @media (min-width: 1024px) {
@@ -146,5 +162,21 @@
     .profile__row p {
     font-size: 16px;
     }
+
+    .profile-label{
+    font-weight: 700;
+    flex: 0 0 110px;
+    letter-spacing: var(--letter-spacing);
+    line-height:var(--line-height);
+}
+
+    .profile-value{
+    flex: 1 1 auto;
+    text-align: left;
+    font-weight: 500;
+    min-width: 0;
+    letter-spacing: var(--letter-spacing);
+    line-height:var(--line-height);
+}
 
 }
