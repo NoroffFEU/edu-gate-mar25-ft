@@ -12,7 +12,7 @@ export default function Home() {
       </div>
 
       <div class="home__actions">
-        <a href="/login" class="btn btn--secondary">Log In</a>
+        <a href="/login" data-link class="btn btn--secondary">Log In</a>
         <a href="/signup" data-link class="btn btn--primary">Sign Up</a>
       </div>
     </section>  

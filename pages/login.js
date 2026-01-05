@@ -39,16 +39,16 @@ export function initLoginForm() {
     // React on click of button
     submitBtn.addEventListener("click", (e) => {
         e.preventDefault();
+    
+    let isValid = true;
 
-        // Remove error-text
-        emailError.textContent = "";
-        emailInput.classList.remove("login-input-error");
-        passwordError.textContent = "";
-        passwordInput.classList.remove("login-input-error");
+     // Remove error-styling
+    emailError.textContent = "";
+    emailInput.classList.remove("login-input-error");
+    passwordError.textContent = "";
+    passwordInput.classList.remove("login-input-error");
 
-        let isValid = true;
-
-        // When input is empty show error message and styling
+    // When input is empty show error message and styling
     if (emailInput.value.trim() === "") {
         emailError.textContent = "Please insert your email";
         emailInput.classList.add("login-input-error");
@@ -64,5 +64,15 @@ export function initLoginForm() {
     if (isValid) {
         console.log("Works");
     }
+    });
+
+    // No error text or styling when input entered
+    emailInput.addEventListener("input", () => {
+        emailError.textContent = "";
+        emailInput.classList.remove("login-input-error");
+    });
+    passwordInput.addEventListener("input", () => {
+        passwordError.textContent = "";
+        passwordInput.classList.remove("login-input-error");
     });
 }
