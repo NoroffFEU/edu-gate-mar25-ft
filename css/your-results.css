@@ -1,5 +1,7 @@
 html {
+  width: 100vw;
   width: 100dvw;
+  height: 100vh;
   height: 100dvh;
   overflow-x: hidden;
   background-color: var(--color-neutral-gray);
@@ -13,6 +15,7 @@ main {
 }
 
 body {
+  width: 100vw;
   width: 100dvw;
 }
 h1,
@@ -79,6 +82,7 @@ a {
 }
 
 .student-search input {
+  width: 100vw;
   width: 100dvw;
   height: 46px;
   border: 1px solid var(--color-neutral-medium-gray);
@@ -131,8 +135,10 @@ a {
 
 table {
   max-width: 1280px;
+  width: 90vw;
   width: 90dvw;
   height: 600px;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   border: 0.5px solid transparent;
@@ -191,6 +197,7 @@ td {
   align-items: center;
   margin: var(--padding-16px);
   gap: var(--padding-16px);
+  width: 100vw;
   width: 100dvw;
   min-width: 300px;
 }
@@ -250,6 +257,7 @@ td {
 
 @media (max-width: 767px) {
   .student-results-table-container {
+    width: 100vw;
     width: 100dvw;
   }
 
@@ -260,6 +268,7 @@ td {
   }
 
   .student-search {
+    width: 90vw;
     width: 90dvw;
   }
 
