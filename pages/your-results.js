@@ -456,7 +456,9 @@ function transformResults(allResults){
           <div class="pagination-info">
             <p>Page <span id="current-page-display">1</span> of <span id="total-pages-display">1</span> </p>
           </div>
-          <button class="secondary-btn">Back to dashboard</button>
+          <a href="/">
+            <button class="btn btn--secondary">Back to dashboard</button>
+          </a>
       </div>
     </div>
     `;
