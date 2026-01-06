@@ -1,5 +1,5 @@
 export default function StudentManageUser() {
-    return /*HTML*/`
+ return /*HTML*/ `
     <div class="breadcrumb-top">
         <a href="/student-dashboard" class="breadcrumb-link">Dashboard</a>
         <span class="arrow">></span>
@@ -13,7 +13,7 @@ export default function StudentManageUser() {
     <h1>Manage user</h1>
     <p>Edit the user info below:</p>
 
-        <form id="manageStudentForm" class="manage-form">
+        <form id="manageStudentForm" class="manage-form" novalidate>
           <div class="userInfo-group">
             <label for="idInput" class="userInfo-label">ID:</label>
             <input id="idInput" type="text"
@@ -23,37 +23,37 @@ export default function StudentManageUser() {
           <div class="userInfo-group">
             <label for="first-name" class="userInfo-label">First name:</label>
             <input id="first-name" type="text"
-            placeholder="Joe" required />
+            placeholder="Joe" required data-required/>
           </div>
 
            <div class="userInfo-group">
             <label for="last-name" class="userInfo-label">Last name:</label>
             <input id="last-name" type="text"
-            placeholder="Bloggs" required />
+            placeholder="Bloggs" required data-required>
           </div>
 
           <div class="userInfo-group">
             <label for="grad-year" class="userInfo-label">Grad year:</label>
             <input id="grad-year" type="text"
-            placeholder="2020" required />
+            placeholder="2020" required data-required/>
           </div>
 
           <div class="userInfo-group">
             <label for="position" class="userInfo-label">Position:</label>
             <input id="position" type="text"
-            placeholder="Student" readonly />
+            placeholder="Student" required data-required/>
           </div>
 
           <div class="userInfo-group">
             <label for="dateOfBirth" class="userInfo-label">DOB:</label>
             <input id="dateOfBirth" type="text"
-            placeholder="01/01/2002" required />
+            placeholder="01/01/2002" required data-required/>
           </div>
 
           <div class="userInfo-group">
             <label for="email" class="userInfo-label">Email:</label>
             <input id="email" type="email"
-            placeholder="joeblog2020@edugate.no" required />
+            placeholder="joeblog2020@edugate.no" required data-required/>
           </div>
 
           <div class="userInfo-group">
