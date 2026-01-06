@@ -54,9 +54,9 @@ export default function StudentResults() {
           <tr class="student-row-white">
 
           <td>1921840</td>
-          <td>Joe</td>
+          <td>patrick</td>
           <td>Bloggs</td>
-          <td>2020</td>
+          <td>1986</td>
           </tr>
 
           <tr class="student-row-grey">
@@ -139,10 +139,10 @@ export default function StudentResults() {
 
 export function selectPageNumber() {
   const rowsPerPage = 7;
-  const tableRows = Array.from(
+  const originalRows = Array.from(
     document.querySelectorAll("#student-results tbody tr")
   );
-
+  let filteredRows = originalRows
   const pageButtons = document.querySelectorAll(
     "#pagination button[data-page]:not([data-page^='page-'])"
   );
@@ -153,16 +153,24 @@ export function selectPageNumber() {
   const lastBtn = document.querySelector("#page-last");
   let currentPage = 1;
 
-  const totalPages = 5; // ← comme tu fais déjà
-
+  const totalPages = 5; // 
 
   function renderPage(page) {
     currentPage = page;
-
-    tableRows.forEach((row, index) => {
+    console.log('filteredRows', filteredRows)
+    originalRows.forEach(row => row.style.display = "none");
+    filteredRows.forEach((row, index) => {
       const start = (page - 1) * rowsPerPage;
       const end = start + rowsPerPage;
-      row.style.display = index >= start && index < end ? "" : "none";
+      // row.style.display = index >= start && index < end ? "" : "none";
+      if (index >= start && index < end) {
+        console.log("showing row", index);
+        console.log(row.display)
+
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
     });
 
     updateActiveButton();
@@ -206,25 +214,39 @@ export function selectPageNumber() {
   renderPage(1);
 
 
-}
 
-/*  SEARCH */
-
-export function selectSearch() {
+  /*  SEARCH */
   const searchInput = document.querySelector('#student-search input');
   console.log("searchInput =", searchInput);
 
+
   searchInput.addEventListener("input", () => {
     const searchValue = searchInput.value.toLowerCase();
-    row.dataset.visible = rowText.includes(searchValue) ? "1" : "0";
+    if (searchValue == "") { filteredRows = originalRows } else {
+      filteredRows = originalRows.filter(row =>
+        row.textContent.toLowerCase().includes(searchValue)
+      );
+
+      console.log(filteredRows);
+
+    }
 
 
-    tableRows.forEach(row => {
+
+    /* tableRows.forEach(row => {
       const rowText = row.textContent.toLowerCase();
-      row.dataset.visible = rowText.includes(searchValue) ? "1" : "0";
 
+      if (rowText.includes(searchValue)) {
+        row.style.backgroundColor = "red";
+        console.log(row.style);
+      } else {
+        row.style.display = "none";
+        console.log(row.style);
+      }
+    
     });
-    currentPage = 1;
+    */
+
     renderPage(1);
   });
 }
