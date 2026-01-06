@@ -10,6 +10,7 @@ import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
 import { initFormValidation } from "../pages/form-field-validation.js";
+import adminUserSearch from "../pages/admin-user-search.js";
 
 const routes = [
  { path: "/", view: Home },
@@ -43,6 +44,7 @@ const routes = [
    initFormValidation();
   },
  },
+ { path: "/admin-user-search", view: adminUserSearch },
 ];
 
 export default routes;
