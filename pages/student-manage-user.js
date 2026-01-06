@@ -34,7 +34,7 @@ export default function StudentManageUser() {
 
           <div class="userInfo-group">
             <label for="grad-year" class="userInfo-label">Grad year:</label>
-            <input id="grad-year" type="number"
+            <input id="grad-year" type="text"
             placeholder="2020" required />
           </div>
 
@@ -46,7 +46,7 @@ export default function StudentManageUser() {
 
           <div class="userInfo-group">
             <label for="dateOfBirth" class="userInfo-label">DOB:</label>
-            <input id="dateOfBirth" type="date"
+            <input id="dateOfBirth" type="text"
             placeholder="01/01/2002" required />
           </div>
 
