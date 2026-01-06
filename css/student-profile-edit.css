@@ -103,6 +103,11 @@ input::placeholder {
   gap: 1.5rem;
 }
 
+.profile-form input:focus {
+  outline: none;
+  border: 2px solid var(--primary-color);
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
