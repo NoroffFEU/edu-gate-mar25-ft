@@ -9,41 +9,60 @@ import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
+
+
+import TeacherProfileEdit, { initTeacherProfileEdit } from "../pages/teacher-profile-edit.js";
+
+
 import { initFormValidation } from "../pages/form-field-validation.js";
 import adminUserSearch from "../pages/admin-user-search.js";
 
 const routes = [
- { path: "/", view: Home },
- { path: "/about", view: About },
- { path: "/login", view: Login },
- { path: "/student-dashboard", view: StudentDashboard },
- { path: "/student-results", view: StudentResults },
- { path: "/admin-dashboard", view: AdminDashboard },
- {
-  path: "/signup",
-  view: Signup,
-  afterRender: () => {
-   initSignupForm();
-   initFormValidation();
+  { path: "/", view: Home },
+  { path: "/about", view: About },
+  { path: "/login", view: Login },
+  { path: "/student-dashboard", view: StudentDashboard },
+  { path: "/student-results", view: StudentResults },
+  { path: "/admin-dashboard", view: AdminDashboard },
+
+  {
+    path: "/signup",
+    view: Signup,
+    afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+    },
   },
- },
- { path: "/teacher-dashboard", view: TeacherDashboard },
- {
-  path: "/registration",
-  view: Registration,
-  afterRender: () => {
-   initSignupForm();
-   initFormValidation();
+
+  { path: "/teacher-dashboard", view: TeacherDashboard },
+
+  {
+    path: "/registration",
+    view: Registration,
+    afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+    },
   },
- },
- {
-  path: "/admin-edit",
-  view: AdminEdit,
-  afterRender: () => {
-   initAdminProfileEdit();
-   initFormValidation();
+
+  {
+    path: "/admin-edit",
+    view: AdminEdit,
+    afterRender: () => {
+      initAdminProfileEdit();
+      initFormValidation();
+    },
   },
- },
+
+
+  {
+    path: "/teacher-profile-edit",
+    view: TeacherProfileEdit,
+    afterRender: () => {
+      initTeacherProfileEdit();
+      initFormValidation();
+    },
+  },
  { path: "/admin-user-search", view: adminUserSearch },
 ];
 
