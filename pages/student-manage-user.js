@@ -14,7 +14,7 @@ export default function StudentManageUser() {
     <p>Edit the user info below:</p>
 
         <form id="manageStudentForm" class="manage-form" novalidate>
-          <div class="userInfo-group">
+          <div class="userInfo-group readonly">
             <label for="idInput" class="userInfo-label">ID:</label>
             <input id="idInput" type="text"
             placeholder="1921840" readonly />
