@@ -160,13 +160,24 @@ function transformResults(allResults){
 
 
   
-    // If 5 or fewer pages, show all (same for mobile and desktop)
-    if (totalPages <= 5) {
+    // If 3 or fewer pages for mobile show all pages
+    if (isMobile) {
+      if (totalPages <= 3) {
+        for (let i = 1; i <= totalPages; i++) {
+          pageButtonsContainer.appendChild(createButton(i));
+        }
+        return;
+      }
+    }
+    // If 5 or fewer pages for desktop show all pages
+    if (!isMobile) {
+   if (totalPages <= 5) {
       for (let i = 1; i <= totalPages; i++) {
         pageButtonsContainer.appendChild(createButton(i));
       }
       return;
     }
+  }
 
     // MOBILE
     if (isMobile) {
