@@ -34,19 +34,30 @@ async function getSchools() {
 
 /* Load first teacher and first school into the profile fields */
 export async function initTeacherProfile() {
+  const values = document.querySelectorAll(".profile-field .profile-value");
+
+  if (values.length < 6) {
+    console.error("Profile values missing in DOM");
+    return;
+  }
+
   const teachers = await getTeachers();
   const schools = await getSchools();
 
+  if (teachers.length === 0) {
+    console.error("No teachers data found");
+    return;
+  }
+
   const teacher = teachers[0];
   const school = schools[0];
-  const values = document.querySelectorAll(".profile-field .profile-value");
 
   values[0].textContent = teacher.firstName + " " + teacher.lastName;
   values[1].textContent = "joeblog2020@edugate.no";
   values[2].textContent = "19/11/1988";
   values[3].textContent = teacher.id;
   values[4].textContent = "Teacher";
-  values[5].textContent = school.name;
+  values[5].textContent = school ? school.name : "-";
 }
 
 export default function TeacherProfilePage() {
