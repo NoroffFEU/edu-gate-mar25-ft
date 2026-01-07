@@ -54,9 +54,9 @@ export default function StudentResults() {
           <tr class="student-row-white">
 
           <td>1921840</td>
-          <td>patrick</td>
+          <td>joe</td>
           <td>Bloggs</td>
-          <td>1986</td>
+          <td>2020</td>
           </tr>
 
           <tr class="student-row-grey">
