@@ -16,5 +16,6 @@ export default function Home() {
         <a href="#" class="btn btn--secondary">Log In</a>
       </div>
     </section>  
+    <a href="/admin-profile" data-link class="btn">Admin Profile</a>
     `;
 }
