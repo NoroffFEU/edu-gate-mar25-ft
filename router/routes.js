@@ -66,6 +66,12 @@ const routes = [
       initFormValidation();
     },
   },
+
+  {
+    path: "/teacher-profile",
+    view: TeacherProfilePage,
+    afterRender: initTeacherProfile,
+  },
 ];
 
 export default routes;
