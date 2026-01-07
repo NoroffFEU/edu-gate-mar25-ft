@@ -113,11 +113,7 @@ function transformResults(allResults){
 
     const totalPages = getTotalPages(allResults.length);
     const pageButtonsContainer = document.getElementById('page-buttons');
-    const currentPageDisplay = document.getElementById('current-page-display');
-    const totalPagesDisplay = document.getElementById('total-pages-display');
-  
-    if (currentPageDisplay) currentPageDisplay.textContent = currentPage;
-    if (totalPagesDisplay) totalPagesDisplay.textContent = totalPages;
+    
     
     const paginationContainer = document.getElementById('pagination');
     if (paginationContainer) {
@@ -451,9 +447,6 @@ function transformResults(allResults){
               alt="Go to last page"
             />
           </button>
-          </div>
-          <div class="pagination-info">
-            <p>Page <span id="current-page-display">1</span> of <span id="total-pages-display">1</span> </p>
           </div>
           <a href="/">
             <button class="btn btn--secondary">Back to dashboard</button>
