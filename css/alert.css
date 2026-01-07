@@ -68,7 +68,7 @@
  margin: 0;
 }
 .alert--success h2::before {
- background-image: url(/public/icons/success.png);
+ background-image: url(../public/icons/success.png);
 }
 
 /* Styling for failed alert*/
@@ -90,7 +90,7 @@
 }
 
 .alert--failed h2::before {
- background-image: url(/public/icons/fail.png);
+ background-image: url(../public/icons/fail.png);
 }
 
 /* alert media queries for desktop */
