@@ -1,25 +1,29 @@
 /* fetch teachers from JSON file */
 async function getTeachers() {
-  const response = await fetch("/Data/Teachers.json");
-  if (!response.ok) {
-    throw new Error("Failed to fetch teacher");
-  }
   try {
+    const response = await fetch("/Data/Teachers.json");
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch teacher");
+    }
+
     const data = await response.json();
     return data.users;
   } catch (error) {
-    console.error("Error fetching results:", error);
+    console.error("Error fetching teachers:", error);
     return [];
   }
 }
 
 /* fetch schools from JSON file */
 async function getSchools() {
-  const response = await fetch("/Data/Schools.json");
-  if (!response.ok) {
-    throw new Error("Failed to fetch school");
-  }
   try {
+    const response = await fetch("/Data/Schools.json");
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch school");
+    }
+
     const data = await response.json();
     return data.schools;
   } catch (error) {
@@ -98,7 +102,6 @@ export default function TeacherProfilePage() {
 
       <button class="secondary-btn edit-profile-btn">Edit Profile</button>
     </div>  
-    </div>
   </section>
    `;
 }
