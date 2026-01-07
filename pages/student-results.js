@@ -2,9 +2,9 @@ export default function StudentResults(){
     return /*HTML*/`
 <div id="main">
       <nav class="breadcrumbs" id="breadcrumbs">
-        <a href="/">Dashboard</a>
+        <a href="#/">Dashboard</a>
         <span>></span>
-        <a href="/student-results" class="your-results">Your results</a>
+        <a href="#/student-results" class="your-results">Your results</a>
       </nav>
       <div class="student-results-container">
         <h1>Your Results</h1>
