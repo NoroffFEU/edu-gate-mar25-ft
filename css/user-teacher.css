@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    background-color: #f3f3f3;
+    padding: 24px 16px;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+}
+
+/*phone width -- centered*/
+.profile-breadcrumb, 
+.profile-header, 
+.profile__card{
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*breadcrumb*/
+
+.profile-breadcrumb{
+    color: #757575;
+    font: 400 ;
+}
+
+.profile-breadcrumb-active{
+    color: var(--primary-color);
+    font-weight: 500 ;
+    
+}
+
+.profile-breadcrumb{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px ;
+    white-space: nowrap;
+    align-items: center;
+    font-size: var(--paragraph);
+    font-family: var(--primary-font);
+    padding: 16px;
+    letter-spacing: var(--letter-spacing);
+}
+
+/*header*/
+.profile-header h1{
+    text-align: center;
+    font-weight:700;
+    font-style: bold;
+    font-size: 32px;
+    letter-spacing: var(--letter-spacing);
+}
+
+.profile-header p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 24px;
+    color: var(--color-neutral-medium-gray);
+
+
+}
+
+.profile-header{
+    width: 100%;
+    display: block;  /*this is so the p after break line from the header */
+    border: none; /*i kept having border around,  probably inherited from header rule from global*/
+    outline: none;
+    box-shadow: none;
+}
+/*form*/
+.profile__card{
+    max-width: 420px;
+    gap: 16px;
+}
+
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+
+}
+.userInfo-label{
+   font-weight: 700; 
+   color: #000;
+}
+
+.userInfo input{
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.userInfo input[readonly]{
+    color: var(--color-neutral-medium-gray);
+    cursor: none; 
+}
+
+.userInfo input:not([readonly]){
+    font-weight: 400;
+    color: var(--color-neutral-medium-gray);
+}
+
