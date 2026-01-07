@@ -91,7 +91,7 @@ function transformResults(allResults){
     
     paginatedResults.forEach((result, index) => {
       const rowClass = index % 2 === 0 ? 'student-row-grey' : 'student-row-white';
-      const row =document.createElement('tr');
+      const row = document.createElement('tr');
       row.className = rowClass;
       row.innerHTML = `
       <td>${result.year}</td>
@@ -100,8 +100,7 @@ function transformResults(allResults){
       <td>${result.exam}</td>
       <td>${result.result}</td>
       <td>${result.grade}</td>
-      <td class="more-info-button"><img src="./public/icons/info.png" alt="More information" />
-      </td>
+      <td class="more-info-button"><img src="./public/icons/info.png" alt="More information" /></td>
       `;
       tbody.appendChild(row);
     });
@@ -301,7 +300,7 @@ function transformResults(allResults){
   export async function initYourResults() {
     const allResults = await getResults();
     const transformedResults = transformResults(allResults);
-  
+
     window.YourResults = transformedResults;
     window.filteredResults = transformedResults;
 

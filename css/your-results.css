@@ -1,6 +1,5 @@
 html {
-  width: 100vw;
-  width: 100dvw;
+  width: 100%;
   height: 100vh;
   height: 100dvh;
   overflow-x: hidden;
@@ -15,8 +14,7 @@ main {
 }
 
 body {
-  width: 100vw;
-  width: 100dvw;
+  width: 100%;
 }
 h1,
 h2,
@@ -82,8 +80,7 @@ a {
 }
 
 .student-search input {
-  width: 100vw;
-  width: 100dvw;
+  width: 100%;
   height: 46px;
   border: 1px solid var(--color-neutral-medium-gray);
   color: var(--color-neutral-medium-gray);
@@ -95,7 +92,7 @@ a {
 
 .student-search button {
   border-radius: 6px 0 0 6px;
-  width: 20dvw;
+  width: 20%;
   height: 50px;
   border: 1px solid var(--primary-color);
   border-radius: 0 6px 6px 0;
@@ -131,14 +128,13 @@ a {
   justify-content: center;
   align-items: center;
   margin: var(--padding-32px);
+  width: 100%;
 }
 
 table {
   max-width: 1280px;
-  width: 90vw;
-  width: 90dvw;
+  width: 90%;
   height: 600px;
-  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   border: 0.5px solid transparent;
@@ -197,8 +193,7 @@ td {
   align-items: center;
   margin: var(--padding-16px);
   gap: var(--padding-16px);
-  width: 100vw;
-  width: 100dvw;
+  width: 100%;
   min-width: 300px;
 }
 
@@ -257,8 +252,7 @@ td {
 
 @media (max-width: 767px) {
   .student-results-table-container {
-    width: 100vw;
-    width: 100dvw;
+    width: 100%;
   }
 
   .results-icon {
@@ -268,8 +262,7 @@ td {
   }
 
   .student-search {
-    width: 90vw;
-    width: 90dvw;
+    width: 90%;
   }
 
   .student-search button {
@@ -281,10 +274,9 @@ td {
   }
 
   .more-info-button {
-    display: flex;
+    display: table-cell;
     vertical-align: top;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 
   .more-info-button img {
@@ -307,9 +299,13 @@ td {
   .secondary-btn {
     font-size: 16px;
   }
+  td,
+  th {
+    font-size: var(--paragraph);
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 424px) {
   table {
     font-size: 12px;
   }
