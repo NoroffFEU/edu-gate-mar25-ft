@@ -1,0 +1,71 @@
+.breadcrumb-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 16px;
+}
+
+.student-manage H1, p {
+    text-align: center;
+}
+
+.student-manage p {
+    font-weight: 400;
+}
+
+.student-manage {
+    max-width: 315px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.userInfo-group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.userInfo-label {
+    text-align: left;
+    padding: 10px 5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+form input[readonly] {
+    background-color: #e0e0e0;
+    color: var(--color-neutral-medium-gray);
+    cursor: not-allowed;
+    pointer-events: none;
+    border: 1px solid #cccccc;
+}
+
+.manage-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.mng-btn {
+    width: 177px;
+}
+
+@media (min-width: 768px) {
+    .manage-btn {
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px;
+  }
+
+  .mng-btn {
+    font-size: 24px;
+  }
+
+.breadcrumb-top {
+    margin: 24px;
+   }
+
+}

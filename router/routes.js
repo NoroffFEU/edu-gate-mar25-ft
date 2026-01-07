@@ -12,6 +12,7 @@ import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
 import TeacherProfileEdit, { initTeacherProfileEdit } from "../pages/teacher-profile-edit.js";
 import { initFormValidation } from "../pages/form-field-validation.js";
+import StudentManageUser from "../pages/student-manage-user.js";
 
 const routes = [
 
@@ -34,35 +35,42 @@ const routes = [
     },
   },
 
-  { path: "/teacher-dashboard", view: TeacherDashboard },
+ { path: "/teacher-dashboard", view: TeacherDashboard },
 
-  {
-    path: "/registration",
-    view: Registration,
-    afterRender: () => {
-      initSignupForm();
-      initFormValidation();
-    },
+ {
+  path: "/registration",
+  view: Registration,
+  afterRender: () => {
+   initSignupForm();
+   initFormValidation();
   },
+ },
 
-  {
-    path: "/admin-edit",
-    view: AdminEdit,
-    afterRender: () => {
-      initAdminProfileEdit();
-      initFormValidation();
-    },
+ {
+  path: "/admin-edit",
+  view: AdminEdit,
+  afterRender: () => {
+   initAdminProfileEdit();
+   initFormValidation();
   },
+ },
 
-
-  {
-    path: "/teacher-profile-edit",
-    view: TeacherProfileEdit,
-    afterRender: () => {
-      initTeacherProfileEdit();
-      initFormValidation();
-    },
+ {
+  path: "/teacher-profile-edit",
+  view: TeacherProfileEdit,
+  afterRender: () => {
+   initTeacherProfileEdit();
+   initFormValidation();
   },
+ },
+ {
+  path: "/student-manage-user",
+  view: StudentManageUser,
+  afterRender: () => {
+   initSignupForm();
+   initFormValidation();
+  },
+ },
 ];
 
 export default routes;
