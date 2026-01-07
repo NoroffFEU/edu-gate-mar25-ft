@@ -94,7 +94,7 @@ input::placeholder {
  }
 
  .registrationCard {
-  max-width: 24rem;
+  max-width: 480px;
   padding: 3rem 2.5rem;
   border: 3px solid #cccccc;
  }
