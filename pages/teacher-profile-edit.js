@@ -3,7 +3,7 @@ export default function TeacherProfileEdit() {
   if (!existing) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "/css/teacher-profile-edit.css";
+    link.href = "./css/teacher-profile-edit.css";
     link.setAttribute("data-profile-style", "true");
     document.head.appendChild(link);
   }
@@ -29,7 +29,7 @@ export default function TeacherProfileEdit() {
             <button class="avatar-upload-btn" type="button">
               <img
                 id="adminAvatarPreview"
-                src="/public/icons/user-circle-edit-mobile.png"
+                src="./public/icons/user-circle-edit-mobile.png"
                 alt="User avatar"
                 class="avatar-circle-img"
               />

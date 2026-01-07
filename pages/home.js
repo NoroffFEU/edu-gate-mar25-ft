@@ -3,7 +3,7 @@ export default function Home() {
     <section class="home__container">
 
       <div class="home__media">
-        <img src="/public/img/heroimage-edugate.png" alt="two-students-sitting-on-the-grass-with-laptops">
+        <img src="./public/img/heroimage-edugate.png" alt="two-students-sitting-on-the-grass-with-laptops">
       </div>
 
       <div class="home__content">
@@ -12,8 +12,8 @@ export default function Home() {
       </div>
 
       <div class="home__actions">
-        <a href="/login" data-link class="btn btn--secondary">Log In</a>
-        <a href="/signup" data-link class="btn btn--primary">Sign Up</a>
+        <a href="#/login" data-link class="btn btn--secondary">Log In</a>
+        <a href="#/signup" data-link class="btn btn--primary">Sign Up</a>
       </div>
     </section>  
     `;
