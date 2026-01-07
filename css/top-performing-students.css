@@ -47,7 +47,7 @@
   line-height: var(--line-height);
 }
 
-.seaction-header p {
+.section-header p {
   font-family: var(--secondary-font);
   font-size: var(--paragraph);
   font-weight: 400;
@@ -58,28 +58,30 @@
   height: 32px;
 }
 
-.search-wrapper {
+.search-wrapper,
+.table-wrapper,
+.pagination {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .search-container {
+  /* width 314px */
   display: flex;
-  width: 314px;
+  width: 100%;
+  max-width: 314px;
   height: 50px;
-
   background: #fff;
-  border: 1px solid var(--color-neutral-medium-gray);
   border-radius: 8px;
-
   overflow: hidden;
 }
 
 .search-container input {
   width: 265px;
   height: 100%;
-  border: none;
+  border: 1px solid #cccccc;
+  border-radius: 8px 0 0 8px;
   outline: none;
   background: transparent;
 
@@ -95,6 +97,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid var(--primary-color);
+  border-radius: 0 8px 8px 0;
   background: transparent;
   cursor: pointer;
   padding: 10px;
@@ -108,14 +111,10 @@
 }
 
 .table-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
 }
 
 .student-table {
-  width: 393px;
+  max-width: 100%; /* make sure to check this and mabye have 393px */
   border: 1px solid #d9d9d9;
   border-radius: 6px;
   border-collapse: separate;
@@ -131,10 +130,11 @@
   border-bottom: none;
 }
 
-.student-table th,
+.student-table th, /* padding 12px 16px vertical aling middle */
 .student-table td {
-  padding: 12px 16px;
-  vertical-align: middle;
+  font-size: 13px;
+  line-height: 1.4;
+  padding: 10px 12px;
 }
 
 .student-table thead th {
@@ -174,11 +174,14 @@
   display: none;
 }
 
-.pagination {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+/* @media (max-width: 424px) { 
+  .student-table th,
+  .student-table td {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 12px 16px;
+ } 
+} */
 
 @media (min-width: 768px) /* tablet*/ {
   .section-header {
@@ -193,9 +196,7 @@
   .top-performing-students {
     padding: 32px;
   }
-}
 
-@media (min-width: 1024px) /* desktop*/ {
   .top-performing-students {
     max-width: 1200px;
     margin: 0 auto;
@@ -208,8 +209,8 @@
   }
 
   .section-header {
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
   }
 
   .book-icon {
@@ -217,11 +218,11 @@
   }
 
   .search-wrapper {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .table-wrapper {
-    justify-content: flex start;
+    justify-content: center;
   }
 
   .student-table {
@@ -236,7 +237,7 @@
   }
 
   .pagination {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .secondary-btn {
