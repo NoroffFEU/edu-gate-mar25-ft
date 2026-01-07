@@ -10,31 +10,7 @@ import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
-<<<<<<< HEAD
 import UserTeacher from '../pages/user-teacher.js';
-
-const routes = [
-    { path: "/", view: Home },
-    { path: "/about", view: About },
-    { path: "/login", view: Login },
-    { path: "/student-dashboard", view: StudentDashboard },
-    { path: "/student-results", view: StudentResults },
-    { path: "/admin-dashboard", view: AdminDashboard },
-    { path: "/signup", view: Signup, afterRender: initSignupForm },
-    { path: "/teacher-dashboard", view: TeacherDashboard },
-    { path: "/registration", view: Registration },
-    { path: "/admin-edit", view: AdminEdit, afterRender: initAdminProfileEdit },
-
-
-
-    { path: "/user-teacher",
-      view: UserTeacher,
-      afterRender: () => {
-      initSignupForm();
-      initFormValidation();
-  }
-}
-=======
 import TeacherProfileEdit, { initTeacherProfileEdit } from "../pages/teacher-profile-edit.js";
 import { initFormValidation } from "../pages/form-field-validation.js";
 
@@ -46,10 +22,7 @@ const routes = [
  { path: "/student-dashboard", view: StudentDashboard },
  { path: "/student-results", view: StudentResults },
  { path: "/admin-dashboard", view: AdminDashboard },
- { path: "/signup", view: Signup, afterRender: initSignupForm },
  { path: "/teacher-dashboard", view: TeacherDashboard },
- { path: "/registration", view: Registration },
- { path: "/admin-edit", view: AdminEdit, afterRender: initAdminProfileEdit },
   {
     path: "/signup",
     view: Signup,
@@ -58,9 +31,6 @@ const routes = [
       initFormValidation();
     },
   },
-
-  { path: "/teacher-dashboard", view: TeacherDashboard },
-
   {
     path: "/registration",
     view: Registration,
@@ -79,6 +49,13 @@ const routes = [
     },
   },
 
+      { path: "/user-teacher",
+      view: UserTeacher,
+      afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+  }
+},
 
   {
     path: "/teacher-profile-edit",
@@ -88,7 +65,6 @@ const routes = [
       initFormValidation();
     },
   },
->>>>>>> develop
 ];
 
 export default routes;
