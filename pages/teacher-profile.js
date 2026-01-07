@@ -1,6 +1,6 @@
 /* fetch teachers from JSON file */
 async function getTeachers() {
-  const response = await fetch("./Data/Teachers.json");
+  const response = await fetch("/Data/Teachers.json");
   if (!response.ok) {
     throw new Error("Failed to fetch teacher");
   }
@@ -15,7 +15,7 @@ async function getTeachers() {
 
 /* fetch schools from JSON file */
 async function getSchools() {
-  const response = await fetch("./Data/Schools.json");
+  const response = await fetch("/Data/Schools.json");
   if (!response.ok) {
     throw new Error("Failed to fetch school");
   }
