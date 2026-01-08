@@ -17,16 +17,16 @@ export default function StudentDashboard() {
           <div class="dashboard-options">
           <div class ="logo-container">
             <img src="public/icons/user-circle.png" alt="Profile Icon" class="profile-icon"/>
-            <a href="/#" class="student-profile">See profile</a>
+            <a href="#/profile" class="student-profile">See profile</a>
           </div>
         <div class ="logo-container">
         <img src="public/icons/results.png" alt="Profile Icon" class="profile-icon"/>
-        <a href="/#" class="student-results">See results</a>
+        <a href="#/student-results" class="student-results">See results</a>
         </div>
 
         <div class ="logo-container">
             <img src="public/icons/logout.png" alt="Logout Icon" class="profile-icon"/>
-            <a href="/#" class="student-logout">Logout</a></div>
+            <a href="#/logout" class="student-logout">Logout</a></div>
          </div>
         </div>
       </section>`

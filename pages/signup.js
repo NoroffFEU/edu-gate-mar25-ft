@@ -5,7 +5,7 @@ export default function Signup() {
  if (!existing) {
   const link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = "/css/signup.css";
+  link.href = "./css/signup.css";
   link.setAttribute("data-signup-style", "true");
   document.head.appendChild(link);
  }

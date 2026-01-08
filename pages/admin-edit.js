@@ -3,7 +3,7 @@ export default function AdminEdit() {
  if (!existing) {
   const link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = "/css/admin-edit.css";
+  link.href = "./css/admin-edit.css";
   link.setAttribute("data-profile-style", "true");
   document.head.appendChild(link);
  }
@@ -11,7 +11,7 @@ export default function AdminEdit() {
    <div class="edit-wrapper">
 
   <div class="breadcrumb">
-        <a href="/admin-dashboard" class="breadcrumb-link" alt="Green circular avatar with the white initials JB and a small camera icon in the lower-right corner">Dashboard</a>
+        <a href="#/admin-dashboard" class="breadcrumb-link" alt="Green circular avatar with the white initials JB and a small camera icon in the lower-right corner">Dashboard</a>
         <span class="arrow">></span>
         <span class="current">Profile</span>
   </div>
@@ -20,7 +20,7 @@ export default function AdminEdit() {
     <h1 class="adminTitle">Edit Profile</h1>
 
   <div class="avatar-wrapper">
-      <img id="adminAvatarPreview" src="/public/icons/user-circle-edit-mobile.png" alt="User avatar" class="avatar-circle"/>
+      <img id="adminAvatarPreview" src="./public/icons/user-circle-edit-mobile.png" alt="User avatar" class="avatar-circle"/>
       <input type="file" accept="image/*" id="adminAvatarInput" style="display: none;"/>
 </div>
 
