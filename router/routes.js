@@ -23,6 +23,8 @@ const routes = [
     { path: "/registration", view: Registration },
     { path: "/admin-edit", view: AdminEdit, afterRender: initAdminProfileEdit },
     { path: "/admin-profile", view: AdminProfile },
+    { path: "/admin-profile", view: AdminProfile },
+
 ];
 
 export default routes;
