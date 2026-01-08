@@ -3,7 +3,7 @@ export default function UserTeacher(){
     <nav class = "profile-breadcrumb">
         <a href= "/teacher-dashboard" class = "breadcrumb-link">Dashboard</a>
         <span>&gt;</span>
-        <a href="/select-user" class = "breadcrumb-link">Select user</a>
+        <a href="/teacher-dashboard" class = "breadcrumb-link">Select user</a>
         <span>&gt;</span>
         <span class = "profile-breadcrumb-active">Manage user</span>
     </nav> 
