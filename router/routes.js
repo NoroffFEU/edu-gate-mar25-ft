@@ -14,7 +14,6 @@ import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
 import TeacherProfileEdit, { initTeacherProfileEdit } from "../pages/teacher-profile-edit.js";
 import { initFormValidation } from "../pages/form-field-validation.js";
 import StudentManageUser from "../pages/student-manage-user.js";
-
 import adminUserSearch from "../pages/admin-user-search.js";
 
 const routes = [

@@ -10,18 +10,6 @@
  background-color: var(--color-neutral-gray);
 }
 
-.breadcrumb {
- font-size: 16px;
- color: var(--color-neutral-dark-gray);
- margin-bottom: 16px;
- text-decoration: none;
-}
-
-.breadcrumb strong {
- color: var(--primary-color);
- font-weight: 500;
-}
-
 .h1-userSearch {
  margin: 0.25rem 0;
  font: var(--primary-font);
@@ -35,13 +23,17 @@
  max-width: 190px;
  text-align: center;
  font-size: 14px;
- font-weight: 500;
+ font-weight: 400;
  color: var(--color-neutral-dark-gray);
  margin-bottom: 2rem;
  margin: 0 auto;
 }
 
-.search-form {
+.admin-search-img {
+ width: 18px;
+}
+
+.admin-search-form {
  display: flex;
  border: 1px solid #cccccc;
  border-radius: 6px;
@@ -50,18 +42,22 @@
  margin-top: 1rem;
 }
 
-.search-form input {
+.admin-search-form input {
  flex: 1;
  border: none;
  padding: 0.75rem;
  font-size: 20px;
+ font-weight: 400;
 }
 
-.search-form input:focus {
+.admin-search-form input:focus {
  outline: var(--primary-color);
 }
 
-.search-form button {
+.admin-search-form button {
+ display: flex;
+ align-items: center;
+ justify-content: center;
  border: none;
  background: none;
  padding: 0 0.75rem;
@@ -77,7 +73,7 @@
 }
 
 .user-table__header,
-.user-row {
+.admin-user-row {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
  padding: 0.75rem;
@@ -90,14 +86,14 @@
  font-weight: 600;
 }
 
-.user-row {
+.admin-user-row {
  text-decoration: none;
  color: inherit;
  border-top: 1px solid #cccccc;
 }
 
-.user-row:hover,
-.user-row:focus {
+.admin-user-row:hover,
+.admin-user-row:focus {
  background: #f3f4f6;
 }
 
@@ -108,14 +104,17 @@
  display: none;
 }
 
-.pagination {
+.admin-pagination {
  display: flex;
  justify-content: center;
  gap: 0.25rem;
  margin: 1.25rem 0;
 }
 
-.pagination button {
+.admin-pagination button {
+ display: flex;
+ align-items: center;
+ justify-content: center;
  border: 1px solid #cccccc;
  background: #fff;
  font: var(--secondary-font);
@@ -126,7 +125,7 @@
  cursor: pointer;
 }
 
-.pagination button.active-admin-search {
+.admin-pagination button.active-admin-search {
  color: var(--primary-font);
  border: 2px solid var(--primary-color);
 }
@@ -136,6 +135,10 @@
  text-align: center;
  max-width: 195px;
  margin: 0 auto;
+}
+
+.btnSymbol img {
+ width: 10px;
 }
 
 .editBtn {
@@ -155,7 +158,7 @@
  white-space: nowrap;
 }
 
-/* Screen reader only */
+/* Screen reader*/
 .sr-only {
  position: absolute;
  width: 1px;
@@ -171,12 +174,16 @@
   display: block;
  }
 
+ .admin-user-row {
+  padding: 10px 16px;
+ }
+
  .admin-select-user {
   max-width: 1100px;
   padding: 2rem;
  }
 
- .search-form {
+ .admin-search-form {
   max-width: 480px;
   margin: 2rem auto;
  }
@@ -187,11 +194,11 @@
 
  .userSearch-sub {
   max-width: none;
-  font-size: 0.95rem;
+  font-size: 20px;
  }
 
  .user-table__header,
- .user-row {
+ .admin-user-row {
   grid-template-columns: 1fr 1.2fr 1.2fr 0.8fr 1fr 1.2fr 1.2fr;
   align-items: center;
  }
