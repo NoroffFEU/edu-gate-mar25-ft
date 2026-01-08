@@ -241,7 +241,7 @@ td {
   pointer-events: none;
 }
 
-.btn--secondary {
+.btn-your-result {
   margin: var(--padding-48px);
 }
 
