@@ -54,14 +54,10 @@ export default function Header() {
 
   });
   return /*HTML*/ `
-<<<<<<< HEAD
-    <a href="/" data-link>Home</a> |
-    <a href="/login" data-link>Login</a> 
-    <a href="/student-profile" data-link>Student profile</a>
-    <a href="/"><img src="public/img/logo-header.png" class="headerLogo" alt="Home"></a>
-=======
+    <a href="#/" data-link>Home</a> |
+    <a href="#/login" data-link>Login</a> 
+    <a href="#/student-profile" data-link>Student profile</a>
     <a href="#/"><img src="public/img/logo-header.png" class="headerLogo" alt="Home"></a>
->>>>>>> develop
     <nav>
     <ul>
       <li><a href="#/dashboard">Dashboard</a></li>
