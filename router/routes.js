@@ -11,6 +11,7 @@ import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
+import AdminProfile from "../pages/admin-profile.js";
 import TeacherProfileEdit, {
   initTeacherProfileEdit,
 } from "../pages/teacher-profile-edit.js";
@@ -21,14 +22,19 @@ import TeacherProfilePage, {
 } from "../pages/teacher-profile.js";
 
 const routes = [
-  { path: "/", view: Home },
-  { path: "/about", view: About },
-  { path: "/login", view: Login, afterRender: initLoginForm },
+    { path: "/", view: Home },
+    { path: "/about", view: About },
+    { path: "/login", view: Login, afterRender: initLoginForm },
+    { path: "/student-dashboard", view: StudentDashboard },
+    { path: "/student-results", view: StudentResults },
+    { path: "/admin-dashboard", view: AdminDashboard },
+    { path: "/signup", view: Signup, afterRender: initSignupForm },
+    { path: "/teacher-dashboard", view: TeacherDashboard },
+    { path: "/registration", view: Registration },
+    { path: "/admin-edit", view: AdminEdit, afterRender: initAdminProfileEdit },
+    { path: "/admin-profile", view: AdminProfile }
   { path: "/contact", view: Contact },
   { path: "/your-results", view: YourResults, afterRender: initYourResults },
-  { path: "/student-dashboard", view: StudentDashboard },
-  { path: "/admin-dashboard", view: AdminDashboard },
-  { path: "/teacher-dashboard", view: TeacherDashboard },
   {
     path: "/signup",
     view: Signup,
@@ -37,8 +43,6 @@ const routes = [
       initFormValidation();
     },
   },
-
-  { path: "/teacher-dashboard", view: TeacherDashboard },
 
   {
     path: "/registration",

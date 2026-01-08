@@ -16,5 +16,6 @@ export default function Home() {
         <a href="#/signup" data-link class="btn btn--primary">Sign Up</a>
       </div>
     </section>  
+    <a href="/admin-profile" data-link class="btn">Admin Profile</a>
     `;
 }

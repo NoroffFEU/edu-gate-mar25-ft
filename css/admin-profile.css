@@ -1,0 +1,102 @@
+
+.admin-profile-page {
+    background: var(--color-neutral-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 var(--padding-16px) var(--padding-24px) var(--padding-16px);    
+}
+.admin-profile-menu {
+    display: flex;
+    align-items: center;
+    color: var(--color-neutral-medium-gray);
+    gap: var(--padding-16px);
+    max-width: 1280px;
+    width: 100%;
+}
+.admin-profile-p {
+    color: var(--primary-color);
+}
+.admin-profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-24px) var(--padding-32px);
+    margin: var(--padding-48px) 0;
+    border: solid 3px #cccccc;
+}
+.admin-profile-h1 {
+    font-size: 20px;
+    line-height: var(--letter-spacing);
+}
+.admin-profile-icon {
+    max-width: 71px;
+    height: auto;
+    margin-bottom: var(--padding-16px);
+}
+.admin-profile-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: var(--padding-16px);
+    row-gap: var(--padding-16px);
+    margin-bottom: var(--padding-16px);
+}
+.admin-profile-label {
+    font-weight: 700;
+}
+.admin-profile-a {
+    color: var(--color-neutral-medium-gray);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.admin-profile-a__active {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+
+@media (min-width: 768px) {
+    .admin-profile-card {
+        padding: var(--padding-32px) var(--padding-40px);
+        margin: var(--padding-40px) 0;
+    }
+    .admin-profile-h1 {
+        font-size: var(--heading-2);
+        margin-bottom: var(--padding-24px);
+    }
+    .admin-profile-info {
+        column-gap: var(--padding-24px);
+        margin-top: var(--padding-16px);
+        margin-bottom: var(--padding-24px);
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .admin-profile-page {
+        padding: var(--padding-48px);
+    }
+    .admin-profile-menu {
+        gap: var(--padding-24px);
+    }
+    .admin-profile-card {
+        padding: 80px 150px 150px 150px;
+        margin: var(--padding-48px) 0;
+    }
+    .admin-profile-h1 {
+        font-size: var(--heading-1);
+        margin-bottom: var(--padding-48px);
+    }
+    .admin-profile-icon {
+        max-width: 129px;
+        margin-bottom: var(--padding-24px);
+    }
+    .admin-profile-info {
+    column-gap: var(--padding-48px);
+    row-gap: var(--padding-16px);
+    margin-bottom: var(--padding-48px);
+    }
+}
