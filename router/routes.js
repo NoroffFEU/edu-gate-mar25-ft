@@ -16,13 +16,14 @@ import { initFormValidation } from "../pages/form-field-validation.js";
 
 const routes = [
 
- { path: "/", view: UserTeacher },  /*this is TEMPORARILY REPLACING HOME */
+ { path: "/", view: Home },  
  { path: "/about", view: About },
  { path: "/login", view: Login, afterRender: initLoginForm },
  { path: "/student-dashboard", view: StudentDashboard },
  { path: "/student-results", view: StudentResults },
  { path: "/admin-dashboard", view: AdminDashboard },
  { path: "/teacher-dashboard", view: TeacherDashboard },
+
  
   {
     path: "/signup",
