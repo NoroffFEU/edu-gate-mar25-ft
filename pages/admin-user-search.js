@@ -8,7 +8,7 @@ export default function adminUserSearch() {
         <span class="current">Select user</span>
     </div>
       
-<section class="admin-select-user">
+  <section class="admin-select-user">
       <h1 class="h1-userSearch">Select User</h1>
       <p class="userSearch-sub">
         Search for the user below &amp; select to make changes to their info:
@@ -21,10 +21,15 @@ export default function adminUserSearch() {
           type="search"
           placeholder="Search for user..."
           autocomplete="off"
-          required data-required
-        />
+          required data-required />
+
         <button type="submit" aria-label="Search"><img class="admin-search-img" src="./public/icons/search.png" alt="Search icon"></button>
       </form>
+
+      <div class="admin-add-user">
+        <button class="btn btn--primary">Add user</button>
+      </div>
+
 
       <div class="user-table" role="table" aria-label="User list">
         <div class="user-table__header" role="row">

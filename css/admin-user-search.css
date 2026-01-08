@@ -66,6 +66,10 @@
  color: var(--primary-color);
 }
 
+.admin-add-user {
+ display: none;
+}
+
 .user-table {
  border: 1px solid #cccccc;
  border-radius: 6px;
@@ -195,6 +199,12 @@
  .userSearch-sub {
   max-width: none;
   font-size: 20px;
+ }
+
+ .admin-add-user {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
  }
 
  .user-table__header,
