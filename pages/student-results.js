@@ -1,6 +1,5 @@
 export default function StudentResults() {
   return /*HTML*/ `
-<div id="student-page">
 
   <nav class="breadcrumbs" id="breadcrumbs">
     <a href="/">Dashboard</a>
@@ -22,12 +21,15 @@ export default function StudentResults() {
       <p>View your results</p>
     </div>
 
+
+
     <div class="student-search" id="student-search">
      <input type="text" placeholder="Search for results" aria-label="Search for results"/>
       <button type="submit" aria-label="Search"> <div class="search-icon" aria-label="Search">
        <img src="./public/icons/search.png" alt="Search" />
         </div> 
         </button>
+         </div>
          </div>
 
     <!-- Table -->
@@ -132,7 +134,6 @@ export default function StudentResults() {
   </button>
 </div>
 
-</div>
   `;
 }
 

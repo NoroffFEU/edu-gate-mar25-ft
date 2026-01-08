@@ -4,8 +4,7 @@ main {
   background-color: var(--color-neutral-gray);
   font-family: var(--secondary-font);
   width: 100%;
-  max-width: 1200px;
-
+  max-width: 1280px;
 }
 
 body {
@@ -171,9 +170,9 @@ a {
 }
 
 table {
-  max-width: 1280px;
-  width: 1200px;
-  height: 600px;
+  width: 100%;
+  max-width: 1200px;
+  height: 780px;
   border-collapse: separate;
   border-spacing: 0;
   border: 0.5px solid transparent;
@@ -182,6 +181,7 @@ table {
   overflow: hidden;
   border-radius: 10px;
 }
+
 
 tbody tr:hover {
   background-color: color-mix(in srgb,
@@ -206,14 +206,13 @@ th {
   color: var(--primary-color);
   font-family: var(--primary-font);
   font-size: var(--heading-2);
-
 }
 
 th,
 td {
   padding: var(--padding-16px);
   text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
   letter-spacing: var(--letter-spacing);
 }
 
