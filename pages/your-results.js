@@ -449,7 +449,7 @@ function transformResults(allResults){
           </button>
           </div>
           <a href="/">
-            <button class="btn btn--secondary">Back to dashboard</button>
+            <button class="btn-your-result btn btn--secondary">Back to dashboard</button>
           </a>
       </div>
     </div>
