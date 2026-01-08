@@ -3,6 +3,9 @@ main {
   overflow-x: hidden;
   background-color: var(--color-neutral-gray);
   font-family: var(--secondary-font);
+  width: 100%;
+  max-width: 1200px;
+
 }
 
 body {
@@ -298,6 +301,7 @@ td {
 
   #student-page {
     width: 100%;
+    max-width: 767px;
     margin: 0;
     overflow-x: hidden;
   }
@@ -306,6 +310,11 @@ td {
     display: inline-block;
   }
 
+  .student-search {
+    width: 100%;
+    max-width: 265px;
+    height: 65px;
+  }
 
   th {
 
@@ -318,14 +327,15 @@ td {
     padding: 0 15px;
     box-sizing: border-box;
     text-align: left;
+    vertical-align: middle;
   }
 
   th::after {
-    font-size: 15px;
+    font-size: 16px;
     color: #28a645;
     position: absolute;
     left: 12px;
-    top: 0;
+    top: 15px;
     display: block;
   }
 
@@ -341,6 +351,8 @@ td {
     content: "F.Name";
     width: 90px;
     left: 8px;
+    align-items: center;
+    justify-content: center;
   }
 
   /* slight nudge */
@@ -356,6 +368,9 @@ td {
     left: 8px;
   }
 
+  .h1 {
+    font-size: 20px;
+  }
 
   .student-results-table-container {
 
@@ -374,9 +389,12 @@ td {
 
 
   td {
+    vertical-align: middle;
+    font-size: 18px;
     padding: 12px;
     min-width: 0;
   }
+
 
 
 
