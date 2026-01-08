@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*phone */ 
+.profile__card{
+    max-width: 315px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/*profile header*/
+.profile__card h1, p{
+    text-align: center;
+}
+
+.profile__card h1{
+    font-weight: 700;
+    font-style: bold;
+    font-size: 32px;
+}
+
+.profile__card p{
+    color: var(--color-neutral-medium-gray);
+    font-weight: 400;
+}
+
+/*breadcrumb*/
+.profile-breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px ;
+    align-items: center;
+    margin: 10px;
+}
+
+.breadcrumb-link{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-neutral-medium-gray);
+}
+
+.profile-breadcrumb-active{
+    color: var(--primary-color);
+    font-weight: 500 ;
+}
+
+/*form*/
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+
+}
+.userInfo-label{
+    text-align: left;
+    font-weight: 700; 
+    padding: 10px 5px;
+    font-size: 16px;
+}
+
+.userInfo input{
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.userInfo input[readonly]{
+    color: var(--color-neutral-medium-gray);
+    cursor: none; 
+    border: 1px solid #ccc;
+
+}
+
+.userInfo input:not([readonly]){
+    font-weight: 400;
+    color: var(--color-neutral-medium-gray);
+}
+
+/*btn*/
+
+.form__button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+
+
+}
+
+.profile-update-button, 
+.profile-delete-button{
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    width: 177px;
+    height: 56px;
+}
+
+.profile-update-button{
+    background-color: var(--primary-color);
+}
+
+.profile-delete-button{
+    background-color: var(--accent-color) ;
+}
+
+@media (min-width: 768px){
+    .form__button{
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+        padding: 10px 20px;
+        margin: 20px;
+    }
+
+    .profile-update-button, 
+    .profile-delete-button{
+        width: 177px;
+        padding: 0 25px;
+    }
+
+    .profile-delete-button{
+        white-space: nowrap;
+    }
+}

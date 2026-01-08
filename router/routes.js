@@ -11,14 +11,11 @@ import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
-import TeacherProfileEdit, {
-  initTeacherProfileEdit,
-} from "../pages/teacher-profile-edit.js";
-import { initFormValidation } from "../pages/form-field-validation.js";
+import UserTeacher from '../pages/user-teacher.js';
+import TeacherProfileEdit, {initTeacherProfileEdit,} from "../pages/teacher-profile-edit.js";
+import {initFormValidation } from "../pages/form-field-validation.js";
 import StudentManageUser from "../pages/student-manage-user.js";
-import TeacherProfilePage, {
-  initTeacherProfile,
-} from "../pages/teacher-profile.js";
+import TeacherProfilePage, {initTeacherProfile,} from "../pages/teacher-profile.js";
 
 const routes = [
   { path: "/", view: Home },
@@ -38,8 +35,6 @@ const routes = [
     },
   },
 
-  { path: "/teacher-dashboard", view: TeacherDashboard },
-
   {
     path: "/registration",
     view: Registration,
@@ -48,6 +43,13 @@ const routes = [
       initFormValidation();
     },
   },
+  { path: "/user-teacher",
+    view: UserTeacher,
+    afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+  }
+},
 
   {
     path: "/admin-edit",
@@ -81,5 +83,4 @@ const routes = [
     },
   },
 ];
-
 export default routes;
