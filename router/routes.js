@@ -27,13 +27,13 @@ const routes = [
  { path: "/student-dashboard", view: StudentDashboard },
  { path: "/admin-dashboard", view: AdminDashboard },
  { path: "/teacher-dashboard", view: TeacherDashboard },
-
+ 
  {
-    path: "/signup",
-    view: Signup,
-    afterRender: () => {
-      initSignupForm();
-      initFormValidation();
+  path: "/signup",
+  view: Signup,
+  afterRender: () => {
+    initSignupForm();
+    initFormValidation();
     },
   },
 
@@ -43,6 +43,7 @@ const routes = [
   afterRender: () => {
    initSignupForm();
    initFormValidation();
+
   },
  },
 
@@ -58,8 +59,8 @@ const routes = [
   { path: "/user-teacher",
     view: UserTeacher,
     afterRender: () => {
-    initSignupForm();
-    initFormValidation();
+      initSignupForm();
+      initFormValidation();
   }
 },
 
@@ -80,5 +81,4 @@ const routes = [
   },
  },
 ];
-
 export default routes;
