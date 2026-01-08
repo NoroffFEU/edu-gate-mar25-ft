@@ -14,6 +14,7 @@ import TeacherProfileEdit, {
   initTeacherProfileEdit,
 } from "../pages/teacher-profile-edit.js";
 import { initFormValidation } from "../pages/form-field-validation.js";
+import StudentManageUser from "../pages/student-manage-user.js";
 import TeacherProfilePage, {
   initTeacherProfile,
 } from "../pages/teacher-profile.js";
@@ -71,6 +72,14 @@ const routes = [
     path: "/teacher-profile",
     view: TeacherProfilePage,
     afterRender: initTeacherProfile,
+  },
+  {
+    path: "/student-manage-user",
+    view: StudentManageUser,
+    afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+    },
   },
 ];
 
