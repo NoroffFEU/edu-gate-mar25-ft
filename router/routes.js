@@ -11,6 +11,7 @@ import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
+import StudentProfile from "../pages/student-profile.js"; 
 import TeacherProfileEdit, { initTeacherProfileEdit } from "../pages/teacher-profile-edit.js";
 import { initFormValidation } from "../pages/form-field-validation.js";
 import StudentManageUser from "../pages/student-manage-user.js";
@@ -21,6 +22,8 @@ const routes = [
  { path: "/", view: Home },
  { path: "/about", view: About },
  { path: "/login", view: Login, afterRender: initLoginForm },
+ { path: "/student-results", view: StudentResults },
+ { path: "/student-profile", view: StudentProfile },
  { path: "/contact", view: Contact },
  { path: "/your-results", view: YourResults, afterRender: initYourResults },
  { path: "/student-dashboard", view: StudentDashboard },
@@ -34,7 +37,6 @@ const routes = [
       initFormValidation();
     },
   },
-
  {
   path: "/registration",
   view: Registration,
@@ -43,7 +45,6 @@ const routes = [
    initFormValidation();
   },
  },
-
  {
   path: "/admin-edit",
   view: AdminEdit,
@@ -52,7 +53,6 @@ const routes = [
    initFormValidation();
   },
  },
-
  {
   path: "/teacher-profile-edit",
   view: TeacherProfileEdit,

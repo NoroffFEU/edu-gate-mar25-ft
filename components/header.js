@@ -54,6 +54,9 @@ export default function Header() {
 
   });
   return /*HTML*/ `
+    <a href="#/" data-link>Home</a> |
+    <a href="#/login" data-link>Login</a> 
+    <a href="#/student-profile" data-link>Student profile</a>
     <a href="#/"><img src="public/img/logo-header.png" class="headerLogo" alt="Home"></a>
     <nav>
     <ul>
