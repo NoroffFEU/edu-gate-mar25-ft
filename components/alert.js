@@ -6,7 +6,7 @@ export default function Alert(type, title, message) {
         <p>${message}</p>
       </div>
       <button class="alert-close" type="button" aria-label="Close alert">
-        <img src="/public/icons/x-${type}.png" alt="" />
+        <img src="./public/icons/x-${type}.png" alt="" />
       </button>
     </div>
   `;

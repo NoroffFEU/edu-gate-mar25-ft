@@ -1,8 +1,13 @@
 @import url("css/variables.css");
 @import url("css/global.css");
 @import url("css/home.css");
+@import url("css/login.css");
+@import url("css/your-results.css");
+@import url("css/login.css");
 @import url("css/registration.css");
 @import url("css/hamburger-menu.css");
 @import url("css/admin-edit.css");
+@import url("css/teacher-profile.css");
 @import url("css/alert.css");
 @import url("css/admin-profile.css");
+@import url("css/student-manage-user.css");

@@ -3,7 +3,7 @@ export default function AdminEdit() {
  if (!existing) {
   const link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = "/css/admin-edit.css";
+  link.href = "./css/admin-edit.css";
   link.setAttribute("data-profile-style", "true");
   document.head.appendChild(link);
  }
@@ -11,7 +11,7 @@ export default function AdminEdit() {
    <div class="edit-wrapper">
 
   <div class="breadcrumb">
-        <a href="/admin-dashboard" class="breadcrumb-link" alt="Green circular avatar with the white initials JB and a small camera icon in the lower-right corner">Dashboard</a>
+        <a href="#/admin-dashboard" class="breadcrumb-link" alt="Green circular avatar with the white initials JB and a small camera icon in the lower-right corner">Dashboard</a>
         <span class="arrow">></span>
         <span class="current">Profile</span>
   </div>
@@ -20,28 +20,34 @@ export default function AdminEdit() {
     <h1 class="adminTitle">Edit Profile</h1>
 
   <div class="avatar-wrapper">
-      <img id="adminAvatarPreview" src="/public/icons/user-circle-edit-mobile.png" alt="User avatar" class="avatar-circle"/>
+      <img id="adminAvatarPreview" src="./public/icons/user-circle-edit-mobile.png" alt="User avatar" class="avatar-circle"/>
       <input type="file" accept="image/*" id="adminAvatarInput" style="display: none;"/>
 </div>
 
-  <form id="adminEditForm">
+  <form id="adminEditForm" novalidate>
     <div class="formGroups">
       <label class="adminLabel">Name: 
-          <input id="adminName" type="text" placeholder="Joe Bloggs" novalidate/>
+          <input id="adminName" type="text" required data-required placeholder="Joe Bloggs"/>
       </label>      
     </div>
 
     <div class="formGroups">
       <label class="adminLabel">Email:
-          <input id="adminEmail" type="text" placeholder="joeblog2024@edugate no" novalidate/>
+          <input id="adminEmail" type="text" required data-email placeholder="joeblog2024@edugate.no"/>
       </label>        
     </div>
 
     <div class="formGroups">
       <label class="adminLabel">Date of birth:
-          <input id="adminDate" type="text" placeholder="01/01/1987" novalidate/>
+          <input id="adminDate" type="text" required data-required placeholder="01/01/1987"/>
       </label>        
     </div>
+
+    <div class="formGroups positionHidden">
+      <label class="adminLabel">Position:
+          <input id="adminPosition" type="text" placeholder="Administrator" readonly/>
+      </label>        
+    </div>  
 
     <div class="formGroups">
       <label class="adminLabel">School:
@@ -53,10 +59,12 @@ export default function AdminEdit() {
     <button type="submit" class="btn btn--primary">Update</button>
     </div>
     </form>    
-      </div>
-    </div>
+  </div>
+</div>
   `;
 }
+
+/* Upload image to profile */
 
 export function initAdminProfileEdit() {
  const form = document.querySelector("#adminEditForm");
@@ -66,7 +74,7 @@ export function initAdminProfileEdit() {
  const fileInput = document.querySelector("#adminAvatarInput");
 
  if (avatar && fileInput) {
-  // Clicking the avatar opens file picker
+  // When user clicks - file uploader
   avatar.addEventListener("click", () => {
    fileInput.click();
   });
@@ -83,54 +91,4 @@ export function initAdminProfileEdit() {
    reader.readAsDataURL(file);
   });
  }
-
- //Show error under an input
- function showError(input, message) {
-  let error = input.parentElement.querySelector(".error-message");
-
-  if (!error) {
-   error = document.createElement("div");
-   error.classList.add("error-message");
-   input.parentElement.appendChild(error);
-  }
-
-  error.textContent = message;
- }
-
- // Clear error when user focuses field
- form.querySelectorAll("input").forEach((input) => {
-  input.addEventListener("focus", () => {
-   const error = input.parentElement.querySelector(".error-message");
-   if (error) error.remove();
-  });
- });
-
- form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const fullName = form.querySelector("#adminName");
-  const email = form.querySelector("#adminEmail");
-  const date = form.querySelector("#adminDate");
-
-  let hasError = false;
-
-  if (!fullName.value.trim()) {
-   showError(fullName, "Name is required.");
-   hasError = true;
-  }
-
-  if (!email.value.trim()) {
-   showError(email, "Email is required.");
-   hasError = true;
-  }
-
-  if (!date.value.trim()) {
-   showError(date, "Date of birth is required.");
-   hasError = true;
-  }
-
-  if (hasError) return;
-
-  console.log("Profile updated");
- });
 }

@@ -1,20 +1,30 @@
 // views
-import Home from '../pages/home.js'
-import About from '../pages/about.js'
-import Login from '../pages/login.js'
-import StudentDashboard from '../pages/student-dashboard.js'
-import StudentResults from "../pages/student-results.js";
+
+import Home from "../pages/home.js";
+import About from "../pages/about.js";
+import Login, { initLoginForm } from "../pages/login.js";
+import Contact from "../pages/contact.js";
+import YourResults, { initYourResults } from "../pages/your-results.js";
+import StudentDashboard from "../pages/student-dashboard.js";
 import AdminDashboard from "../pages/admin-dashboard.js";
 import Signup, { initSignupForm } from "../pages/signup.js";
 import TeacherDashboard from "../pages/teacher-dashboard.js";
 import Registration from "../pages/registration.js";
 import AdminEdit, { initAdminProfileEdit } from "../pages/admin-edit.js";
 import AdminProfile from "../pages/admin-profile.js";
+import TeacherProfileEdit, {
+  initTeacherProfileEdit,
+} from "../pages/teacher-profile-edit.js";
+import { initFormValidation } from "../pages/form-field-validation.js";
+import StudentManageUser from "../pages/student-manage-user.js";
+import TeacherProfilePage, {
+  initTeacherProfile,
+} from "../pages/teacher-profile.js";
 
 const routes = [
     { path: "/", view: Home },
     { path: "/about", view: About },
-    { path: "/login", view: Login },
+    { path: "/login", view: Login, afterRender: initLoginForm },
     { path: "/student-dashboard", view: StudentDashboard },
     { path: "/student-results", view: StudentResults },
     { path: "/admin-dashboard", view: AdminDashboard },
@@ -22,9 +32,58 @@ const routes = [
     { path: "/teacher-dashboard", view: TeacherDashboard },
     { path: "/registration", view: Registration },
     { path: "/admin-edit", view: AdminEdit, afterRender: initAdminProfileEdit },
-    { path: "/admin-profile", view: AdminProfile },
-    { path: "/admin-profile", view: AdminProfile },
+    { path: "/admin-profile", view: AdminProfile }
+  { path: "/contact", view: Contact },
+  { path: "/your-results", view: YourResults, afterRender: initYourResults },
+  {
+    path: "/signup",
+    view: Signup,
+    afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+    },
+  },
 
+  {
+    path: "/registration",
+    view: Registration,
+    afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+    },
+  },
+
+  {
+    path: "/admin-edit",
+    view: AdminEdit,
+    afterRender: () => {
+      initAdminProfileEdit();
+      initFormValidation();
+    },
+  },
+
+  {
+    path: "/teacher-profile-edit",
+    view: TeacherProfileEdit,
+    afterRender: () => {
+      initTeacherProfileEdit();
+      initFormValidation();
+    },
+  },
+
+  {
+    path: "/teacher-profile",
+    view: TeacherProfilePage,
+    afterRender: initTeacherProfile,
+  },
+  {
+    path: "/student-manage-user",
+    view: StudentManageUser,
+    afterRender: () => {
+      initSignupForm();
+      initFormValidation();
+    },
+  },
 ];
 
 export default routes;

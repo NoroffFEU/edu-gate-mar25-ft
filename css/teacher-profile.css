@@ -1,0 +1,161 @@
+/* Include padding and border inside width calculations */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* breaccrumb*/
+.teacher-breadcrumb {
+  max-width: 1280px;
+  width: 100%;
+  color: var(--color-neutral-medium-gray);
+  display: flex;
+  gap: var(--padding-16px);
+  padding: var(--padding-16px) var(--padding-8px);
+}
+
+.breadcrumb-link {
+  font-size: var(--paragraph);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.breadcrumb-link__active {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* layout containers */
+.teacher-page-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-16px);
+}
+
+.profile-card__wrapper {
+  max-width: 612px;
+  width: 100%;
+  padding: var(--padding-16px);
+  border: 3px solid #cccccc;
+  margin: var(--padding-24px) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* profile fields wrapper */
+.profile-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* individual rows */
+.profile-field {
+  display: flex;
+  font-size: var(--small-txt);
+  margin-bottom: var(--padding-16px);
+}
+
+.profile-label {
+  min-width: 110px;
+  font-weight: 700;
+}
+
+.profile-value {
+  flex: 1;
+}
+
+.short-label {
+  display: inline;
+}
+
+.full-label {
+  display: none;
+}
+
+/* avatar and title */
+.profile-title {
+  font-size: var(--heading-3);
+  font-weight: 600;
+  text-align: center;
+}
+
+.profile-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: var(--padding-32px);
+}
+
+/* avatar images */
+.avatar-mobile {
+  display: block;
+}
+
+.avatar-desktop {
+  display: none;
+}
+
+/* edit button overrides */
+.edit-profile-btn {
+  height: 44px;
+  min-width: 195px;
+  margin-top: var(--padding-16px);
+  font-weight: 600;
+  font-size: var(--paragraph);
+}
+
+/* responsive */
+@media (min-width: 768px) {
+  /* layout */
+  .profile-card__wrapper {
+    padding: var(--padding-32px);
+  }
+
+  /* avatar */
+  .avatar-mobile {
+    display: none;
+  }
+  .avatar-desktop {
+    display: block;
+  }
+
+  /* title */
+  .profile-title {
+    font-size: var(--heading-1);
+    font-weight: 700;
+  }
+
+  /* profile fields */
+  .profile-field {
+    font-size: var(--paragraph);
+  }
+
+  .profile-label {
+    min-width: 180px;
+  }
+
+  .short-label {
+    display: none;
+  }
+
+  .full-label {
+    display: inline;
+  }
+
+  /* edit button */
+  .edit-profile-btn {
+    height: 59px;
+    min-width: 190px;
+    font-size: 26px;
+    margin: var(--padding-48px) 0;
+  }
+}

@@ -1,159 +1,160 @@
 .signup-page {
-  position: relative;
+ position: relative;
 }
 
 .signup-card {
-  padding-top: 120px;
+ padding-top: 120px;
 }
 
 /* Shared styling for alert*/
 .alert {
-  position: absolute;
-  top: 16px;
-  right: 0;
-  width: 337px;
-  height: 114px;
-  padding: var(--padding-8px);
-  box-shadow: -2px 4px 4px 2px rgba(0, 0, 0, 0.25);
-  z-index: 10;
+ position: absolute;
+ top: 16px;
+ right: 0;
+ width: 337px;
+ height: 114px;
+ padding: var(--padding-8px);
+ box-shadow: -2px 4px 4px 2px rgba(0, 0, 0, 0.25);
+ z-index: 10;
 }
 
 .alert p {
-  font-weight: 400;
+ font-weight: 400;
 }
 
 .alert-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  background: none;
-  border: none;
+ position: absolute;
+ top: 16px;
+ right: 16px;
+ background: none;
+ border: none;
+ cursor: pointer;
 }
 .alert h2 {
-  position: relative;
-  padding-left: 40px;
+ position: relative;
+ padding-left: 40px;
 }
 
 .alert h2::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 32px;
-  height: 32px;
-  background-size: contain;
+ content: "";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 32px;
+ height: 32px;
+ background-size: contain;
 }
 
 /* Styling for success alert */
 .alert--success {
-  background-color: #e8f5e9;
+ background-color: #e8f5e9;
 }
 
 .alert--success h2,
 .alert--success p {
-  color: #388e3c;
+ color: #388e3c;
 }
 
 .alert--success p {
-  font-size: var(--small-txt);
+ font-size: var(--small-txt);
 }
 
 .alert--success h2 {
-  margin-bottom: 8px;
+ margin-bottom: 8px;
 }
 
 .alert--success p {
-  margin: 0;
+ margin: 0;
 }
 .alert--success h2::before {
-  background-image: url(/public/icons/success.png);
+ background-image: url(../public/icons/success.png);
 }
 
 /* Styling for failed alert*/
 .alert--failed {
-  background-color: #ffebee;
+ background-color: #ffebee;
 }
 
 .alert--failed h2,
 .alert--failed p {
-  color: #c62828;
+ color: #c62828;
 }
 
 .alert--failed h2 {
-  margin-bottom: 2px;
+ margin-bottom: 2px;
 }
 
 .alert--failed p {
-  font-size: var(--paragraph);
+ font-size: var(--paragraph);
 }
 
 .alert--failed h2::before {
-  background-image: url(/public/icons/fail.png);
+ background-image: url(../public/icons/fail.png);
 }
 
 /* alert media queries for desktop */
 @media (min-width: 1024px) {
-  /* Shared styling for alert desktop*/
-  .alert {
-    top: -50px;
-    width: 450px;
-    height: 167px;
-  }
+ /* Shared styling for alert desktop*/
+ .alert {
+  top: -50px;
+  width: 450px;
+  height: 167px;
+ }
 
-  .alert h2 {
-    font-size: var(--heading-1);
-    position: relative;
-    padding-left: 80px;
-  }
+ .alert h2 {
+  font-size: var(--heading-1);
+  position: relative;
+  padding-left: 80px;
+ }
 
-  .alert p {
-    padding-left: 80px;
-    font-size: var(--paragraph);
-  }
+ .alert p {
+  padding-left: 80px;
+  font-size: var(--paragraph);
+ }
 
-  .alert-text {
-    width: 380px;
-  }
+ .alert-text {
+  width: 380px;
+ }
 
-  .signup-card {
-    padding-top: 0;
-  }
+ .signup-card {
+  padding-top: 0;
+ }
 
-  /* Styling for success alert desktop*/
-  .alert--success h2::before {
-    top: 10px;
-    left: 5px;
-    width: 100px;
-    height: 100px;
-  }
+ /* Styling for success alert desktop*/
+ .alert--success h2::before {
+  top: 10px;
+  left: 5px;
+  width: 100px;
+  height: 100px;
+ }
 
-  .alert h2,
-  .alert p {
-    padding-left: 120px;
-  }
+ .alert h2,
+ .alert p {
+  padding-left: 120px;
+ }
 
-  .alert-text {
-    width: 420px;
-  }
+ .alert-text {
+  width: 420px;
+ }
 
-  .alert--success h2 {
-    margin-bottom: 2px;
-  }
+ .alert--success h2 {
+  margin-bottom: 2px;
+ }
 
-  /* Styling for failed alert desktop*/
-  .alert--failed h2::before {
-    top: 10px;
-    left: 20px;
-    width: 80px;
-    height: 80px;
-  }
+ /* Styling for failed alert desktop*/
+ .alert--failed h2::before {
+  top: 10px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+ }
 
-  .alert--failed p {
-    margin-top: 6px;
-  }
+ .alert--failed p {
+  margin-top: 6px;
+ }
 
-  .alert-text {
-    padding-top: 8px;
-  }
+ .alert-text {
+  padding-top: 8px;
+ }
 }
