@@ -1,7 +1,10 @@
+import SidebarAdmin from "../components/sidebar-admin.js";
+
 export default function AdminDashboard() {
   return /*HTML*/ `
-<main class="dashboard">
-
+<div>
+<div id="sidebar-container">${SidebarAdmin()}</div>
+<div class="dashboard">
   <section class="admin-info">
   <h1>Dashboard</h1>
   
@@ -38,7 +41,7 @@ export default function AdminDashboard() {
     <p>Logout</p> </a>
 
   </nav>
-
-  </main>
+  </div>
+  </div>
   `;
 }
