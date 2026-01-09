@@ -99,7 +99,7 @@ export default function topperformingstudents() {
         </button>
       </div>
 
-    <a href="#/teacher-dashboard" class="secondary-btn">
+    <a href="#/teacher-dashboard" class="secondary-btn button-back">
       Back to dashboard
     </a>
   </div>

@@ -19,6 +19,7 @@
 .breadcrumb a {
   color: var(--color-neutral-medium-gray);
   text-decoration: none;
+  font-size: 16px;
 }
 
 .breadcrumb-separator::before {
@@ -186,7 +187,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .col-id,
   .col-firstname,
   .col-year {
@@ -257,5 +258,10 @@
 
   .secondary-btn {
     width: fit-content;
+  }
+
+  .button-back {
+    justify-content: center;
+    margin: 0 auto;
   }
 }
