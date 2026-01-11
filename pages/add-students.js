@@ -2,7 +2,7 @@ import SidebarTeacher from "../components/sidebar-teaching.js";
 
 // Load CSS/JS once
 async function loadJSpreadsheet() {
-  // 1) CSS
+  // CSS
   if (!document.querySelector('link[data-jss-css="1"]')) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
@@ -25,7 +25,7 @@ async function loadJSpreadsheet() {
     });
   }
 
-  // 2) JS modules
+  // JS modules
   const parserModule = await import("https://esm.sh/@jspreadsheet/parser");
 
   console.log("jspreadsheet global:", window.jspreadsheet);
